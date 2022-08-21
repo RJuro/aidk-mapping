@@ -1,0 +1,1635 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d022aad18749b09011f3c89f00eb2a1f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_d022aad18749b09011f3c89f00eb2a1f" ></div>
+        
+</body>
+<script>    
+    
+            var map_d022aad18749b09011f3c89f00eb2a1f = L.map(
+                "map_d022aad18749b09011f3c89f00eb2a1f",
+                {
+                    center: [56.1629, 10.2039],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c18a5074db9fc351bc7dacac022427d0 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+            var tile_layer_d639e721cecc778b01bbb93933395e1a = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+            var circle_088eae1716209b5afb3abe0dd1998ede = L.circle(
+                [56.1597, 10.2161],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_cba08953bc6b1a23ea364b212587e5dc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cd952fbd2c6ca419b42e849591fcc70a = $(`<div id="html_cd952fbd2c6ca419b42e849591fcc70a" style="width: 100.0%; height: 100.0%;"><b>.legal</b> <a href='https://https://www.dotlegal.dk/' target='_blank'>https://www.dotlegal.dk/</a>   Tooling for GDPR complience</div>`)[0];
+            popup_cba08953bc6b1a23ea364b212587e5dc.setContent(html_cd952fbd2c6ca419b42e849591fcc70a);
+        
+
+        circle_088eae1716209b5afb3abe0dd1998ede.bindPopup(popup_cba08953bc6b1a23ea364b212587e5dc)
+        ;
+
+        
+    
+    
+            circle_088eae1716209b5afb3abe0dd1998ede.bindTooltip(
+                `<div>
+                     .legal
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1591fb1a48994a425069925ad3ba5076 = L.circle(
+                [55.65934601, 12.51762934],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_8f50369bb6e96971ab12d80bd61af683 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a3014436e35764941e72c0df65a9083e = $(`<div id="html_a3014436e35764941e72c0df65a9083e" style="width: 100.0%; height: 100.0%;"><b>Canon Medical Informatics</b> <a href='https://https://www.canon.dk/business/medical/' target='_blank'>https://www.canon.dk/business/medical/</a>   Canon's digital Radiology technology offers image sensor technology and software for integration into X-ray systems.</div>`)[0];
+            popup_8f50369bb6e96971ab12d80bd61af683.setContent(html_a3014436e35764941e72c0df65a9083e);
+        
+
+        circle_1591fb1a48994a425069925ad3ba5076.bindPopup(popup_8f50369bb6e96971ab12d80bd61af683)
+        ;
+
+        
+    
+    
+            circle_1591fb1a48994a425069925ad3ba5076.bindTooltip(
+                `<div>
+                     Canon Medical Informatics
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_0be44b0f359e7d271fdb3ae12e6a8b0e = L.circle(
+                [56.17059639, 10.03292068],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_5d7fecb2c3d4cc7d4bc701b6f30b0058 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_937dab07360e7726f0362f0339a2b093 = $(`<div id="html_937dab07360e7726f0362f0339a2b093" style="width: 100.0%; height: 100.0%;"><b>Care-call</b> <a href='https://https://www.care-call.dk/' target='_blank'>https://www.care-call.dk/</a>   We advise on, deliver and service calling, communication, assignment and personal security solutions. Our primary areas are hospitals, nursing homes, institutions, schools and correctional facilities - areas we have worked with since the company was established in 2000.</div>`)[0];
+            popup_5d7fecb2c3d4cc7d4bc701b6f30b0058.setContent(html_937dab07360e7726f0362f0339a2b093);
+        
+
+        circle_0be44b0f359e7d271fdb3ae12e6a8b0e.bindPopup(popup_5d7fecb2c3d4cc7d4bc701b6f30b0058)
+        ;
+
+        
+    
+    
+            circle_0be44b0f359e7d271fdb3ae12e6a8b0e.bindTooltip(
+                `<div>
+                     Care-call
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_fc6bb13e83f56dc67ff116b55dc51ea7 = L.circle(
+                [55.68899294, 12.57673777],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_6ab866f27eda63231664883f31cafa65 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2302dd453453c54ef88e1a38291934ae = $(`<div id="html_2302dd453453c54ef88e1a38291934ae" style="width: 100.0%; height: 100.0%;"><b>Cerebriu</b> <a href='https://https://cerebriu.com/' target='_blank'>https://cerebriu.com/</a>   Cerebriu provides solutions to automate radiology workflows, improve brain MRI efficiency, improve patient prioritisation, and reduce scan time, re-examinations, and non-acute admissions.</div>`)[0];
+            popup_6ab866f27eda63231664883f31cafa65.setContent(html_2302dd453453c54ef88e1a38291934ae);
+        
+
+        circle_fc6bb13e83f56dc67ff116b55dc51ea7.bindPopup(popup_6ab866f27eda63231664883f31cafa65)
+        ;
+
+        
+    
+    
+            circle_fc6bb13e83f56dc67ff116b55dc51ea7.bindTooltip(
+                `<div>
+                     Cerebriu
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_4244f870f9f02e2b897ae1f653115029 = L.circle(
+                [55.6730546, 12.58877916],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_64d53181a7ec16af2eb0a25b1c4ebe3a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e8aca6033219595f462a90356ef2f7f3 = $(`<div id="html_e8aca6033219595f462a90356ef2f7f3" style="width: 100.0%; height: 100.0%;"><b>CURVEX</b> <a href='https://https://curvex.dk/' target='_blank'>https://curvex.dk/</a>   Back at the beginning, the team at the time was shocked that sickness absence in Danish workplaces costs the state up to DKK 12 billion annually. A large cost that probably occurs because of the competitive society we live in. A society where numbers and progress shadows man's personal well-being and health. Therefore, we decided that a device should be developed that could give employers, as well as the individual employee, an indication of their mental stages and the strain they put on themselves and their brain on a daily basis.</div>`)[0];
+            popup_64d53181a7ec16af2eb0a25b1c4ebe3a.setContent(html_e8aca6033219595f462a90356ef2f7f3);
+        
+
+        circle_4244f870f9f02e2b897ae1f653115029.bindPopup(popup_64d53181a7ec16af2eb0a25b1c4ebe3a)
+        ;
+
+        
+    
+    
+            circle_4244f870f9f02e2b897ae1f653115029.bindTooltip(
+                `<div>
+                     CURVEX
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_7dc51515100934ad0b5ffa64fc349296 = L.circle(
+                [55.672861, 12.58955163],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_a9cd545ba01546d96b8ce7aa4f3da12f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_253f25d92b805dfb800c158f28fafa62 = $(`<div id="html_253f25d92b805dfb800c158f28fafa62" style="width: 100.0%; height: 100.0%;"><b>DCR Solutions</b> <a href='https://https://dcrsolutions.net/' target='_blank'>https://dcrsolutions.net/</a>   DCR Solutions is revolutionising the Business Process Management market by helping companies in heavily regulated industries digitize their processes, ensuring higher compliance and transparency, while saving employees time and company costs. DCR boosts the value of your existing IT system by adapting to your business needs. DCR’s no-code business process management platform is a new approach to process digitization and process mining that enables you to create more efficient and more compliant processes.</div>`)[0];
+            popup_a9cd545ba01546d96b8ce7aa4f3da12f.setContent(html_253f25d92b805dfb800c158f28fafa62);
+        
+
+        circle_7dc51515100934ad0b5ffa64fc349296.bindPopup(popup_a9cd545ba01546d96b8ce7aa4f3da12f)
+        ;
+
+        
+    
+    
+            circle_7dc51515100934ad0b5ffa64fc349296.bindTooltip(
+                `<div>
+                     DCR Solutions
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_e2fff0074fad3965ace31b2fe08a9744 = L.circle(
+                [56.65673812, 9.809348027],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_099071f11b2371b35f42a3c249aeee57 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4575766b545c78ca42ef97b47c8f4110 = $(`<div id="html_4575766b545c78ca42ef97b47c8f4110" style="width: 100.0%; height: 100.0%;"><b>Nopa Nordic</b> <a href='https://https://nopanordic.com/' target='_blank'>https://nopanordic.com/</a>   In 1993, we produced the first eco-labelled products. Ever since, sustainability has been in our DNA. That’s why we have also been certified in the UN’s 17 Sustainable Development Goals as the first company in the world in our category. We believe that our choices matter, so we will always offer you the most sustainable option</div>`)[0];
+            popup_099071f11b2371b35f42a3c249aeee57.setContent(html_4575766b545c78ca42ef97b47c8f4110);
+        
+
+        circle_e2fff0074fad3965ace31b2fe08a9744.bindPopup(popup_099071f11b2371b35f42a3c249aeee57)
+        ;
+
+        
+    
+    
+            circle_e2fff0074fad3965ace31b2fe08a9744.bindTooltip(
+                `<div>
+                     Nopa Nordic
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_ec7b57cfd641340a51bfc8bbda33cfb7 = L.circle(
+                [55.73903852, 12.39968537],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_5a49c8d0665649bc64b650061ad52487 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3d289e09acfccf946f8cecbea3638fe3 = $(`<div id="html_3d289e09acfccf946f8cecbea3638fe3" style="width: 100.0%; height: 100.0%;"><b>Precure</b> <a href='https://https://www.precure.dk/' target='_blank'>https://www.precure.dk/</a>   MLI® Interface is the online dashboard, where you manage all your projects to map MSD risks in your organization. Data collected will automatically be analyzed and presented to you in the MLI® Interface. You will also get recommendations on how to improve. The MLI® Interface keeps track of your interventions and the effect hereof. The value for you is that you will know whether there is MSD issue, where is it, what to do about it, and the effect of improvements. The projects can be done by function, process, team – as much and whenever you want. It provides a complete, databased overview to make better decisions and achieve better effect.</div>`)[0];
+            popup_5a49c8d0665649bc64b650061ad52487.setContent(html_3d289e09acfccf946f8cecbea3638fe3);
+        
+
+        circle_ec7b57cfd641340a51bfc8bbda33cfb7.bindPopup(popup_5a49c8d0665649bc64b650061ad52487)
+        ;
+
+        
+    
+    
+            circle_ec7b57cfd641340a51bfc8bbda33cfb7.bindTooltip(
+                `<div>
+                     Precure
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_811097c248c1c3ddf3760e1646ab3554 = L.circle(
+                [55.75144644, 12.59668239],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_681752d600e4455c6a1465d93d874ab1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2da2d3611f6e0f9d153f415d85c19cf6 = $(`<div id="html_2da2d3611f6e0f9d153f415d85c19cf6" style="width: 100.0%; height: 100.0%;"><b>Rokoko</b> <a href='https://https://www.rokoko.com/' target='_blank'>https://www.rokoko.com/</a>   Rokoko is a Danish brand of consumer motion capture and animation technology products. It was founded in 2015 in Copenhagen, Denmark with additional offices located in Athens, Greece, and San Francisco, USA. It manufactures the Smartsuit Pro, an IMU motion capture suit used by animators, game developers, vTubers.</div>`)[0];
+            popup_681752d600e4455c6a1465d93d874ab1.setContent(html_2da2d3611f6e0f9d153f415d85c19cf6);
+        
+
+        circle_811097c248c1c3ddf3760e1646ab3554.bindPopup(popup_681752d600e4455c6a1465d93d874ab1)
+        ;
+
+        
+    
+    
+            circle_811097c248c1c3ddf3760e1646ab3554.bindTooltip(
+                `<div>
+                     Rokoko
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_e2de9f0039ae8ebad0ba9e93edc78a08 = L.circle(
+                [55.67689907, 12.5707055],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_a11fcdbb35f87ccdb9d3e2126e3ffdff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_21cdc445f7e25698713022fea9f3d568 = $(`<div id="html_21cdc445f7e25698713022fea9f3d568" style="width: 100.0%; height: 100.0%;"><b>Saninudge </b> <a href='https://https://saninudge.com/' target='_blank'>https://saninudge.com/</a>   Medical equipment manufacturer in Copenhage. "Drive patient safety, prevent infections, and turn caregivers into hand hygiene champions. sani nudge is the only hand hygiene solution to measure patient contact according to your healthcare guidelines."</div>`)[0];
+            popup_a11fcdbb35f87ccdb9d3e2126e3ffdff.setContent(html_21cdc445f7e25698713022fea9f3d568);
+        
+
+        circle_e2de9f0039ae8ebad0ba9e93edc78a08.bindPopup(popup_a11fcdbb35f87ccdb9d3e2126e3ffdff)
+        ;
+
+        
+    
+    
+            circle_e2de9f0039ae8ebad0ba9e93edc78a08.bindTooltip(
+                `<div>
+                     Saninudge 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_820f368a30eef075570605b0b5cd935c = L.circle(
+                [55.76218131, 12.4540671],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_5a719721bc8885805a2979bc7081e878 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_69848099e3460817824ea7e05bda6eeb = $(`<div id="html_69848099e3460817824ea7e05bda6eeb" style="width: 100.0%; height: 100.0%;"><b>Specialbandager </b> <a href='https://https://specialbandager.dk/' target='_blank'>https://specialbandager.dk/</a>   "Specialbandager er landets største udbyder af specialstrikkede kompressionsstrømper til afhjælpning af lymfødem og ødem i forbindelse med venøse lidelser. Vi har mere end 30 års erfaring på feltet. Vi er sygeplejersker, sårsygeplejersker og Medicokonsulenter. De fleste med flere års erfaring fra branchen. Specialbandager arbejder tæt sammen med lymfødemterapeuter, både på hospitalerne og i privatpraksis og har derfor en stor kontaktflade til lymfødemterapeuter, borgere samt producenter. Ligeledes har vi et tæt samarbejde med Videncenter for Sår og Lymfødem på Bispebjerg Hospital. Vi fører alle de kendte og veldokumenterede mærker som Medi, Jobst, Juzo, Egertina og Sigvaris.</div>`)[0];
+            popup_5a719721bc8885805a2979bc7081e878.setContent(html_69848099e3460817824ea7e05bda6eeb);
+        
+
+        circle_820f368a30eef075570605b0b5cd935c.bindPopup(popup_5a719721bc8885805a2979bc7081e878)
+        ;
+
+        
+    
+    
+            circle_820f368a30eef075570605b0b5cd935c.bindTooltip(
+                `<div>
+                     Specialbandager 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_20c23276027f87727ff40fd47c075023 = L.circle(
+                [55.68060517, 12.60363474],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_a692c1adc8be50bdec6ce5288242ffc5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_545b9e13d111f65604cdb0eb24f8c7a3 = $(`<div id="html_545b9e13d111f65604cdb0eb24f8c7a3" style="width: 100.0%; height: 100.0%;"><b>Vital Beats</b> <a href='https://https://vitalbeats.com/' target='_blank'>https://vitalbeats.com/</a>   Get the overview you need without logging into multiple vendor systems. Our platform never sleeps and constantly triages every cardiac device patient using our patent-pending technique. Then it automatically handles all your routine cases, so you only need to focus on the truly essential and critical. Served in a beautiful and usable dashboard. All on our future-proof cloud-based, secure and GDPR compliant platform, of course.</div>`)[0];
+            popup_a692c1adc8be50bdec6ce5288242ffc5.setContent(html_545b9e13d111f65604cdb0eb24f8c7a3);
+        
+
+        circle_20c23276027f87727ff40fd47c075023.bindPopup(popup_a692c1adc8be50bdec6ce5288242ffc5)
+        ;
+
+        
+    
+    
+            circle_20c23276027f87727ff40fd47c075023.bindTooltip(
+                `<div>
+                     Vital Beats
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f22f824cbc661dcbe7d6a7b09470e3d0 = L.circle(
+                [55.69168865, 12.52448203],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_0206e14ac16ba8359f8a1ece82f92f70 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_64a823cd2c7c70201aefc97dc49d4f84 = $(`<div id="html_64a823cd2c7c70201aefc97dc49d4f84" style="width: 100.0%; height: 100.0%;"><b>Datasolvr</b> <a href='https://http://datasolvr.com/' target='_blank'>http://datasolvr.com/</a>   Data is one of a company's most valuable assets - a gold mine of truths and insights waiting to be uncovered. But to leverage this in a continuous and seamless way is challenging. Large data projects can be high risk, low return efforts, while fragmented analysis won't provide long term value. Datasolvr turns data exploration and management into a low risk, high return effort by providing a flexible and powerful platform, for delivering value from raw data all the way into the board room.</div>`)[0];
+            popup_0206e14ac16ba8359f8a1ece82f92f70.setContent(html_64a823cd2c7c70201aefc97dc49d4f84);
+        
+
+        circle_f22f824cbc661dcbe7d6a7b09470e3d0.bindPopup(popup_0206e14ac16ba8359f8a1ece82f92f70)
+        ;
+
+        
+    
+    
+            circle_f22f824cbc661dcbe7d6a7b09470e3d0.bindTooltip(
+                `<div>
+                     Datasolvr
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d021fd454425b9bf650f3f6bc6238a67 = L.circle(
+                [56.15351316, 10.17507256],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_3e2b195059236209683e9fb11eac18f0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2286be40e2b52b1769ac3214affdcfd8 = $(`<div id="html_2286be40e2b52b1769ac3214affdcfd8" style="width: 100.0%; height: 100.0%;"><b>Digital Revisor</b> <a href='https://https://www.digitalrevisor.nu/' target='_blank'>https://www.digitalrevisor.nu/</a>   "Digital Revisor er en hjælp til dig, som udlejer en bolig, har lavet forældrekøb, har enkeltmandsvirksomhed eller et selskab. Det er også til dig, der er professionel rådgiver, fx bogholder eller revisor. Digital Revisor er et online værktøj, som hjælper med at optimere din skat, sikrer dig de rette fradrag, og hjælper dig med indberetningen til SKAT og/eller Erhvervsstyrelsen. Lovgivningen er pakket ind i en simpel guide, som er udarbejdet og testet af registrerede og statsautoriserede revisorer."</div>`)[0];
+            popup_3e2b195059236209683e9fb11eac18f0.setContent(html_2286be40e2b52b1769ac3214affdcfd8);
+        
+
+        circle_d021fd454425b9bf650f3f6bc6238a67.bindPopup(popup_3e2b195059236209683e9fb11eac18f0)
+        ;
+
+        
+    
+    
+            circle_d021fd454425b9bf650f3f6bc6238a67.bindTooltip(
+                `<div>
+                     Digital Revisor
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_fb197050b7fbe0f6330c6c76be1f6c6c = L.circle(
+                [55.67810547, 12.5794905],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_2bf7d71b5ba06d05b3e58ffa76ca4d14 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_962d0d2466029a92459bc452abf68db2 = $(`<div id="html_962d0d2466029a92459bc452abf68db2" style="width: 100.0%; height: 100.0%;"><b>Fullbrain</b> <a href='https://https://www.fullbrain.org/' target='_blank'>https://www.fullbrain.org/</a>   "FullBrain is a social e-learning platform where students study together, find personalized learning material and connect with top companies."</div>`)[0];
+            popup_2bf7d71b5ba06d05b3e58ffa76ca4d14.setContent(html_962d0d2466029a92459bc452abf68db2);
+        
+
+        circle_fb197050b7fbe0f6330c6c76be1f6c6c.bindPopup(popup_2bf7d71b5ba06d05b3e58ffa76ca4d14)
+        ;
+
+        
+    
+    
+            circle_fb197050b7fbe0f6330c6c76be1f6c6c.bindTooltip(
+                `<div>
+                     Fullbrain
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_87c22229d627a17d3b9056dfc4649b31 = L.circle(
+                [55.73138208, 12.4683168],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_bb758fc2b307b773a97a2443f3b6d40e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_807d7be198aef2488b41a747b9d48c9f = $(`<div id="html_807d7be198aef2488b41a747b9d48c9f" style="width: 100.0%; height: 100.0%;"><b>IO Group</b> <a href='https://https://iogroup.ai/' target='_blank'>https://iogroup.ai/</a>   The company was created in 2008 with the purpose to implement IT solutions that re-enforces the business development for the Insurance market. IO Group excels at defining business requirements together with clients, and convert requirements into IT systems that supports the client business ROI. Process-efficiency has been in focus all the way – in 2019 IO Group decided to take the process-efficiency to the next level via the use of Artificial Intelligence (AI). IO Group’s goal is to improve up to 80% of the common processes within the industry. Our re-vised business objective is to continue implementing AI solutions, and through proven client results become a well-known and trusted AI provider within the European insurance space by 2025.</div>`)[0];
+            popup_bb758fc2b307b773a97a2443f3b6d40e.setContent(html_807d7be198aef2488b41a747b9d48c9f);
+        
+
+        circle_87c22229d627a17d3b9056dfc4649b31.bindPopup(popup_bb758fc2b307b773a97a2443f3b6d40e)
+        ;
+
+        
+    
+    
+            circle_87c22229d627a17d3b9056dfc4649b31.bindTooltip(
+                `<div>
+                     IO Group
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a3df9a6a93471323e695da28ed92d6e5 = L.circle(
+                [55.73516821, 12.56471834],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_eb4bcd3f9221998c3a763261f49702ed = L.popup({"maxWidth": "100%"});
+
+        
+            var html_776c9aa5221c8328f67e0e0a6a0e8c60 = $(`<div id="html_776c9aa5221c8328f67e0e0a6a0e8c60" style="width: 100.0%; height: 100.0%;"><b>SHFT</b> <a href='https://http://shft.run/' target='_blank'>http://shft.run/</a>   Listen to your virtual coach, get instructions tailored just for you and improve your performance with every run. SHFT accurately track and analyze your full body running style and statistics through two intelligent pods. Your running data is translated into simple, actionable and real-time coaching instructions that’ll help you run better, faster and with reduced risk of injury</div>`)[0];
+            popup_eb4bcd3f9221998c3a763261f49702ed.setContent(html_776c9aa5221c8328f67e0e0a6a0e8c60);
+        
+
+        circle_a3df9a6a93471323e695da28ed92d6e5.bindPopup(popup_eb4bcd3f9221998c3a763261f49702ed)
+        ;
+
+        
+    
+    
+            circle_a3df9a6a93471323e695da28ed92d6e5.bindTooltip(
+                `<div>
+                     SHFT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_4f6131f6e315caf3f1b90f3c43283b0a = L.circle(
+                [55.88104883, 12.54770804],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_cb3fcf4486300a6f349ece9079f7f736 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_10b65f923124616acdf49be52b177c86 = $(`<div id="html_10b65f923124616acdf49be52b177c86" style="width: 100.0%; height: 100.0%;"><b>TICRA</b> <a href='https://https://www.ticra.com/' target='_blank'>https://www.ticra.com/</a>   TICRA is a small company in Copenhagen, Denmark specializing in antenna analysis and synthesis software. Their signature software includes: GRASP: POS CHAMP Their software is regarded as the de facto industry standard. </div>`)[0];
+            popup_cb3fcf4486300a6f349ece9079f7f736.setContent(html_10b65f923124616acdf49be52b177c86);
+        
+
+        circle_4f6131f6e315caf3f1b90f3c43283b0a.bindPopup(popup_cb3fcf4486300a6f349ece9079f7f736)
+        ;
+
+        
+    
+    
+            circle_4f6131f6e315caf3f1b90f3c43283b0a.bindTooltip(
+                `<div>
+                     TICRA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9b813811ed0c5d820dfc793145e1c6f1 = L.circle(
+                [55.95492689, 12.59165335],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_58af403755c718c286dc722d19454385 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a4de4d1aa8d901e3c072904d23a34032 = $(`<div id="html_a4de4d1aa8d901e3c072904d23a34032" style="width: 100.0%; height: 100.0%;"><b>Withcon</b> <a href='https://http://withcon.dk/' target='_blank'>http://withcon.dk/</a>   At Withcon, we specialize in implementing a smooth, optimized construction process. The core is thorough preparatory work, planning, risk management, an overview of requirements and, not least, management of the process throughout the entire construction project.  </div>`)[0];
+            popup_58af403755c718c286dc722d19454385.setContent(html_a4de4d1aa8d901e3c072904d23a34032);
+        
+
+        circle_9b813811ed0c5d820dfc793145e1c6f1.bindPopup(popup_58af403755c718c286dc722d19454385)
+        ;
+
+        
+    
+    
+            circle_9b813811ed0c5d820dfc793145e1c6f1.bindTooltip(
+                `<div>
+                     Withcon
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_2ced8bdd1b3f12191f2b216b3f6a86db = L.circle(
+                [56.14869468, 10.21319171],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_7f5b2a40226e2f4e620c50aa04b56ef3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e84f87a854263dc528d95f361969e25b = $(`<div id="html_e84f87a854263dc528d95f361969e25b" style="width: 100.0%; height: 100.0%;"><b>AAK</b> <a href='https://https://www.aak.com/' target='_blank'>https://www.aak.com/</a>   AAK specializes in plant-based oils that are the value-adding ingredients in many of the products people love to consume. We make these products better tasting, healthier, and more sustainable. We enhance their sensory experience – by giving the silkier mouthfeel in premium chocolate, the juicier texture in a plant-based burger, and the puffier appearance in a lower-fat pastry.</div>`)[0];
+            popup_7f5b2a40226e2f4e620c50aa04b56ef3.setContent(html_e84f87a854263dc528d95f361969e25b);
+        
+
+        circle_2ced8bdd1b3f12191f2b216b3f6a86db.bindPopup(popup_7f5b2a40226e2f4e620c50aa04b56ef3)
+        ;
+
+        
+    
+    
+            circle_2ced8bdd1b3f12191f2b216b3f6a86db.bindTooltip(
+                `<div>
+                     AAK
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9ee2652d64eeb59223dfa4966a64f9ac = L.circle(
+                [55.72663719, 12.3732971],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_82f70b958633c50e6b02295cc519c42f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_97bb5fb3975be1eab5ed0dbfccda60b9 = $(`<div id="html_97bb5fb3975be1eab5ed0dbfccda60b9" style="width: 100.0%; height: 100.0%;"><b>Andel Lumen</b> <a href='https://https://andellumen.dk/' target='_blank'>https://andellumen.dk/</a>   "Vi er knap 100 specialister, der sørger for, at børn og voksne kan færdes sikkert på cykelstier og veje, og vi samarbejder med de bedste aktører på markedet om at levere smarte løsninger til det offentlige rum. Uanset, om vi rådgiver, planlægger drift og vedligehold eller rykker ud og sørger for, at lampen lyser i parken, på gaden og på sportsanlægget, når vi skal være aktive sammen, så løfter vi i flok og i tæt samarbejde med vores kunder.</div>`)[0];
+            popup_82f70b958633c50e6b02295cc519c42f.setContent(html_97bb5fb3975be1eab5ed0dbfccda60b9);
+        
+
+        circle_9ee2652d64eeb59223dfa4966a64f9ac.bindPopup(popup_82f70b958633c50e6b02295cc519c42f)
+        ;
+
+        
+    
+    
+            circle_9ee2652d64eeb59223dfa4966a64f9ac.bindTooltip(
+                `<div>
+                     Andel Lumen
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_0ac446c1df36160e641331259c3c3bdc = L.circle(
+                [56.10902245, 10.15830372],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_53277e54b8be80a0da189aaf774233e7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6379d828ecbeb03091220725bfa0c399 = $(`<div id="html_6379d828ecbeb03091220725bfa0c399" style="width: 100.0%; height: 100.0%;"><b>BKI</b> <a href='https://https://www.bkifoods.com/' target='_blank'>https://www.bkifoods.com/</a>   "Den gode kaffeoplevelse er ikke kun forbeholdt kaffebaren eller din egen kaffemaskine derhjemme. Med BKI Professionel er du sikret den gode kaffeoplevelse på arbejdspladsen, hvor du hverken går på kompromis med kvalitet eller pris. BKI har siden sin opstart i 1960 leveret kvalitetskaffe til de danske forbrugere, og er i dag den største kaffeleverandør til det kaffeglade Danmark – hertil kommer en stærkt voksende eksport. Vi rister og pakker i dag kaffer fra hele verden, på vores højteknologiske kaffefabrik i Højbjerg ved Aarhus. BKI er i dag, blandt de største aktører på kaffemarkedet, det eneste 100% danskejede kaffefirma, med salg til detail- og foodservicesektoren og produktion i Danmark."</div>`)[0];
+            popup_53277e54b8be80a0da189aaf774233e7.setContent(html_6379d828ecbeb03091220725bfa0c399);
+        
+
+        circle_0ac446c1df36160e641331259c3c3bdc.bindPopup(popup_53277e54b8be80a0da189aaf774233e7)
+        ;
+
+        
+    
+    
+            circle_0ac446c1df36160e641331259c3c3bdc.bindTooltip(
+                `<div>
+                     BKI
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_0852bd0b381f968dff83595cc1817bd4 = L.circle(
+                [55.46850423, 8.668532758],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_b19e39a2db2101e6233b08008cce02fd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_727e12373615b31acac45a978ef8a6e5 = $(`<div id="html_727e12373615b31acac45a978ef8a6e5" style="width: 100.0%; height: 100.0%;"><b>Bramidan</b> <a href='https://https://www.bramidan.com/' target='_blank'>https://www.bramidan.com/</a>   We develop and produce machines for compaction of recyclable waste. We have a strong brand in the market with more than 40 years' experience and a wide global network.</div>`)[0];
+            popup_b19e39a2db2101e6233b08008cce02fd.setContent(html_727e12373615b31acac45a978ef8a6e5);
+        
+
+        circle_0852bd0b381f968dff83595cc1817bd4.bindPopup(popup_b19e39a2db2101e6233b08008cce02fd)
+        ;
+
+        
+    
+    
+            circle_0852bd0b381f968dff83595cc1817bd4.bindTooltip(
+                `<div>
+                     Bramidan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_ceae8baaea06fb8cee30c4c55477cc3d = L.circle(
+                [56.15996684, 10.21059453],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_3f5ab87b8c68bf2ceeccb930531c0935 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_886119d2a843effaa72c3c2cb8228f8e = $(`<div id="html_886119d2a843effaa72c3c2cb8228f8e" style="width: 100.0%; height: 100.0%;"><b>Cadesign</b> <a href='https://http://www.cadesign.dk/' target='_blank'>http://www.cadesign.dk/</a>   Cadesign Group består af de tre virksomheder Cadesign base, Cadesign form og Mind Group. Til Mind Group hører virksomhederne Rootz og Rent a Brain og til Cadesign form hører virksomheden Dimension Design.</div>`)[0];
+            popup_3f5ab87b8c68bf2ceeccb930531c0935.setContent(html_886119d2a843effaa72c3c2cb8228f8e);
+        
+
+        circle_ceae8baaea06fb8cee30c4c55477cc3d.bindPopup(popup_3f5ab87b8c68bf2ceeccb930531c0935)
+        ;
+
+        
+    
+    
+            circle_ceae8baaea06fb8cee30c4c55477cc3d.bindTooltip(
+                `<div>
+                     Cadesign
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9438697a044630368c4c4684f5f265c7 = L.circle(
+                [55.64087903, 12.26134905],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_9702f946fffaf0c4527400e6a5b8d20e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_95052957cdb0ff964ef07cf2296d3198 = $(`<div id="html_95052957cdb0ff964ef07cf2296d3198" style="width: 100.0%; height: 100.0%;"><b>Climaid</b> <a href='https://https://en.climaid.dk/' target='_blank'>https://en.climaid.dk/</a>   CLIMAID Insight is an open IoT platform that collects, analyses and visualises all types of data from your buildings.</div>`)[0];
+            popup_9702f946fffaf0c4527400e6a5b8d20e.setContent(html_95052957cdb0ff964ef07cf2296d3198);
+        
+
+        circle_9438697a044630368c4c4684f5f265c7.bindPopup(popup_9702f946fffaf0c4527400e6a5b8d20e)
+        ;
+
+        
+    
+    
+            circle_9438697a044630368c4c4684f5f265c7.bindTooltip(
+                `<div>
+                     Climaid
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_0fbcb990d0db7e65a2be3b8d12425446 = L.circle(
+                [56.47728169, 8.583737585],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_1e4a9ec230fdebc301e546d8da633618 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c6c0ebaef211a437704d923768d1bfb9 = $(`<div id="html_c6c0ebaef211a437704d923768d1bfb9" style="width: 100.0%; height: 100.0%;"><b>Conpleks Innovation</b> <a href='https://https://conpleks.com/' target='_blank'>https://conpleks.com/</a>   Award-winning Solutions for Mobile Robot</div>`)[0];
+            popup_1e4a9ec230fdebc301e546d8da633618.setContent(html_c6c0ebaef211a437704d923768d1bfb9);
+        
+
+        circle_0fbcb990d0db7e65a2be3b8d12425446.bindPopup(popup_1e4a9ec230fdebc301e546d8da633618)
+        ;
+
+        
+    
+    
+            circle_0fbcb990d0db7e65a2be3b8d12425446.bindTooltip(
+                `<div>
+                     Conpleks Innovation
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_ebc753d493ad52cb3b6b105b5e23abef = L.circle(
+                [55.96774698, 12.40095023],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_2d8c039f3cbd2aa1609372b0d1d5fd65 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8b1eb235fe871fe2c7f1d502c9d0fff7 = $(`<div id="html_8b1eb235fe871fe2c7f1d502c9d0fff7" style="width: 100.0%; height: 100.0%;"><b>Dansac</b> <a href='https://https://www.dansac.dk/da-dk' target='_blank'>https://www.dansac.dk/da-dk</a>   Dansac udvikler, producerer og markedsfører unikke stomiplejeprodukter, der opfylder behovene hos folk med stomi – og hos de folk, der leverer stomipleje. Vores produkter er designet til at løse specifikke problemer og forbedre livskvaliteten for alle de mennesker, der bruger dem.</div>`)[0];
+            popup_2d8c039f3cbd2aa1609372b0d1d5fd65.setContent(html_8b1eb235fe871fe2c7f1d502c9d0fff7);
+        
+
+        circle_ebc753d493ad52cb3b6b105b5e23abef.bindPopup(popup_2d8c039f3cbd2aa1609372b0d1d5fd65)
+        ;
+
+        
+    
+    
+            circle_ebc753d493ad52cb3b6b105b5e23abef.bindTooltip(
+                `<div>
+                     Dansac
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_c9c548905e701b2c842d78ac77325252 = L.circle(
+                [57.02592308, 9.921649543],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_b933a31f0c8bd9d63d77a7ef49f3f300 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_65ee2841a8debf5781bbb71d11cbbd2b = $(`<div id="html_65ee2841a8debf5781bbb71d11cbbd2b" style="width: 100.0%; height: 100.0%;"><b>Dansk Retursystem</b> <a href='https://https://danskretursystem.dk/' target='_blank'>https://danskretursystem.dk/</a>   Dansk Retursystem has developed the Returkampen, an experience-based and creative learning concept, the purpose of which is to create enthusiasm and increased focus on recycling and circular economy among children and young people in primary schools. If you want to know more about the Returkampen and how to register your class, click on the link below.</div>`)[0];
+            popup_b933a31f0c8bd9d63d77a7ef49f3f300.setContent(html_65ee2841a8debf5781bbb71d11cbbd2b);
+        
+
+        circle_c9c548905e701b2c842d78ac77325252.bindPopup(popup_b933a31f0c8bd9d63d77a7ef49f3f300)
+        ;
+
+        
+    
+    
+            circle_c9c548905e701b2c842d78ac77325252.bindTooltip(
+                `<div>
+                     Dansk Retursystem
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_206316a6debc6804db1880adeef8e7cc = L.circle(
+                [55.69226488, 12.61286551],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_e39b042d87986eea51baa6003bc85793 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eb8f039efaa3a26b7e0a4fd99ca33592 = $(`<div id="html_eb8f039efaa3a26b7e0a4fd99ca33592" style="width: 100.0%; height: 100.0%;"><b>Empirical</b> <a href='https://https://empirical.co/' target='_blank'>https://empirical.co/</a>   Empirical is a flavor company. Let us explain what that means. Subscribe for product launches, events and whatever else we think of. linkin.bio/empiricalcph.</div>`)[0];
+            popup_e39b042d87986eea51baa6003bc85793.setContent(html_eb8f039efaa3a26b7e0a4fd99ca33592);
+        
+
+        circle_206316a6debc6804db1880adeef8e7cc.bindPopup(popup_e39b042d87986eea51baa6003bc85793)
+        ;
+
+        
+    
+    
+            circle_206316a6debc6804db1880adeef8e7cc.bindTooltip(
+                `<div>
+                     Empirical
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_4f2ac51ac13cbaf2f1eab5ba2d21b21f = L.circle(
+                [55.57517869, 12.10542213],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_446c49a1234baa990e4e5b0e096a1509 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1138d6527863f48166d3242eba7224e9 = $(`<div id="html_1138d6527863f48166d3242eba7224e9" style="width: 100.0%; height: 100.0%;"><b>Esti Chem</b> <a href='https://https://estichem.com/' target='_blank'>https://estichem.com/</a>   Esti Chem, green chemistry,environment. Development, sustainable raw materials, Formulation Ingredients,Formulation Technology,Developments.</div>`)[0];
+            popup_446c49a1234baa990e4e5b0e096a1509.setContent(html_1138d6527863f48166d3242eba7224e9);
+        
+
+        circle_4f2ac51ac13cbaf2f1eab5ba2d21b21f.bindPopup(popup_446c49a1234baa990e4e5b0e096a1509)
+        ;
+
+        
+    
+    
+            circle_4f2ac51ac13cbaf2f1eab5ba2d21b21f.bindTooltip(
+                `<div>
+                     Esti Chem
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d00868c4dd96e7f4951f17194cc26649 = L.circle(
+                [56.17324956, 10.18964658],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_e9a51f791bcc27eae12da51e262860df = L.popup({"maxWidth": "100%"});
+
+        
+            var html_debce6a8d544af1250893526716a274c = $(`<div id="html_debce6a8d544af1250893526716a274c" style="width: 100.0%; height: 100.0%;"><b>Exigo</b> <a href='https://https://exigoconsult.com/' target='_blank'>https://exigoconsult.com/</a>   Exigo’s advice is data driven. And that makes us special. We will inform you about the benefits and risks of the different scenarios for you to make well-informed and sound decisions.</div>`)[0];
+            popup_e9a51f791bcc27eae12da51e262860df.setContent(html_debce6a8d544af1250893526716a274c);
+        
+
+        circle_d00868c4dd96e7f4951f17194cc26649.bindPopup(popup_e9a51f791bcc27eae12da51e262860df)
+        ;
+
+        
+    
+    
+            circle_d00868c4dd96e7f4951f17194cc26649.bindTooltip(
+                `<div>
+                     Exigo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_16eed8f74f2c5b5d14640fcf844edd3b = L.circle(
+                [55.64893126, 12.55006952],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_6258402ad8910b6eb1279586d10642df = L.popup({"maxWidth": "100%"});
+
+        
+            var html_30ff1ddd0a0b6f3d7a9583552327bf5f = $(`<div id="html_30ff1ddd0a0b6f3d7a9583552327bf5f" style="width: 100.0%; height: 100.0%;"><b>FaunaPhotonics</b> <a href='https://https://faunaphotonics.com/' target='_blank'>https://faunaphotonics.com/</a>   FaunaPhotonics is positioned at the intersection of two global megatrends: Precision agriculture and biodiversity.We are building next generation real-time insect monitoring technology. By bringing a new technology to the market, we will fill gaps in knowledge of insect populations. We are unmatched in product scale and breadth within automated optical sensing of flying insects in precision agriculture and beyond, uniquely positioned vs competition to providing missing data for optimizing/protecting crop yield and biodiversity while pursuing mobile solutions for autonomous monitoring and precision spraying. Our technology is continuously tested in the field by leading commercial companies within ag-chem, seed and food production as well as equipment manufacturers, and by globally renowned academic institutions and testing authorities. These tests provide us with the technical and scientific validation needed to develop our commercial business at scale. Our mission is to become the leader in delivering data enabling solutions for sustainable and smarter crop management and biodiversity monitoring, with additional opportunities in public health (vector control) and aqua-culture.</div>`)[0];
+            popup_6258402ad8910b6eb1279586d10642df.setContent(html_30ff1ddd0a0b6f3d7a9583552327bf5f);
+        
+
+        circle_16eed8f74f2c5b5d14640fcf844edd3b.bindPopup(popup_6258402ad8910b6eb1279586d10642df)
+        ;
+
+        
+    
+    
+            circle_16eed8f74f2c5b5d14640fcf844edd3b.bindTooltip(
+                `<div>
+                     FaunaPhotonics
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f2773f4d43d09510d402c96746d28bd5 = L.circle(
+                [56.107817, 10.14393501],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_93d8c0638e5e063387b91e5d5261a6ef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_17ff7834f22a62352cd69156ef0debc6 = $(`<div id="html_17ff7834f22a62352cd69156ef0debc6" style="width: 100.0%; height: 100.0%;"><b>Frontier Film</b> <a href='https://https://www.frontierfilm.dk/' target='_blank'>https://www.frontierfilm.dk/</a>   Frontier is well-known in Denmark for its production of commercials and for its TV programs for children and adults, which are characterized by innovation and high standards. In fact Frontier is the single largest producer of children's TV for TV2/Denmark (one of two broadcasters in Denmark). Frontier has been recommended for a nomination to an Emmy for a youth program and has participated in the short film and documentary film festival in Berlin with a documentary film entry. Children and parents in Denmark have been entertained on national TV by Frontier's Christmas series in twenty-four episodes. First All Time's Christmas, then All Time's Santa and finally, All Time's Father Christmas and latest Island of the Pixies. The ratings for these primetime shows have only been beaten by the national football team.</div>`)[0];
+            popup_93d8c0638e5e063387b91e5d5261a6ef.setContent(html_17ff7834f22a62352cd69156ef0debc6);
+        
+
+        circle_f2773f4d43d09510d402c96746d28bd5.bindPopup(popup_93d8c0638e5e063387b91e5d5261a6ef)
+        ;
+
+        
+    
+    
+            circle_f2773f4d43d09510d402c96746d28bd5.bindTooltip(
+                `<div>
+                     Frontier Film
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f77177e42ed896e23edce8091e1e3aa7 = L.circle(
+                [56.11437129, 10.19320071],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_1b9b564f07d890d127ab9e005e28e19d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d6bf3d7dce98d2e80dc217d08a116590 = $(`<div id="html_d6bf3d7dce98d2e80dc217d08a116590" style="width: 100.0%; height: 100.0%;"><b>HMF</b> <a href='https://https://dk.hmfcranes.com/' target='_blank'>https://dk.hmfcranes.com/</a>   We specialize in the development of truck-mounted cranes. Our focus has always been to optimize our cranes' strong and clean design, operational reliability, lifting capacity in relation to dead weight, reach, size andinstallation dimensions. </div>`)[0];
+            popup_1b9b564f07d890d127ab9e005e28e19d.setContent(html_d6bf3d7dce98d2e80dc217d08a116590);
+        
+
+        circle_f77177e42ed896e23edce8091e1e3aa7.bindPopup(popup_1b9b564f07d890d127ab9e005e28e19d)
+        ;
+
+        
+    
+    
+            circle_f77177e42ed896e23edce8091e1e3aa7.bindTooltip(
+                `<div>
+                     HMF
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_baf27b31e721cebe5be56f2f5d7d90c0 = L.circle(
+                [56.25639277, 8.793744485],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_6dff37928695360ca3ffcfacbe4c6ae9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8586dd768febf53ba9d6c790fe757e3e = $(`<div id="html_8586dd768febf53ba9d6c790fe757e3e" style="width: 100.0%; height: 100.0%;"><b>HORN Bordplader</b> <a href='https://https://www.hornbordplader.dk/' target='_blank'>https://www.hornbordplader.dk/</a>   HORN ønsker at gentænke kvalitetsbegrebet. Dette gør vi gennem grundige overvejelser om vores rødder, CSR profil, værdisæt, indhentning af certificerede produkter, læring, uddannelse & vidensdeling, løbende udvikling og innovation der sikrer optimal materiale udnyttelser og hertil selvfølgelig en effektiv produktion og overholdelse af internationalt gældende love og reguleringer.</div>`)[0];
+            popup_6dff37928695360ca3ffcfacbe4c6ae9.setContent(html_8586dd768febf53ba9d6c790fe757e3e);
+        
+
+        circle_baf27b31e721cebe5be56f2f5d7d90c0.bindPopup(popup_6dff37928695360ca3ffcfacbe4c6ae9)
+        ;
+
+        
+    
+    
+            circle_baf27b31e721cebe5be56f2f5d7d90c0.bindTooltip(
+                `<div>
+                     HORN Bordplader
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_4c6758a1b98fbe6ec2db5b0711d50859 = L.circle(
+                [55.45133173, 11.79267204],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_d820085b8875f7e82ab39b143e828fa3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4da3c97d1bd980e1602872d9ca872f88 = $(`<div id="html_4da3c97d1bd980e1602872d9ca872f88" style="width: 100.0%; height: 100.0%;"><b>HOVMAND</b> <a href='https://https://hovmand.com/da_dk/?utm_term=hovmand&utm_campaign=DK:+L%C3%B8fteudstyr+Exact&utm_source=adwords&utm_medium=ppc&hsa_acc=3459539300&hsa_cam=15230887911&hsa_grp=129152664149&hsa_ad=575978146554&hsa_src=g&hsa_tgt=kwd-13367446&hsa_kw=hovmand&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=CjwKCAjw6fyXBhBgEiwAhhiZss2JBPno839ANuasfuAhP1_Eazw0RIN6mICD-FcH8e4bHa19Pi1T7BoCc6EQAvD_BwE' target='_blank'>https://hovmand.com/da_dk/?utm_term=hovmand&utm_campaign=DK:+L%C3%B8fteudstyr+Exact&utm_source=adwords&utm_medium=ppc&hsa_acc=3459539300&hsa_cam=15230887911&hsa_grp=129152664149&hsa_ad=575978146554&hsa_src=g&hsa_tgt=kwd-13367446&hsa_kw=hovmand&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=CjwKCAjw6fyXBhBgEiwAhhiZss2JBPno839ANuasfuAhP1_Eazw0RIN6mICD-FcH8e4bHa19Pi1T7BoCc6EQAvD_BwE</a>   Hovmand is the world-leading manufacturer of mobile, battery-powered lifters. For nearly 50 years, we have been improving efficiency and working conditions in the area of material handling. Our innovative lifting solutions help customers all over the world improve ergonomics and create more productive workflows.</div>`)[0];
+            popup_d820085b8875f7e82ab39b143e828fa3.setContent(html_4da3c97d1bd980e1602872d9ca872f88);
+        
+
+        circle_4c6758a1b98fbe6ec2db5b0711d50859.bindPopup(popup_d820085b8875f7e82ab39b143e828fa3)
+        ;
+
+        
+    
+    
+            circle_4c6758a1b98fbe6ec2db5b0711d50859.bindTooltip(
+                `<div>
+                     HOVMAND
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_bfd158570c0a618942aa31f782c32b3d = L.circle(
+                [57.04738039, 9.944874183],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_6fed5ca7afa91066eb6ace64b1245702 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a65f6acce3de5da71a98fe5620564772 = $(`<div id="html_a65f6acce3de5da71a98fe5620564772" style="width: 100.0%; height: 100.0%;"><b>Inropa</b> <a href='https://https://www.inropa.com/' target='_blank'>https://www.inropa.com/</a>   Inropa means Intelligent Robot Painting. We develop and sell software for programming of industrial robots, vision systems, and 3D scanning equipment. We specialize in automatic, semi-automatic and offline programming systems for paint and surface treatment robots</div>`)[0];
+            popup_6fed5ca7afa91066eb6ace64b1245702.setContent(html_a65f6acce3de5da71a98fe5620564772);
+        
+
+        circle_bfd158570c0a618942aa31f782c32b3d.bindPopup(popup_6fed5ca7afa91066eb6ace64b1245702)
+        ;
+
+        
+    
+    
+            circle_bfd158570c0a618942aa31f782c32b3d.bindTooltip(
+                `<div>
+                     Inropa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_42c1cb9e69b8289fd1d3d48a27698c50 = L.circle(
+                [55.68244381, 12.50511484],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_24f18b5317d0e4c25ecda58ecf9020cf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_09448550bd957cc87cbd7d7cc3aacc76 = $(`<div id="html_09448550bd957cc87cbd7d7cc3aacc76" style="width: 100.0%; height: 100.0%;"><b>JJW Arkitekter</b> <a href='https://http://www.jjw.dk/' target='_blank'>http://www.jjw.dk/</a>   Vi gør de hverdagsrum, vi alle sammen har brug for, befinder os i og mødes igennem til noget helt særligt. Vores tilgang er at tage samfundsmæssigt ansvar og skabe skræddersyede rum, bygninger, bebyggelser og byrum, som rammer om livet og udveksling mellem mennesker</div>`)[0];
+            popup_24f18b5317d0e4c25ecda58ecf9020cf.setContent(html_09448550bd957cc87cbd7d7cc3aacc76);
+        
+
+        circle_42c1cb9e69b8289fd1d3d48a27698c50.bindPopup(popup_24f18b5317d0e4c25ecda58ecf9020cf)
+        ;
+
+        
+    
+    
+            circle_42c1cb9e69b8289fd1d3d48a27698c50.bindTooltip(
+                `<div>
+                     JJW Arkitekter
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_c8c9b73f3ecf89e145c9156a7107caf4 = L.circle(
+                [55.82039528, 12.25314502],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_85d9402ded555be15b47183c7e4c3084 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ed1fa1cfc8dbad82ec17deb2089417d5 = $(`<div id="html_ed1fa1cfc8dbad82ec17deb2089417d5" style="width: 100.0%; height: 100.0%;"><b>Kohberg</b> <a href='https://https://www.kohberg.dk/' target='_blank'>https://www.kohberg.dk/</a>   Alle skal have mulighed for at få godt brød hver dag. Det er dét, der driver os, og derfor vi går på arbejde hver dag. Vi har sat nogle klare rammer for vores virke og formuleret en vision, en mission og et værdisæt med ærlige og jordnære værdier</div>`)[0];
+            popup_85d9402ded555be15b47183c7e4c3084.setContent(html_ed1fa1cfc8dbad82ec17deb2089417d5);
+        
+
+        circle_c8c9b73f3ecf89e145c9156a7107caf4.bindPopup(popup_85d9402ded555be15b47183c7e4c3084)
+        ;
+
+        
+    
+    
+            circle_c8c9b73f3ecf89e145c9156a7107caf4.bindTooltip(
+                `<div>
+                     Kohberg
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_5517c17568901ec445cbc2f321207548 = L.circle(
+                [56.80168987, 9.499461083],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_d13dd9aa05e03c822bda78c76197eaa4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_921751313b92fdef7dd8096840a30c99 = $(`<div id="html_921751313b92fdef7dd8096840a30c99" style="width: 100.0%; height: 100.0%;"><b>Lyngsoe System</b> <a href='https://https://lyngsoesystems.com/' target='_blank'>https://lyngsoesystems.com/</a>   Lyngsoe Systems is a world leader in logistic solutions across the customer supply chain, offering real-time transparency, traceability and data capture.</div>`)[0];
+            popup_d13dd9aa05e03c822bda78c76197eaa4.setContent(html_921751313b92fdef7dd8096840a30c99);
+        
+
+        circle_5517c17568901ec445cbc2f321207548.bindPopup(popup_d13dd9aa05e03c822bda78c76197eaa4)
+        ;
+
+        
+    
+    
+            circle_5517c17568901ec445cbc2f321207548.bindTooltip(
+                `<div>
+                     Lyngsoe System
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_6a65c2e5d8ab444a351991190156cc70 = L.circle(
+                [57.01288349, 9.988334371],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_92dc6cd49c8fcc389717c4ebc38212de = L.popup({"maxWidth": "100%"});
+
+        
+            var html_19754c779db028ecb60aa8ba6920dcb7 = $(`<div id="html_19754c779db028ecb60aa8ba6920dcb7" style="width: 100.0%; height: 100.0%;"><b>Neogrid</b> <a href='https://https://neogrid.dk/' target='_blank'>https://neogrid.dk/</a>   Neogrid Technologies ApS is a cleantech company that works with intelligent energy visualization, monitoring and control. Here, knowledge and experience from wireless communication technology is used to develop Smart Grid solutions.</div>`)[0];
+            popup_92dc6cd49c8fcc389717c4ebc38212de.setContent(html_19754c779db028ecb60aa8ba6920dcb7);
+        
+
+        circle_6a65c2e5d8ab444a351991190156cc70.bindPopup(popup_92dc6cd49c8fcc389717c4ebc38212de)
+        ;
+
+        
+    
+    
+            circle_6a65c2e5d8ab444a351991190156cc70.bindTooltip(
+                `<div>
+                     Neogrid
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_0134a4943232e5a5cf68d510519fa85e = L.circle(
+                [55.68373225, 12.38948211],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_eb6e171f3ef408947243dcaa7198930b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_08e1e404057117b7ac65268f4b21ac6e = $(`<div id="html_08e1e404057117b7ac65268f4b21ac6e" style="width: 100.0%; height: 100.0%;"><b>Nethire</b> <a href='https://https://nethire.dk/' target='_blank'>https://nethire.dk/</a>   Nethire A/S was founded on 1 July 2017 as a direct outgrowth of the rental industry. Nethire's first task was to take over the license rights to the rental system of the same name from the sister company Garant Udlejning A/S. The rental system was then thoroughly modernized, with both a technological and functional upgrade, and a considerable number of new users have since joined the system. Based on an idea from the company's main shareholder, Nethire has since introduced Denmark's first sharing economy platform for the exchange of machines and tools - Nethire Community.</div>`)[0];
+            popup_eb6e171f3ef408947243dcaa7198930b.setContent(html_08e1e404057117b7ac65268f4b21ac6e);
+        
+
+        circle_0134a4943232e5a5cf68d510519fa85e.bindPopup(popup_eb6e171f3ef408947243dcaa7198930b)
+        ;
+
+        
+    
+    
+            circle_0134a4943232e5a5cf68d510519fa85e.bindTooltip(
+                `<div>
+                     Nethire
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_7fe3e938036f3aef26993e2498eb7e4e = L.circle(
+                [55.67445953, 12.59164704],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_48400bf3b7a00cf2dbf4f8234ecdbdb0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b45508f8597792d57e8dba20d50fe197 = $(`<div id="html_b45508f8597792d57e8dba20d50fe197" style="width: 100.0%; height: 100.0%;"><b>Northtech</b> <a href='https://https://northtech.dk/' target='_blank'>https://northtech.dk/</a>   For almost 20 years, we have been a preferred digital innovation and development partner for some of the largest and most successful organizations in Denmark. Our customers choose us because we are specialists in finding and developing solutions that others cannot. Our customer relationship is built on trust. We always solve the tasks in close cooperation with our customers and we always make sure that what we deliver works in practice.</div>`)[0];
+            popup_48400bf3b7a00cf2dbf4f8234ecdbdb0.setContent(html_b45508f8597792d57e8dba20d50fe197);
+        
+
+        circle_7fe3e938036f3aef26993e2498eb7e4e.bindPopup(popup_48400bf3b7a00cf2dbf4f8234ecdbdb0)
+        ;
+
+        
+    
+    
+            circle_7fe3e938036f3aef26993e2498eb7e4e.bindTooltip(
+                `<div>
+                     Northtech
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_339cf7f8eb6e265148bf627be3b2537c = L.circle(
+                [56.15386952, 9.560810343],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_325a6291c369fdd62a3769954c03312d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2f1571ff8ab705d2c77093b77562e23a = $(`<div id="html_2f1571ff8ab705d2c77093b77562e23a" style="width: 100.0%; height: 100.0%;"><b>One2Feed</b> <a href='https://https://www.one2feed.dk/' target='_blank'>https://www.one2feed.dk/</a>   "Our feeding system is master class. Safe and economical. Developed from our and our customers’ everyday lives in the stable. As a company, we were born out of the Danish agricultural culture, where efficiency and quality characterize modern milk production. The Automatic Feeding Mixer has a capacity of 3.5 m3. It is made of stainless steel and is available either with side-doors or a conveyor belt of your preferred length. One2Feed Hoppers are available in capacities from 5m2 to 42m2. The Hopper can be delivered both as a mobile or stationary unit. The moving floor gently carries the feed as a solid pile without air-intake. The floor is made from fibreglass. The Hopper is built to last and proven to be corrosion resistant."</div>`)[0];
+            popup_325a6291c369fdd62a3769954c03312d.setContent(html_2f1571ff8ab705d2c77093b77562e23a);
+        
+
+        circle_339cf7f8eb6e265148bf627be3b2537c.bindPopup(popup_325a6291c369fdd62a3769954c03312d)
+        ;
+
+        
+    
+    
+            circle_339cf7f8eb6e265148bf627be3b2537c.bindTooltip(
+                `<div>
+                     One2Feed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_af25f11e51ea885c651abf30f9df9c1e = L.circle(
+                [56.130272, 9.064785],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_51ea333bd6efce034280100faadeb27d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7b4543438bcee939299c49788d5fab61 = $(`<div id="html_7b4543438bcee939299c49788d5fab61" style="width: 100.0%; height: 100.0%;"><b>OpenFreeForm</b> <a href='https://nan' target='_blank'>nan</a>   620100 Computer programming.</div>`)[0];
+            popup_51ea333bd6efce034280100faadeb27d.setContent(html_7b4543438bcee939299c49788d5fab61);
+        
+
+        circle_af25f11e51ea885c651abf30f9df9c1e.bindPopup(popup_51ea333bd6efce034280100faadeb27d)
+        ;
+
+        
+    
+    
+            circle_af25f11e51ea885c651abf30f9df9c1e.bindTooltip(
+                `<div>
+                     OpenFreeForm
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_8363ec1c94613c3c7007961edcc044f7 = L.circle(
+                [56.15144907, 10.2073961],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_b7a8ee64352d9167ab7d392d2e99e3e6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_286ab6048e40cbe772204f1277fb3a39 = $(`<div id="html_286ab6048e40cbe772204f1277fb3a39" style="width: 100.0%; height: 100.0%;"><b>Raptor</b> <a href='https://https://www.raptorservices.com/?_gl=1%2A3c09zh%2A_up%2AMQ..&gclid=CjwKCAjw6fyXBhBgEiwAhhiZshPPNcx40QmxdprrxlbRqK3jf_-VEAr86LVe336m4U0HfaAoYaIxOhoC4MEQAvD_BwE' target='_blank'>https://www.raptorservices.com/?_gl=1%2A3c09zh%2A_up%2AMQ..&gclid=CjwKCAjw6fyXBhBgEiwAhhiZshPPNcx40QmxdprrxlbRqK3jf_-VEAr86LVe336m4U0HfaAoYaIxOhoC4MEQAvD_BwE</a>   Raptor Services is a market-leading Personalization and Customer Data Platform provider creating relevant experiences from customer data.</div>`)[0];
+            popup_b7a8ee64352d9167ab7d392d2e99e3e6.setContent(html_286ab6048e40cbe772204f1277fb3a39);
+        
+
+        circle_8363ec1c94613c3c7007961edcc044f7.bindPopup(popup_b7a8ee64352d9167ab7d392d2e99e3e6)
+        ;
+
+        
+    
+    
+            circle_8363ec1c94613c3c7007961edcc044f7.bindTooltip(
+                `<div>
+                     Raptor
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_050ed771dff1edc33cda1b7de09e1b3d = L.circle(
+                [55.3781974, 10.41378985],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_2a95a0da848e9bf9891eea295396694e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b09804b73481a6edd803a622039e14ae = $(`<div id="html_b09804b73481a6edd803a622039e14ae" style="width: 100.0%; height: 100.0%;"><b>ROB-EX</b> <a href='https://https://rob-ex.com/en/about-us/' target='_blank'>https://rob-ex.com/en/about-us/</a>   ROB-EX A/S is an IT and engineering company, specialised in software specifically dedicated to production scheduling. We launched ROB-EX Scheduler in 2002 and have worked closely with planners and manufacturers to ensure optimum usability and focus on the actual needs and requirements that planners experience every day.</div>`)[0];
+            popup_2a95a0da848e9bf9891eea295396694e.setContent(html_b09804b73481a6edd803a622039e14ae);
+        
+
+        circle_050ed771dff1edc33cda1b7de09e1b3d.bindPopup(popup_2a95a0da848e9bf9891eea295396694e)
+        ;
+
+        
+    
+    
+            circle_050ed771dff1edc33cda1b7de09e1b3d.bindTooltip(
+                `<div>
+                     ROB-EX
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_38a31cbd8d5a508debcaf2fa67471351 = L.circle(
+                [57.05415128, 9.911460371],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_533681c5ce92808a73ed2d46f070a516 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aa05d1708f49e6a5230f1e8f724bddf2 = $(`<div id="html_aa05d1708f49e6a5230f1e8f724bddf2" style="width: 100.0%; height: 100.0%;"><b>Senti</b> <a href='https://https://senti.io/' target='_blank'>https://senti.io/</a>   At Senti, we believe that it is important to find the right business and technology partners. This is why we are continuously expanding our partnership network. The combination of devices, IoT application and service platform as well as services from our partner companies not only allows for the rapid implementation of large, innovative IoT applications, but it generates new ideas and products.</div>`)[0];
+            popup_533681c5ce92808a73ed2d46f070a516.setContent(html_aa05d1708f49e6a5230f1e8f724bddf2);
+        
+
+        circle_38a31cbd8d5a508debcaf2fa67471351.bindPopup(popup_533681c5ce92808a73ed2d46f070a516)
+        ;
+
+        
+    
+    
+            circle_38a31cbd8d5a508debcaf2fa67471351.bindTooltip(
+                `<div>
+                     Senti
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_7c11763551aa31a99a8f280f1897f183 = L.circle(
+                [57.02533029, 9.897135187],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_e558d347ceeae3d1612d392568099e6b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_09681ea19325d7ff34ddd41e270ceaea = $(`<div id="html_09681ea19325d7ff34ddd41e270ceaea" style="width: 100.0%; height: 100.0%;"><b>SerEnergy</b> <a href='https://https://serene.advent.energy/' target='_blank'>https://serene.advent.energy/</a>   Meet the needs of the present without compromising the ability of future generations. The push for sustainable energy is not only evident but also highly relevant. Serene is all about clean energy but our solutions also secure other competitive advantages supportive of our customers’ business. We do no just provide power – we empower your business.</div>`)[0];
+            popup_e558d347ceeae3d1612d392568099e6b.setContent(html_09681ea19325d7ff34ddd41e270ceaea);
+        
+
+        circle_7c11763551aa31a99a8f280f1897f183.bindPopup(popup_e558d347ceeae3d1612d392568099e6b)
+        ;
+
+        
+    
+    
+            circle_7c11763551aa31a99a8f280f1897f183.bindTooltip(
+                `<div>
+                     SerEnergy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f592edcbb66619129866b230b6ade42e = L.circle(
+                [55.80395694, 12.53336075],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_9a1b4fdcdf50d19d011b6f9b0f29e405 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2597e99ba74e830525bcc0b14c8c2cde = $(`<div id="html_2597e99ba74e830525bcc0b14c8c2cde" style="width: 100.0%; height: 100.0%;"><b>Sweetspot</b> <a href='https://https://sweetspot.me/' target='_blank'>https://sweetspot.me/</a>   SweetSpot er din rådgiver og sparringspartner, når det kommer til impulsvarer. Med over 25 års erfaring i hele Norden rådgiver vi dig med de bedste anbefalinger og håndtering af indkøb og levering af impulsvarer, så du kan fokusere på din kerneforretning.</div>`)[0];
+            popup_9a1b4fdcdf50d19d011b6f9b0f29e405.setContent(html_2597e99ba74e830525bcc0b14c8c2cde);
+        
+
+        circle_f592edcbb66619129866b230b6ade42e.bindPopup(popup_9a1b4fdcdf50d19d011b6f9b0f29e405)
+        ;
+
+        
+    
+    
+            circle_f592edcbb66619129866b230b6ade42e.bindTooltip(
+                `<div>
+                     Sweetspot
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_ed084e24337a6cff37519a4b9161aef1 = L.circle(
+                [55.70727384, 12.53229083],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_aadeea117758ef16d0cd53adf46a200e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9ff5d9831fdf8ad26bd12b909ee236a0 = $(`<div id="html_9ff5d9831fdf8ad26bd12b909ee236a0" style="width: 100.0%; height: 100.0%;"><b>Syncsense</b> <a href='https://https://www.syncsense.io/' target='_blank'>https://www.syncsense.io/</a>   Today, we are an interdisciplinary team of digital health specialists and collaborate with world-leading partners within health and digital technology. We combine participatory design with Nordic design aesthetics and agile software development to ensure a meaningful and value-creating VR solution. This means that we actively involve patients, citizens and health professionals in the design process via living laboratories. SYNCSENSE® is an award-winning digital training technology that is nominated and finalist at the Danish Design Award in the Healthy Life category.</div>`)[0];
+            popup_aadeea117758ef16d0cd53adf46a200e.setContent(html_9ff5d9831fdf8ad26bd12b909ee236a0);
+        
+
+        circle_ed084e24337a6cff37519a4b9161aef1.bindPopup(popup_aadeea117758ef16d0cd53adf46a200e)
+        ;
+
+        
+    
+    
+            circle_ed084e24337a6cff37519a4b9161aef1.bindTooltip(
+                `<div>
+                     Syncsense
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_3e6b50675e0ebf6ff134ac247515d188 = L.circle(
+                [55.88742405, 12.35020179],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_3a42a311e197804056ef63c4e7897b81 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5aaa2528a85d6b84288d08cbee60a69f = $(`<div id="html_5aaa2528a85d6b84288d08cbee60a69f" style="width: 100.0%; height: 100.0%;"><b>Tier1 Asset</b> <a href='https://https://tier1asset.com/' target='_blank'>https://tier1asset.com/</a>   T1A is Europe’s leading refurbisher with more than 4000 m² production and warehouse facilities with 20 years of experience. We take great pride in our strict grading policy, and are Blancco certified Gold Partner and Microsoft authorized refurbisher. Prior to any sales, our products go through rigorous testing to make sure that our customers receive only 100% fully functioning products with zero to minimal signs of usage</div>`)[0];
+            popup_3a42a311e197804056ef63c4e7897b81.setContent(html_5aaa2528a85d6b84288d08cbee60a69f);
+        
+
+        circle_3e6b50675e0ebf6ff134ac247515d188.bindPopup(popup_3a42a311e197804056ef63c4e7897b81)
+        ;
+
+        
+    
+    
+            circle_3e6b50675e0ebf6ff134ac247515d188.bindTooltip(
+                `<div>
+                     Tier1 Asset
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_50e786cfadf8ab7201fdad6b347821c3 = L.circle(
+                [55.65723893, 12.55835601],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_c9c116ff2b6b2599618d537c359805ae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_216c5c41a477d8952079c75186088417 = $(`<div id="html_216c5c41a477d8952079c75186088417" style="width: 100.0%; height: 100.0%;"><b>Viggo</b> <a href='https://https://viggo.dk/' target='_blank'>https://viggo.dk/</a>   ViGGO is a user-friendly and flexible communication platform that is based on the users' everyday life. With an overview of the schedule, homework, rooms, attendance and much more, ViGGO collects all information for students and staff.</div>`)[0];
+            popup_c9c116ff2b6b2599618d537c359805ae.setContent(html_216c5c41a477d8952079c75186088417);
+        
+
+        circle_50e786cfadf8ab7201fdad6b347821c3.bindPopup(popup_c9c116ff2b6b2599618d537c359805ae)
+        ;
+
+        
+    
+    
+            circle_50e786cfadf8ab7201fdad6b347821c3.bindTooltip(
+                `<div>
+                     Viggo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_e039c0ceeb3b5a0a5bd733cb3b047b7e = L.circle(
+                [55.5058398, 12.18801183],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_d06158e158cd35c7373e00681b5435aa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eef07ace57fc7a554cc7999a32237ba7 = $(`<div id="html_eef07ace57fc7a554cc7999a32237ba7" style="width: 100.0%; height: 100.0%;"><b>Fomaco</b> <a href='https://https://fomaco.com/' target='_blank'>https://fomaco.com/</a>   As one of the world’s leading machine manufacturers in our field, Fomaco delivers thoroughly tested, reliable technology that adds value to every part of our customers curing and marinating processes. As a food machinery company we always strive for perfection, and we never compromise on quality. Choose your industry and see what we can do for you.</div>`)[0];
+            popup_d06158e158cd35c7373e00681b5435aa.setContent(html_eef07ace57fc7a554cc7999a32237ba7);
+        
+
+        circle_e039c0ceeb3b5a0a5bd733cb3b047b7e.bindPopup(popup_d06158e158cd35c7373e00681b5435aa)
+        ;
+
+        
+    
+    
+            circle_e039c0ceeb3b5a0a5bd733cb3b047b7e.bindTooltip(
+                `<div>
+                     Fomaco
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_464372eea82d27174bebfdea9ec64ef6 = L.circle(
+                [55.68187, 12.57819],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_077c8dc9a6708e32f6dfa94710c6c621 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e1ab7affd695bba643ebc10c48368ff8 = $(`<div id="html_e1ab7affd695bba643ebc10c48368ff8" style="width: 100.0%; height: 100.0%;"><b>Infomedia</b> <a href='https://https://infomedia.dk/' target='_blank'>https://infomedia.dk/</a>   Infomedia hjælper virksomheder og organisationer med at få succes gennem intelligent brug af data, ny digital teknologi og dyb indsigt i medier og kommunikation</div>`)[0];
+            popup_077c8dc9a6708e32f6dfa94710c6c621.setContent(html_e1ab7affd695bba643ebc10c48368ff8);
+        
+
+        circle_464372eea82d27174bebfdea9ec64ef6.bindPopup(popup_077c8dc9a6708e32f6dfa94710c6c621)
+        ;
+
+        
+    
+    
+            circle_464372eea82d27174bebfdea9ec64ef6.bindTooltip(
+                `<div>
+                     Infomedia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1c7d8f51f01284281cb9e07ba2a28481 = L.circle(
+                [55.68964077, 12.49930455],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_b565e7a7a6ffa0a63fda1bf91006efc7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_926608c3ed15a02e12fe816686e16647 = $(`<div id="html_926608c3ed15a02e12fe816686e16647" style="width: 100.0%; height: 100.0%;"><b>P+</b> <a href='https://https://www.pplus.dk/' target='_blank'>https://www.pplus.dk/</a>   P+ is a pension fund for academics. We are over 100,000 members who own P+, and we have a total of around DKK 150 billion. DKK. This makes us one of Denmark's largest pension companies</div>`)[0];
+            popup_b565e7a7a6ffa0a63fda1bf91006efc7.setContent(html_926608c3ed15a02e12fe816686e16647);
+        
+
+        circle_1c7d8f51f01284281cb9e07ba2a28481.bindPopup(popup_b565e7a7a6ffa0a63fda1bf91006efc7)
+        ;
+
+        
+    
+    
+            circle_1c7d8f51f01284281cb9e07ba2a28481.bindTooltip(
+                `<div>
+                     P+
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9f5bb0e6928d9c0e69c66459eef7eca9 = L.circle(
+                [55.3447372, 10.39920828],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_8c9ee668455a3581fe37bc20ab36dd16 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5b5f13b91a5617cd0f61d5590d33ca62 = $(`<div id="html_5b5f13b91a5617cd0f61d5590d33ca62" style="width: 100.0%; height: 100.0%;"><b>Plus Pack</b> <a href='https://https://pluspack.com/' target='_blank'>https://pluspack.com/</a>   At Plus Pack, we’re dedicated to designing sustainable and customized food packaging solutions. And to making our customers stand out in the marketplace. We know that differentiation is business-critical. And we believe that our superior industry know-how and flexibility, enable us to customize innovative and sustainable packaging solutions that are truly outstanding.</div>`)[0];
+            popup_8c9ee668455a3581fe37bc20ab36dd16.setContent(html_5b5f13b91a5617cd0f61d5590d33ca62);
+        
+
+        circle_9f5bb0e6928d9c0e69c66459eef7eca9.bindPopup(popup_8c9ee668455a3581fe37bc20ab36dd16)
+        ;
+
+        
+    
+    
+            circle_9f5bb0e6928d9c0e69c66459eef7eca9.bindTooltip(
+                `<div>
+                     Plus Pack
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9438d8602f1f4a553a2b1920c87d9b6c = L.circle(
+                [56.21041482, 10.21025341],
+                {"bubblingMouseEvents": true, "color": "#FEC100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FEC100", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80, "stroke": true, "weight": 3}
+            ).addTo(map_d022aad18749b09011f3c89f00eb2a1f);
+        
+    
+        var popup_772fadc68b980ca2fc741fae60aa4cd0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bc486d21e3432be65a1bb19559cda3fe = $(`<div id="html_bc486d21e3432be65a1bb19559cda3fe" style="width: 100.0%; height: 100.0%;"><b>Tracelink</b> <a href='https://https://www.tracelink.com/' target='_blank'>https://www.tracelink.com/</a>   Leveraging Digital Networks for Greater Visibility and Collaboration with your Supply Partners One system to capture, analyze, resolve and prevent supply chain issues. </div>`)[0];
+            popup_772fadc68b980ca2fc741fae60aa4cd0.setContent(html_bc486d21e3432be65a1bb19559cda3fe);
+        
+
+        circle_9438d8602f1f4a553a2b1920c87d9b6c.bindPopup(popup_772fadc68b980ca2fc741fae60aa4cd0)
+        ;
+
+        
+    
+    
+            circle_9438d8602f1f4a553a2b1920c87d9b6c.bindTooltip(
+                `<div>
+                     Tracelink
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
