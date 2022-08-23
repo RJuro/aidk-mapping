@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_fdb2f07cf86d489f89ab3efbcb3babbc {
+                #map_cdf8fe911c8a5c5255f5e969058c718d {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,16 +35,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@master/folium/templates/leaflet_heat.min.js"></script>
 </head>
 <body>    
     
-            <div class="folium-map" id="map_fdb2f07cf86d489f89ab3efbcb3babbc" ></div>
+            <div class="folium-map" id="map_cdf8fe911c8a5c5255f5e969058c718d" ></div>
         
 </body>
 <script>    
     
-            var map_fdb2f07cf86d489f89ab3efbcb3babbc = L.map(
-                "map_fdb2f07cf86d489f89ab3efbcb3babbc",
+            var map_cdf8fe911c8a5c5255f5e969058c718d = L.map(
+                "map_cdf8fe911c8a5c5255f5e969058c718d",
                 {
                     center: [56.1629, 10.2039],
                     crs: L.CRS.EPSG3857,
@@ -58,50 +59,50 @@
 
         
     
-            var tile_layer_34ae57ce99daaa8fa8fc2eb9e2e78fe4 = L.tileLayer(
+            var tile_layer_7d588db1163fe6c83de5e45ab2d6ab4d = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_fdb2f07cf86d489f89ab3efbcb3babbc);
+            ).addTo(map_cdf8fe911c8a5c5255f5e969058c718d);
         
     
-            var tile_layer_1be81b844b67161a866d7489113952e0 = L.tileLayer(
+            var tile_layer_295df0e54a446e5862fa2d3e9de5f716 = L.tileLayer(
                 "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_fdb2f07cf86d489f89ab3efbcb3babbc);
+            ).addTo(map_cdf8fe911c8a5c5255f5e969058c718d);
         
     
-            var marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a = L.markerClusterGroup(
-                {}
+            var marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd = L.markerClusterGroup(
+                {"showCoverageOnHover": false}
             );
-            map_fdb2f07cf86d489f89ab3efbcb3babbc.addLayer(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            map_cdf8fe911c8a5c5255f5e969058c718d.addLayer(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var marker_a7fdb8c134e16cd49aa4c45e6b6f4abd = L.marker(
+            var marker_63c2cb4f9f9fa895329237f5ffb7d20c = L.marker(
                 [56.1597, 10.2161],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_1b839b4acdb7199a70bbd3f9f97cb9e6 = L.AwesomeMarkers.icon(
+            var icon_bfdb25ccec4703e940943a6ce708ef04 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_a7fdb8c134e16cd49aa4c45e6b6f4abd.setIcon(icon_1b839b4acdb7199a70bbd3f9f97cb9e6);
+            marker_63c2cb4f9f9fa895329237f5ffb7d20c.setIcon(icon_bfdb25ccec4703e940943a6ce708ef04);
         
     
-        var popup_52952ba65ece5b56f04afdca4e7d933f = L.popup({"maxWidth": "100%"});
+        var popup_60e9fdd3997ec014f5709f7d6eef1828 = L.popup({"maxWidth": "100%"});
 
         
-            var html_d156cc446d0bb118772e12a1e24c069e = $(`<div id="html_d156cc446d0bb118772e12a1e24c069e" style="width: 100.0%; height: 100.0%;"><b>.legal</b> <a href='https://https://www.dotlegal.dk/' target='_blank'>https://www.dotlegal.dk/</a>   Tooling for GDPR complience</div>`)[0];
-            popup_52952ba65ece5b56f04afdca4e7d933f.setContent(html_d156cc446d0bb118772e12a1e24c069e);
+            var html_316aaaf51076ece2ffce2cfa9c3187a0 = $(`<div id="html_316aaaf51076ece2ffce2cfa9c3187a0" style="width: 100.0%; height: 100.0%;"><b>.legal</b> <a href='https://https://www.dotlegal.dk/' target='_blank'>https://www.dotlegal.dk/</a>   Tooling for GDPR complience</div>`)[0];
+            popup_60e9fdd3997ec014f5709f7d6eef1828.setContent(html_316aaaf51076ece2ffce2cfa9c3187a0);
         
 
-        marker_a7fdb8c134e16cd49aa4c45e6b6f4abd.bindPopup(popup_52952ba65ece5b56f04afdca4e7d933f)
+        marker_63c2cb4f9f9fa895329237f5ffb7d20c.bindPopup(popup_60e9fdd3997ec014f5709f7d6eef1828)
         ;
 
         
     
     
-            marker_a7fdb8c134e16cd49aa4c45e6b6f4abd.bindTooltip(
+            marker_63c2cb4f9f9fa895329237f5ffb7d20c.bindTooltip(
                 `<div>
                      .legal
                  </div>`,
@@ -109,32 +110,32 @@
             );
         
     
-            var marker_ec55ee6e213a1722b13d10557a6a6830 = L.marker(
+            var marker_41f57af7e2f602ac9817299913723231 = L.marker(
                 [55.65934601, 12.51762934],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_a5e50ec0233bcfc5ec24a814a3a04c3e = L.AwesomeMarkers.icon(
+            var icon_1e2b57ef3a68a6f127be01eec72b6932 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_ec55ee6e213a1722b13d10557a6a6830.setIcon(icon_a5e50ec0233bcfc5ec24a814a3a04c3e);
+            marker_41f57af7e2f602ac9817299913723231.setIcon(icon_1e2b57ef3a68a6f127be01eec72b6932);
         
     
-        var popup_a8b426bba64d9e038f394afba8a1db63 = L.popup({"maxWidth": "100%"});
+        var popup_e8b296b774b3cc994aab74ded1708235 = L.popup({"maxWidth": "100%"});
 
         
-            var html_9b7b6c0dc6cf02570b5bf768637ea575 = $(`<div id="html_9b7b6c0dc6cf02570b5bf768637ea575" style="width: 100.0%; height: 100.0%;"><b>Canon Medical Informatics</b> <a href='https://https://www.canon.dk/business/medical/' target='_blank'>https://www.canon.dk/business/medical/</a>   Canon's digital Radiology technology offers image sensor technology and software for integration into X-ray systems.</div>`)[0];
-            popup_a8b426bba64d9e038f394afba8a1db63.setContent(html_9b7b6c0dc6cf02570b5bf768637ea575);
+            var html_141d8f8bc3379ab8d45ac96212a0ba9b = $(`<div id="html_141d8f8bc3379ab8d45ac96212a0ba9b" style="width: 100.0%; height: 100.0%;"><b>Canon Medical Informatics</b> <a href='https://https://www.canon.dk/business/medical/' target='_blank'>https://www.canon.dk/business/medical/</a>   Canon's digital Radiology technology offers image sensor technology and software for integration into X-ray systems.</div>`)[0];
+            popup_e8b296b774b3cc994aab74ded1708235.setContent(html_141d8f8bc3379ab8d45ac96212a0ba9b);
         
 
-        marker_ec55ee6e213a1722b13d10557a6a6830.bindPopup(popup_a8b426bba64d9e038f394afba8a1db63)
+        marker_41f57af7e2f602ac9817299913723231.bindPopup(popup_e8b296b774b3cc994aab74ded1708235)
         ;
 
         
     
     
-            marker_ec55ee6e213a1722b13d10557a6a6830.bindTooltip(
+            marker_41f57af7e2f602ac9817299913723231.bindTooltip(
                 `<div>
                      Canon Medical Informatics
                  </div>`,
@@ -142,32 +143,32 @@
             );
         
     
-            var marker_1429e246e1b68c073f088d1d029adc78 = L.marker(
+            var marker_9569a7ddc527672d6aef61b604fe2175 = L.marker(
                 [56.17059639, 10.03292068],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_8820a02a2dae585a12de83cdf95be820 = L.AwesomeMarkers.icon(
+            var icon_6f8bb6c6f10c830393f6dc2abf5e954d = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_1429e246e1b68c073f088d1d029adc78.setIcon(icon_8820a02a2dae585a12de83cdf95be820);
+            marker_9569a7ddc527672d6aef61b604fe2175.setIcon(icon_6f8bb6c6f10c830393f6dc2abf5e954d);
         
     
-        var popup_0a7395aba96431bc0983fa741c3476a4 = L.popup({"maxWidth": "100%"});
+        var popup_0fea8095cfd3c9cae34ef8e9a5f4e975 = L.popup({"maxWidth": "100%"});
 
         
-            var html_0f2a33aede3f8247537bf5e1b2eb64f0 = $(`<div id="html_0f2a33aede3f8247537bf5e1b2eb64f0" style="width: 100.0%; height: 100.0%;"><b>Care-call</b> <a href='https://https://www.care-call.dk/' target='_blank'>https://www.care-call.dk/</a>   We advise on, deliver and service calling, communication, assignment and personal security solutions. Our primary areas are hospitals, nursing homes, institutions, schools and correctional facilities - areas we have worked with since the company was established in 2000.</div>`)[0];
-            popup_0a7395aba96431bc0983fa741c3476a4.setContent(html_0f2a33aede3f8247537bf5e1b2eb64f0);
+            var html_6be17afc5be6233352567935c64ee84d = $(`<div id="html_6be17afc5be6233352567935c64ee84d" style="width: 100.0%; height: 100.0%;"><b>Care-call</b> <a href='https://https://www.care-call.dk/' target='_blank'>https://www.care-call.dk/</a>   We advise on, deliver and service calling, communication, assignment and personal security solutions. Our primary areas are hospitals, nursing homes, institutions, schools and correctional facilities - areas we have worked with since the company was established in 2000.</div>`)[0];
+            popup_0fea8095cfd3c9cae34ef8e9a5f4e975.setContent(html_6be17afc5be6233352567935c64ee84d);
         
 
-        marker_1429e246e1b68c073f088d1d029adc78.bindPopup(popup_0a7395aba96431bc0983fa741c3476a4)
+        marker_9569a7ddc527672d6aef61b604fe2175.bindPopup(popup_0fea8095cfd3c9cae34ef8e9a5f4e975)
         ;
 
         
     
     
-            marker_1429e246e1b68c073f088d1d029adc78.bindTooltip(
+            marker_9569a7ddc527672d6aef61b604fe2175.bindTooltip(
                 `<div>
                      Care-call
                  </div>`,
@@ -175,32 +176,32 @@
             );
         
     
-            var marker_6ecc99f564df0bc57f7d861c682ebbc9 = L.marker(
+            var marker_499efd537c678ad83c2ab776b35b0c38 = L.marker(
                 [55.68899294, 12.57673777],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_595b81b15fcd710367b1815709cbee1d = L.AwesomeMarkers.icon(
+            var icon_4a7de4386c34db0b91b742ae3a42040e = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_6ecc99f564df0bc57f7d861c682ebbc9.setIcon(icon_595b81b15fcd710367b1815709cbee1d);
+            marker_499efd537c678ad83c2ab776b35b0c38.setIcon(icon_4a7de4386c34db0b91b742ae3a42040e);
         
     
-        var popup_12489e777a53f976f03c26bbac5c1390 = L.popup({"maxWidth": "100%"});
+        var popup_02b223a7460042beb4b541e0114803c8 = L.popup({"maxWidth": "100%"});
 
         
-            var html_a561df359f699bf56ce576c151b728b2 = $(`<div id="html_a561df359f699bf56ce576c151b728b2" style="width: 100.0%; height: 100.0%;"><b>Cerebriu</b> <a href='https://https://cerebriu.com/' target='_blank'>https://cerebriu.com/</a>   Cerebriu provides solutions to automate radiology workflows, improve brain MRI efficiency, improve patient prioritisation, and reduce scan time, re-examinations, and non-acute admissions.</div>`)[0];
-            popup_12489e777a53f976f03c26bbac5c1390.setContent(html_a561df359f699bf56ce576c151b728b2);
+            var html_86467977dfc21ab55d71da10aa5ee91d = $(`<div id="html_86467977dfc21ab55d71da10aa5ee91d" style="width: 100.0%; height: 100.0%;"><b>Cerebriu</b> <a href='https://https://cerebriu.com/' target='_blank'>https://cerebriu.com/</a>   Cerebriu provides solutions to automate radiology workflows, improve brain MRI efficiency, improve patient prioritisation, and reduce scan time, re-examinations, and non-acute admissions.</div>`)[0];
+            popup_02b223a7460042beb4b541e0114803c8.setContent(html_86467977dfc21ab55d71da10aa5ee91d);
         
 
-        marker_6ecc99f564df0bc57f7d861c682ebbc9.bindPopup(popup_12489e777a53f976f03c26bbac5c1390)
+        marker_499efd537c678ad83c2ab776b35b0c38.bindPopup(popup_02b223a7460042beb4b541e0114803c8)
         ;
 
         
     
     
-            marker_6ecc99f564df0bc57f7d861c682ebbc9.bindTooltip(
+            marker_499efd537c678ad83c2ab776b35b0c38.bindTooltip(
                 `<div>
                      Cerebriu
                  </div>`,
@@ -208,32 +209,32 @@
             );
         
     
-            var marker_bb0c081e2870179de950e54cc197ffd2 = L.marker(
+            var marker_245c18281b6c6822e149cdf428d2c074 = L.marker(
                 [55.6730546, 12.58877916],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_2c2cd56922f67d470e3ac3bc0163a488 = L.AwesomeMarkers.icon(
+            var icon_4ce74549768baad43198dc4dc2cdc48e = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_bb0c081e2870179de950e54cc197ffd2.setIcon(icon_2c2cd56922f67d470e3ac3bc0163a488);
+            marker_245c18281b6c6822e149cdf428d2c074.setIcon(icon_4ce74549768baad43198dc4dc2cdc48e);
         
     
-        var popup_bad403bf8b86638d32ea7ee2b11db7a1 = L.popup({"maxWidth": "100%"});
+        var popup_a4d22906afef2a632c992618d690f484 = L.popup({"maxWidth": "100%"});
 
         
-            var html_9a875b5f264fe5b5d1f4203903e935bb = $(`<div id="html_9a875b5f264fe5b5d1f4203903e935bb" style="width: 100.0%; height: 100.0%;"><b>CURVEX</b> <a href='https://https://curvex.dk/' target='_blank'>https://curvex.dk/</a>   Back at the beginning, the team at the time was shocked that sickness absence in Danish workplaces costs the state up to DKK 12 billion annually. A large cost that probably occurs because of the competitive society we live in. A society where numbers and progress shadows man's personal well-being and health. Therefore, we decided that a device should be developed that could give employers, as well as the individual employee, an indication of their mental stages and the strain they put on themselves and their brain on a daily basis.</div>`)[0];
-            popup_bad403bf8b86638d32ea7ee2b11db7a1.setContent(html_9a875b5f264fe5b5d1f4203903e935bb);
+            var html_5325886a4b95ed92643ebbe0d5f0627f = $(`<div id="html_5325886a4b95ed92643ebbe0d5f0627f" style="width: 100.0%; height: 100.0%;"><b>CURVEX</b> <a href='https://https://curvex.dk/' target='_blank'>https://curvex.dk/</a>   Back at the beginning, the team at the time was shocked that sickness absence in Danish workplaces costs the state up to DKK 12 billion annually. A large cost that probably occurs because of the competitive society we live in. A society where numbers and progress shadows man's personal well-being and health. Therefore, we decided that a device should be developed that could give employers, as well as the individual employee, an indication of their mental stages and the strain they put on themselves and their brain on a daily basis.</div>`)[0];
+            popup_a4d22906afef2a632c992618d690f484.setContent(html_5325886a4b95ed92643ebbe0d5f0627f);
         
 
-        marker_bb0c081e2870179de950e54cc197ffd2.bindPopup(popup_bad403bf8b86638d32ea7ee2b11db7a1)
+        marker_245c18281b6c6822e149cdf428d2c074.bindPopup(popup_a4d22906afef2a632c992618d690f484)
         ;
 
         
     
     
-            marker_bb0c081e2870179de950e54cc197ffd2.bindTooltip(
+            marker_245c18281b6c6822e149cdf428d2c074.bindTooltip(
                 `<div>
                      CURVEX
                  </div>`,
@@ -241,32 +242,32 @@
             );
         
     
-            var marker_0a19725fcb9cf800b11a0e3cbd077520 = L.marker(
+            var marker_193fd93c2979b4623cf6d8e7b84f6c1d = L.marker(
                 [55.672861, 12.58955163],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_f9c92112bd0eb0d2ae2e612bc9065dd2 = L.AwesomeMarkers.icon(
+            var icon_0d9bc4638209898ca50345f4388c1c97 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_0a19725fcb9cf800b11a0e3cbd077520.setIcon(icon_f9c92112bd0eb0d2ae2e612bc9065dd2);
+            marker_193fd93c2979b4623cf6d8e7b84f6c1d.setIcon(icon_0d9bc4638209898ca50345f4388c1c97);
         
     
-        var popup_43f7bf59bd43ee21878c5239b61113bd = L.popup({"maxWidth": "100%"});
+        var popup_3dda24d4f513e8674e492cea73a13374 = L.popup({"maxWidth": "100%"});
 
         
-            var html_338e0b92d98222d9a0ede34814f2554f = $(`<div id="html_338e0b92d98222d9a0ede34814f2554f" style="width: 100.0%; height: 100.0%;"><b>DCR Solutions</b> <a href='https://https://dcrsolutions.net/' target='_blank'>https://dcrsolutions.net/</a>   DCR Solutions is revolutionising the Business Process Management market by helping companies in heavily regulated industries digitize their processes, ensuring higher compliance and transparency, while saving employees time and company costs. DCR boosts the value of your existing IT system by adapting to your business needs. DCR’s no-code business process management platform is a new approach to process digitization and process mining that enables you to create more efficient and more compliant processes.</div>`)[0];
-            popup_43f7bf59bd43ee21878c5239b61113bd.setContent(html_338e0b92d98222d9a0ede34814f2554f);
+            var html_af550b5fd57ae4155afae56b28e9fabe = $(`<div id="html_af550b5fd57ae4155afae56b28e9fabe" style="width: 100.0%; height: 100.0%;"><b>DCR Solutions</b> <a href='https://https://dcrsolutions.net/' target='_blank'>https://dcrsolutions.net/</a>   DCR Solutions is revolutionising the Business Process Management market by helping companies in heavily regulated industries digitize their processes, ensuring higher compliance and transparency, while saving employees time and company costs. DCR boosts the value of your existing IT system by adapting to your business needs. DCR’s no-code business process management platform is a new approach to process digitization and process mining that enables you to create more efficient and more compliant processes.</div>`)[0];
+            popup_3dda24d4f513e8674e492cea73a13374.setContent(html_af550b5fd57ae4155afae56b28e9fabe);
         
 
-        marker_0a19725fcb9cf800b11a0e3cbd077520.bindPopup(popup_43f7bf59bd43ee21878c5239b61113bd)
+        marker_193fd93c2979b4623cf6d8e7b84f6c1d.bindPopup(popup_3dda24d4f513e8674e492cea73a13374)
         ;
 
         
     
     
-            marker_0a19725fcb9cf800b11a0e3cbd077520.bindTooltip(
+            marker_193fd93c2979b4623cf6d8e7b84f6c1d.bindTooltip(
                 `<div>
                      DCR Solutions
                  </div>`,
@@ -274,32 +275,32 @@
             );
         
     
-            var marker_c844b1fffa4c12dfece0a7dc07e294f2 = L.marker(
+            var marker_280c9a1ee67c1386b427a62bb25b5702 = L.marker(
                 [56.65673812, 9.809348027],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_1dfa21ef81035a0e38b4290cfede0959 = L.AwesomeMarkers.icon(
+            var icon_f4673026a2759412708c6ce6cb1f8763 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_c844b1fffa4c12dfece0a7dc07e294f2.setIcon(icon_1dfa21ef81035a0e38b4290cfede0959);
+            marker_280c9a1ee67c1386b427a62bb25b5702.setIcon(icon_f4673026a2759412708c6ce6cb1f8763);
         
     
-        var popup_b09313dcdbdafac1942d09c3f436e560 = L.popup({"maxWidth": "100%"});
+        var popup_35520c815fe86b4823886266070793aa = L.popup({"maxWidth": "100%"});
 
         
-            var html_fdd71274b0dc420ff558866e4cfc9f85 = $(`<div id="html_fdd71274b0dc420ff558866e4cfc9f85" style="width: 100.0%; height: 100.0%;"><b>Nopa Nordic</b> <a href='https://https://nopanordic.com/' target='_blank'>https://nopanordic.com/</a>   In 1993, we produced the first eco-labelled products. Ever since, sustainability has been in our DNA. That’s why we have also been certified in the UN’s 17 Sustainable Development Goals as the first company in the world in our category. We believe that our choices matter, so we will always offer you the most sustainable option</div>`)[0];
-            popup_b09313dcdbdafac1942d09c3f436e560.setContent(html_fdd71274b0dc420ff558866e4cfc9f85);
+            var html_f2fcfdbb72258cd82fec020ad57a7293 = $(`<div id="html_f2fcfdbb72258cd82fec020ad57a7293" style="width: 100.0%; height: 100.0%;"><b>Nopa Nordic</b> <a href='https://https://nopanordic.com/' target='_blank'>https://nopanordic.com/</a>   In 1993, we produced the first eco-labelled products. Ever since, sustainability has been in our DNA. That’s why we have also been certified in the UN’s 17 Sustainable Development Goals as the first company in the world in our category. We believe that our choices matter, so we will always offer you the most sustainable option</div>`)[0];
+            popup_35520c815fe86b4823886266070793aa.setContent(html_f2fcfdbb72258cd82fec020ad57a7293);
         
 
-        marker_c844b1fffa4c12dfece0a7dc07e294f2.bindPopup(popup_b09313dcdbdafac1942d09c3f436e560)
+        marker_280c9a1ee67c1386b427a62bb25b5702.bindPopup(popup_35520c815fe86b4823886266070793aa)
         ;
 
         
     
     
-            marker_c844b1fffa4c12dfece0a7dc07e294f2.bindTooltip(
+            marker_280c9a1ee67c1386b427a62bb25b5702.bindTooltip(
                 `<div>
                      Nopa Nordic
                  </div>`,
@@ -307,32 +308,32 @@
             );
         
     
-            var marker_32e61eff539c7d59e29e9563f89457f5 = L.marker(
+            var marker_afeba58b4399dba720863145a655dd49 = L.marker(
                 [55.73903852, 12.39968537],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_e5df1f9efa642f0277850065b73474ba = L.AwesomeMarkers.icon(
+            var icon_f8d88f54bd4608f49df1441917cc73ea = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_32e61eff539c7d59e29e9563f89457f5.setIcon(icon_e5df1f9efa642f0277850065b73474ba);
+            marker_afeba58b4399dba720863145a655dd49.setIcon(icon_f8d88f54bd4608f49df1441917cc73ea);
         
     
-        var popup_0b875ec623bbf8cd32c536ce6764c0f3 = L.popup({"maxWidth": "100%"});
+        var popup_30996bdc998e7c9cb688f93d295ce906 = L.popup({"maxWidth": "100%"});
 
         
-            var html_939463dbddccb3aa8d88f085d54d8048 = $(`<div id="html_939463dbddccb3aa8d88f085d54d8048" style="width: 100.0%; height: 100.0%;"><b>Precure</b> <a href='https://https://www.precure.dk/' target='_blank'>https://www.precure.dk/</a>   MLI® Interface is the online dashboard, where you manage all your projects to map MSD risks in your organization. Data collected will automatically be analyzed and presented to you in the MLI® Interface. You will also get recommendations on how to improve. The MLI® Interface keeps track of your interventions and the effect hereof. The value for you is that you will know whether there is MSD issue, where is it, what to do about it, and the effect of improvements. The projects can be done by function, process, team – as much and whenever you want. It provides a complete, databased overview to make better decisions and achieve better effect.</div>`)[0];
-            popup_0b875ec623bbf8cd32c536ce6764c0f3.setContent(html_939463dbddccb3aa8d88f085d54d8048);
+            var html_1926c4b82469c0018aa8485056e533df = $(`<div id="html_1926c4b82469c0018aa8485056e533df" style="width: 100.0%; height: 100.0%;"><b>Precure</b> <a href='https://https://www.precure.dk/' target='_blank'>https://www.precure.dk/</a>   MLI® Interface is the online dashboard, where you manage all your projects to map MSD risks in your organization. Data collected will automatically be analyzed and presented to you in the MLI® Interface. You will also get recommendations on how to improve. The MLI® Interface keeps track of your interventions and the effect hereof. The value for you is that you will know whether there is MSD issue, where is it, what to do about it, and the effect of improvements. The projects can be done by function, process, team – as much and whenever you want. It provides a complete, databased overview to make better decisions and achieve better effect.</div>`)[0];
+            popup_30996bdc998e7c9cb688f93d295ce906.setContent(html_1926c4b82469c0018aa8485056e533df);
         
 
-        marker_32e61eff539c7d59e29e9563f89457f5.bindPopup(popup_0b875ec623bbf8cd32c536ce6764c0f3)
+        marker_afeba58b4399dba720863145a655dd49.bindPopup(popup_30996bdc998e7c9cb688f93d295ce906)
         ;
 
         
     
     
-            marker_32e61eff539c7d59e29e9563f89457f5.bindTooltip(
+            marker_afeba58b4399dba720863145a655dd49.bindTooltip(
                 `<div>
                      Precure
                  </div>`,
@@ -340,32 +341,32 @@
             );
         
     
-            var marker_486f627d7c82666f8c066d9a116338b0 = L.marker(
+            var marker_5c9b396a174f8589bbcd36cba019f02f = L.marker(
                 [55.75144644, 12.59668239],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_13f1ea8474d345d6edab57f2b3248714 = L.AwesomeMarkers.icon(
+            var icon_f0d2d853bb6a3a3d6a46f2bf06d3d5f4 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_486f627d7c82666f8c066d9a116338b0.setIcon(icon_13f1ea8474d345d6edab57f2b3248714);
+            marker_5c9b396a174f8589bbcd36cba019f02f.setIcon(icon_f0d2d853bb6a3a3d6a46f2bf06d3d5f4);
         
     
-        var popup_aaeb6f442bdba55e5adcec1fcc301184 = L.popup({"maxWidth": "100%"});
+        var popup_e0d2b6e96f33c640d80854f02f0f4666 = L.popup({"maxWidth": "100%"});
 
         
-            var html_3a8fc1766b0ed8c3c5319a6486ccfccc = $(`<div id="html_3a8fc1766b0ed8c3c5319a6486ccfccc" style="width: 100.0%; height: 100.0%;"><b>Rokoko</b> <a href='https://https://www.rokoko.com/' target='_blank'>https://www.rokoko.com/</a>   Rokoko is a Danish brand of consumer motion capture and animation technology products. It was founded in 2015 in Copenhagen, Denmark with additional offices located in Athens, Greece, and San Francisco, USA. It manufactures the Smartsuit Pro, an IMU motion capture suit used by animators, game developers, vTubers.</div>`)[0];
-            popup_aaeb6f442bdba55e5adcec1fcc301184.setContent(html_3a8fc1766b0ed8c3c5319a6486ccfccc);
+            var html_e9a3333eb9d3c6ec23fb0b96aec10ac6 = $(`<div id="html_e9a3333eb9d3c6ec23fb0b96aec10ac6" style="width: 100.0%; height: 100.0%;"><b>Rokoko</b> <a href='https://https://www.rokoko.com/' target='_blank'>https://www.rokoko.com/</a>   Rokoko is a Danish brand of consumer motion capture and animation technology products. It was founded in 2015 in Copenhagen, Denmark with additional offices located in Athens, Greece, and San Francisco, USA. It manufactures the Smartsuit Pro, an IMU motion capture suit used by animators, game developers, vTubers.</div>`)[0];
+            popup_e0d2b6e96f33c640d80854f02f0f4666.setContent(html_e9a3333eb9d3c6ec23fb0b96aec10ac6);
         
 
-        marker_486f627d7c82666f8c066d9a116338b0.bindPopup(popup_aaeb6f442bdba55e5adcec1fcc301184)
+        marker_5c9b396a174f8589bbcd36cba019f02f.bindPopup(popup_e0d2b6e96f33c640d80854f02f0f4666)
         ;
 
         
     
     
-            marker_486f627d7c82666f8c066d9a116338b0.bindTooltip(
+            marker_5c9b396a174f8589bbcd36cba019f02f.bindTooltip(
                 `<div>
                      Rokoko
                  </div>`,
@@ -373,32 +374,32 @@
             );
         
     
-            var marker_94817010eb20b488a73c68363aa17af1 = L.marker(
+            var marker_effe4b33cabbb2f414fde6d73e82db18 = L.marker(
                 [55.67689907, 12.5707055],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_5403e2ff5b4e70385a1f57728145b22d = L.AwesomeMarkers.icon(
+            var icon_f35a294149be7f572961c64f9894ca66 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_94817010eb20b488a73c68363aa17af1.setIcon(icon_5403e2ff5b4e70385a1f57728145b22d);
+            marker_effe4b33cabbb2f414fde6d73e82db18.setIcon(icon_f35a294149be7f572961c64f9894ca66);
         
     
-        var popup_1b1f66c4f4b2e71ebf0a1d234b0ff709 = L.popup({"maxWidth": "100%"});
+        var popup_e137bcbe17078993f8a4b139096188f1 = L.popup({"maxWidth": "100%"});
 
         
-            var html_ed5e719a67c2e0948b6ca0ed313f21cf = $(`<div id="html_ed5e719a67c2e0948b6ca0ed313f21cf" style="width: 100.0%; height: 100.0%;"><b>Saninudge </b> <a href='https://https://saninudge.com/' target='_blank'>https://saninudge.com/</a>   Medical equipment manufacturer in Copenhage. "Drive patient safety, prevent infections, and turn caregivers into hand hygiene champions. sani nudge is the only hand hygiene solution to measure patient contact according to your healthcare guidelines."</div>`)[0];
-            popup_1b1f66c4f4b2e71ebf0a1d234b0ff709.setContent(html_ed5e719a67c2e0948b6ca0ed313f21cf);
+            var html_42424ea666da3776ec7336cc781a9a05 = $(`<div id="html_42424ea666da3776ec7336cc781a9a05" style="width: 100.0%; height: 100.0%;"><b>Saninudge </b> <a href='https://https://saninudge.com/' target='_blank'>https://saninudge.com/</a>   Medical equipment manufacturer in Copenhage. "Drive patient safety, prevent infections, and turn caregivers into hand hygiene champions. sani nudge is the only hand hygiene solution to measure patient contact according to your healthcare guidelines."</div>`)[0];
+            popup_e137bcbe17078993f8a4b139096188f1.setContent(html_42424ea666da3776ec7336cc781a9a05);
         
 
-        marker_94817010eb20b488a73c68363aa17af1.bindPopup(popup_1b1f66c4f4b2e71ebf0a1d234b0ff709)
+        marker_effe4b33cabbb2f414fde6d73e82db18.bindPopup(popup_e137bcbe17078993f8a4b139096188f1)
         ;
 
         
     
     
-            marker_94817010eb20b488a73c68363aa17af1.bindTooltip(
+            marker_effe4b33cabbb2f414fde6d73e82db18.bindTooltip(
                 `<div>
                      Saninudge 
                  </div>`,
@@ -406,32 +407,32 @@
             );
         
     
-            var marker_78848079d6fa5e7d351d57a1567d2f8e = L.marker(
+            var marker_9c5f2a6ba33ef464c63f0e7ee96c0b7b = L.marker(
                 [55.76218131, 12.4540671],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_17e26957e86cc240b0137632b45d06a5 = L.AwesomeMarkers.icon(
+            var icon_c3efaba88ae07b1fe7ad14326fae287f = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_78848079d6fa5e7d351d57a1567d2f8e.setIcon(icon_17e26957e86cc240b0137632b45d06a5);
+            marker_9c5f2a6ba33ef464c63f0e7ee96c0b7b.setIcon(icon_c3efaba88ae07b1fe7ad14326fae287f);
         
     
-        var popup_6655c25a6bf0f4be668c97c59f1f5a42 = L.popup({"maxWidth": "100%"});
+        var popup_d408f4392ec46a03047facf4aa167218 = L.popup({"maxWidth": "100%"});
 
         
-            var html_69ad914ba16ad6f7b0404e80dce5f379 = $(`<div id="html_69ad914ba16ad6f7b0404e80dce5f379" style="width: 100.0%; height: 100.0%;"><b>Specialbandager </b> <a href='https://https://specialbandager.dk/' target='_blank'>https://specialbandager.dk/</a>   "Specialbandager er landets største udbyder af specialstrikkede kompressionsstrømper til afhjælpning af lymfødem og ødem i forbindelse med venøse lidelser. Vi har mere end 30 års erfaring på feltet. Vi er sygeplejersker, sårsygeplejersker og Medicokonsulenter. De fleste med flere års erfaring fra branchen. Specialbandager arbejder tæt sammen med lymfødemterapeuter, både på hospitalerne og i privatpraksis og har derfor en stor kontaktflade til lymfødemterapeuter, borgere samt producenter. Ligeledes har vi et tæt samarbejde med Videncenter for Sår og Lymfødem på Bispebjerg Hospital. Vi fører alle de kendte og veldokumenterede mærker som Medi, Jobst, Juzo, Egertina og Sigvaris.</div>`)[0];
-            popup_6655c25a6bf0f4be668c97c59f1f5a42.setContent(html_69ad914ba16ad6f7b0404e80dce5f379);
+            var html_c95d6a9739c1844e0b5c7abb3fb859ca = $(`<div id="html_c95d6a9739c1844e0b5c7abb3fb859ca" style="width: 100.0%; height: 100.0%;"><b>Specialbandager </b> <a href='https://https://specialbandager.dk/' target='_blank'>https://specialbandager.dk/</a>   "Specialbandager er landets største udbyder af specialstrikkede kompressionsstrømper til afhjælpning af lymfødem og ødem i forbindelse med venøse lidelser. Vi har mere end 30 års erfaring på feltet. Vi er sygeplejersker, sårsygeplejersker og Medicokonsulenter. De fleste med flere års erfaring fra branchen. Specialbandager arbejder tæt sammen med lymfødemterapeuter, både på hospitalerne og i privatpraksis og har derfor en stor kontaktflade til lymfødemterapeuter, borgere samt producenter. Ligeledes har vi et tæt samarbejde med Videncenter for Sår og Lymfødem på Bispebjerg Hospital. Vi fører alle de kendte og veldokumenterede mærker som Medi, Jobst, Juzo, Egertina og Sigvaris.</div>`)[0];
+            popup_d408f4392ec46a03047facf4aa167218.setContent(html_c95d6a9739c1844e0b5c7abb3fb859ca);
         
 
-        marker_78848079d6fa5e7d351d57a1567d2f8e.bindPopup(popup_6655c25a6bf0f4be668c97c59f1f5a42)
+        marker_9c5f2a6ba33ef464c63f0e7ee96c0b7b.bindPopup(popup_d408f4392ec46a03047facf4aa167218)
         ;
 
         
     
     
-            marker_78848079d6fa5e7d351d57a1567d2f8e.bindTooltip(
+            marker_9c5f2a6ba33ef464c63f0e7ee96c0b7b.bindTooltip(
                 `<div>
                      Specialbandager 
                  </div>`,
@@ -439,32 +440,32 @@
             );
         
     
-            var marker_d2ba63bd80b985ae1420c98b40946051 = L.marker(
+            var marker_48ec366e3d2392e92e6a97b4c29a8bcf = L.marker(
                 [55.68060517, 12.60363474],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_c43bdd4e3ee059ed6e9ebbb9980253e8 = L.AwesomeMarkers.icon(
+            var icon_e2f9164b0399a0690223a106812a8e45 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_d2ba63bd80b985ae1420c98b40946051.setIcon(icon_c43bdd4e3ee059ed6e9ebbb9980253e8);
+            marker_48ec366e3d2392e92e6a97b4c29a8bcf.setIcon(icon_e2f9164b0399a0690223a106812a8e45);
         
     
-        var popup_915bcc918db35f5ac702223506c0f616 = L.popup({"maxWidth": "100%"});
+        var popup_c2e3a40276cb8431338659a82aa3783a = L.popup({"maxWidth": "100%"});
 
         
-            var html_04976d5b622123569154cbe7fac2007a = $(`<div id="html_04976d5b622123569154cbe7fac2007a" style="width: 100.0%; height: 100.0%;"><b>Vital Beats</b> <a href='https://https://vitalbeats.com/' target='_blank'>https://vitalbeats.com/</a>   Get the overview you need without logging into multiple vendor systems. Our platform never sleeps and constantly triages every cardiac device patient using our patent-pending technique. Then it automatically handles all your routine cases, so you only need to focus on the truly essential and critical. Served in a beautiful and usable dashboard. All on our future-proof cloud-based, secure and GDPR compliant platform, of course.</div>`)[0];
-            popup_915bcc918db35f5ac702223506c0f616.setContent(html_04976d5b622123569154cbe7fac2007a);
+            var html_7ed5a879266cf306e0f1c1d772c9980b = $(`<div id="html_7ed5a879266cf306e0f1c1d772c9980b" style="width: 100.0%; height: 100.0%;"><b>Vital Beats</b> <a href='https://https://vitalbeats.com/' target='_blank'>https://vitalbeats.com/</a>   Get the overview you need without logging into multiple vendor systems. Our platform never sleeps and constantly triages every cardiac device patient using our patent-pending technique. Then it automatically handles all your routine cases, so you only need to focus on the truly essential and critical. Served in a beautiful and usable dashboard. All on our future-proof cloud-based, secure and GDPR compliant platform, of course.</div>`)[0];
+            popup_c2e3a40276cb8431338659a82aa3783a.setContent(html_7ed5a879266cf306e0f1c1d772c9980b);
         
 
-        marker_d2ba63bd80b985ae1420c98b40946051.bindPopup(popup_915bcc918db35f5ac702223506c0f616)
+        marker_48ec366e3d2392e92e6a97b4c29a8bcf.bindPopup(popup_c2e3a40276cb8431338659a82aa3783a)
         ;
 
         
     
     
-            marker_d2ba63bd80b985ae1420c98b40946051.bindTooltip(
+            marker_48ec366e3d2392e92e6a97b4c29a8bcf.bindTooltip(
                 `<div>
                      Vital Beats
                  </div>`,
@@ -472,32 +473,32 @@
             );
         
     
-            var marker_fd387cce2ef03ee8f10d1149b10f70ca = L.marker(
+            var marker_56d7c3413cbfe6ec5942a270aeb7fdd3 = L.marker(
                 [55.69168865, 12.52448203],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_5eb665fb0a86abbc298c633f2dd67c78 = L.AwesomeMarkers.icon(
+            var icon_0a9df888180dd5d4afbf89cb8683cace = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_fd387cce2ef03ee8f10d1149b10f70ca.setIcon(icon_5eb665fb0a86abbc298c633f2dd67c78);
+            marker_56d7c3413cbfe6ec5942a270aeb7fdd3.setIcon(icon_0a9df888180dd5d4afbf89cb8683cace);
         
     
-        var popup_3fc9f112021204868d17534a2d8addfd = L.popup({"maxWidth": "100%"});
+        var popup_3817879a49cd7b8378ac6ad831363051 = L.popup({"maxWidth": "100%"});
 
         
-            var html_b05c2dfb6d7b92d9b3dfd9c74b6654d2 = $(`<div id="html_b05c2dfb6d7b92d9b3dfd9c74b6654d2" style="width: 100.0%; height: 100.0%;"><b>Datasolvr</b> <a href='https://http://datasolvr.com/' target='_blank'>http://datasolvr.com/</a>   Data is one of a company's most valuable assets - a gold mine of truths and insights waiting to be uncovered. But to leverage this in a continuous and seamless way is challenging. Large data projects can be high risk, low return efforts, while fragmented analysis won't provide long term value. Datasolvr turns data exploration and management into a low risk, high return effort by providing a flexible and powerful platform, for delivering value from raw data all the way into the board room.</div>`)[0];
-            popup_3fc9f112021204868d17534a2d8addfd.setContent(html_b05c2dfb6d7b92d9b3dfd9c74b6654d2);
+            var html_84f99a89454d11c4860c9b09534e17b9 = $(`<div id="html_84f99a89454d11c4860c9b09534e17b9" style="width: 100.0%; height: 100.0%;"><b>Datasolvr</b> <a href='https://http://datasolvr.com/' target='_blank'>http://datasolvr.com/</a>   Data is one of a company's most valuable assets - a gold mine of truths and insights waiting to be uncovered. But to leverage this in a continuous and seamless way is challenging. Large data projects can be high risk, low return efforts, while fragmented analysis won't provide long term value. Datasolvr turns data exploration and management into a low risk, high return effort by providing a flexible and powerful platform, for delivering value from raw data all the way into the board room.</div>`)[0];
+            popup_3817879a49cd7b8378ac6ad831363051.setContent(html_84f99a89454d11c4860c9b09534e17b9);
         
 
-        marker_fd387cce2ef03ee8f10d1149b10f70ca.bindPopup(popup_3fc9f112021204868d17534a2d8addfd)
+        marker_56d7c3413cbfe6ec5942a270aeb7fdd3.bindPopup(popup_3817879a49cd7b8378ac6ad831363051)
         ;
 
         
     
     
-            marker_fd387cce2ef03ee8f10d1149b10f70ca.bindTooltip(
+            marker_56d7c3413cbfe6ec5942a270aeb7fdd3.bindTooltip(
                 `<div>
                      Datasolvr
                  </div>`,
@@ -505,32 +506,32 @@
             );
         
     
-            var marker_3b58fa293f0517dc0dd5e8c748808844 = L.marker(
+            var marker_bcd11a7bf58a49ca2371eae8524f0924 = L.marker(
                 [56.15351316, 10.17507256],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_dcd7e1d64127873c85b25b974fe98017 = L.AwesomeMarkers.icon(
+            var icon_0d1a4ccbf9a9265775ef5b75a69a4422 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_3b58fa293f0517dc0dd5e8c748808844.setIcon(icon_dcd7e1d64127873c85b25b974fe98017);
+            marker_bcd11a7bf58a49ca2371eae8524f0924.setIcon(icon_0d1a4ccbf9a9265775ef5b75a69a4422);
         
     
-        var popup_321484c7daf8e12ff31ac6b1151163a9 = L.popup({"maxWidth": "100%"});
+        var popup_1686437b5c862ea67ead609293642ac2 = L.popup({"maxWidth": "100%"});
 
         
-            var html_59862a74cfdd385a382d0a5bbc3e0638 = $(`<div id="html_59862a74cfdd385a382d0a5bbc3e0638" style="width: 100.0%; height: 100.0%;"><b>Digital Revisor</b> <a href='https://https://www.digitalrevisor.nu/' target='_blank'>https://www.digitalrevisor.nu/</a>   "Digital Revisor er en hjælp til dig, som udlejer en bolig, har lavet forældrekøb, har enkeltmandsvirksomhed eller et selskab. Det er også til dig, der er professionel rådgiver, fx bogholder eller revisor. Digital Revisor er et online værktøj, som hjælper med at optimere din skat, sikrer dig de rette fradrag, og hjælper dig med indberetningen til SKAT og/eller Erhvervsstyrelsen. Lovgivningen er pakket ind i en simpel guide, som er udarbejdet og testet af registrerede og statsautoriserede revisorer."</div>`)[0];
-            popup_321484c7daf8e12ff31ac6b1151163a9.setContent(html_59862a74cfdd385a382d0a5bbc3e0638);
+            var html_57cb45ba5df0f1a9284af50f831c9f69 = $(`<div id="html_57cb45ba5df0f1a9284af50f831c9f69" style="width: 100.0%; height: 100.0%;"><b>Digital Revisor</b> <a href='https://https://www.digitalrevisor.nu/' target='_blank'>https://www.digitalrevisor.nu/</a>   "Digital Revisor er en hjælp til dig, som udlejer en bolig, har lavet forældrekøb, har enkeltmandsvirksomhed eller et selskab. Det er også til dig, der er professionel rådgiver, fx bogholder eller revisor. Digital Revisor er et online værktøj, som hjælper med at optimere din skat, sikrer dig de rette fradrag, og hjælper dig med indberetningen til SKAT og/eller Erhvervsstyrelsen. Lovgivningen er pakket ind i en simpel guide, som er udarbejdet og testet af registrerede og statsautoriserede revisorer."</div>`)[0];
+            popup_1686437b5c862ea67ead609293642ac2.setContent(html_57cb45ba5df0f1a9284af50f831c9f69);
         
 
-        marker_3b58fa293f0517dc0dd5e8c748808844.bindPopup(popup_321484c7daf8e12ff31ac6b1151163a9)
+        marker_bcd11a7bf58a49ca2371eae8524f0924.bindPopup(popup_1686437b5c862ea67ead609293642ac2)
         ;
 
         
     
     
-            marker_3b58fa293f0517dc0dd5e8c748808844.bindTooltip(
+            marker_bcd11a7bf58a49ca2371eae8524f0924.bindTooltip(
                 `<div>
                      Digital Revisor
                  </div>`,
@@ -538,32 +539,32 @@
             );
         
     
-            var marker_8bddd3b6280d887de19449ffce006ff9 = L.marker(
+            var marker_d011d3c11233b6ca57c641c90b05bac4 = L.marker(
                 [55.67810547, 12.5794905],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_6a49865008cf5a5ba474a5209178d823 = L.AwesomeMarkers.icon(
+            var icon_5001affc1d1e783b352a01949a990fcc = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_8bddd3b6280d887de19449ffce006ff9.setIcon(icon_6a49865008cf5a5ba474a5209178d823);
+            marker_d011d3c11233b6ca57c641c90b05bac4.setIcon(icon_5001affc1d1e783b352a01949a990fcc);
         
     
-        var popup_edd96ef58b64a5ceb8397ce728c293a8 = L.popup({"maxWidth": "100%"});
+        var popup_dee3f93f5dd87d80ff5bd0b7d8b9f10a = L.popup({"maxWidth": "100%"});
 
         
-            var html_1abec16b58fe63e01f55cc7da161c385 = $(`<div id="html_1abec16b58fe63e01f55cc7da161c385" style="width: 100.0%; height: 100.0%;"><b>Fullbrain</b> <a href='https://https://www.fullbrain.org/' target='_blank'>https://www.fullbrain.org/</a>   "FullBrain is a social e-learning platform where students study together, find personalized learning material and connect with top companies."</div>`)[0];
-            popup_edd96ef58b64a5ceb8397ce728c293a8.setContent(html_1abec16b58fe63e01f55cc7da161c385);
+            var html_1c9a7e966c5b3de8ea27f48081091ed5 = $(`<div id="html_1c9a7e966c5b3de8ea27f48081091ed5" style="width: 100.0%; height: 100.0%;"><b>Fullbrain</b> <a href='https://https://www.fullbrain.org/' target='_blank'>https://www.fullbrain.org/</a>   "FullBrain is a social e-learning platform where students study together, find personalized learning material and connect with top companies."</div>`)[0];
+            popup_dee3f93f5dd87d80ff5bd0b7d8b9f10a.setContent(html_1c9a7e966c5b3de8ea27f48081091ed5);
         
 
-        marker_8bddd3b6280d887de19449ffce006ff9.bindPopup(popup_edd96ef58b64a5ceb8397ce728c293a8)
+        marker_d011d3c11233b6ca57c641c90b05bac4.bindPopup(popup_dee3f93f5dd87d80ff5bd0b7d8b9f10a)
         ;
 
         
     
     
-            marker_8bddd3b6280d887de19449ffce006ff9.bindTooltip(
+            marker_d011d3c11233b6ca57c641c90b05bac4.bindTooltip(
                 `<div>
                      Fullbrain
                  </div>`,
@@ -571,32 +572,32 @@
             );
         
     
-            var marker_617dd8cf28d9519ed0847dd0b7d1c764 = L.marker(
+            var marker_05b2442c3e68fb4e1597eec3dca34dff = L.marker(
                 [55.73138208, 12.4683168],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_872b549ce64526f286059b29671229ea = L.AwesomeMarkers.icon(
+            var icon_034659f46ff41522cf50c15f3322e71f = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_617dd8cf28d9519ed0847dd0b7d1c764.setIcon(icon_872b549ce64526f286059b29671229ea);
+            marker_05b2442c3e68fb4e1597eec3dca34dff.setIcon(icon_034659f46ff41522cf50c15f3322e71f);
         
     
-        var popup_f21e72917a232e39055f23050608c19e = L.popup({"maxWidth": "100%"});
+        var popup_37c0b4fca5d72db8ac6338763e9ffab1 = L.popup({"maxWidth": "100%"});
 
         
-            var html_0772f20710bf576ea876de630f72ecd6 = $(`<div id="html_0772f20710bf576ea876de630f72ecd6" style="width: 100.0%; height: 100.0%;"><b>IO Group</b> <a href='https://https://iogroup.ai/' target='_blank'>https://iogroup.ai/</a>   The company was created in 2008 with the purpose to implement IT solutions that re-enforces the business development for the Insurance market. IO Group excels at defining business requirements together with clients, and convert requirements into IT systems that supports the client business ROI. Process-efficiency has been in focus all the way – in 2019 IO Group decided to take the process-efficiency to the next level via the use of Artificial Intelligence (AI). IO Group’s goal is to improve up to 80% of the common processes within the industry. Our re-vised business objective is to continue implementing AI solutions, and through proven client results become a well-known and trusted AI provider within the European insurance space by 2025.</div>`)[0];
-            popup_f21e72917a232e39055f23050608c19e.setContent(html_0772f20710bf576ea876de630f72ecd6);
+            var html_180aded99293ba740053a6d656ecae3e = $(`<div id="html_180aded99293ba740053a6d656ecae3e" style="width: 100.0%; height: 100.0%;"><b>IO Group</b> <a href='https://https://iogroup.ai/' target='_blank'>https://iogroup.ai/</a>   The company was created in 2008 with the purpose to implement IT solutions that re-enforces the business development for the Insurance market. IO Group excels at defining business requirements together with clients, and convert requirements into IT systems that supports the client business ROI. Process-efficiency has been in focus all the way – in 2019 IO Group decided to take the process-efficiency to the next level via the use of Artificial Intelligence (AI). IO Group’s goal is to improve up to 80% of the common processes within the industry. Our re-vised business objective is to continue implementing AI solutions, and through proven client results become a well-known and trusted AI provider within the European insurance space by 2025.</div>`)[0];
+            popup_37c0b4fca5d72db8ac6338763e9ffab1.setContent(html_180aded99293ba740053a6d656ecae3e);
         
 
-        marker_617dd8cf28d9519ed0847dd0b7d1c764.bindPopup(popup_f21e72917a232e39055f23050608c19e)
+        marker_05b2442c3e68fb4e1597eec3dca34dff.bindPopup(popup_37c0b4fca5d72db8ac6338763e9ffab1)
         ;
 
         
     
     
-            marker_617dd8cf28d9519ed0847dd0b7d1c764.bindTooltip(
+            marker_05b2442c3e68fb4e1597eec3dca34dff.bindTooltip(
                 `<div>
                      IO Group
                  </div>`,
@@ -604,32 +605,32 @@
             );
         
     
-            var marker_392e9eae612d2cd3f1611f25a48f6849 = L.marker(
+            var marker_663a3288bc33968c35b5bf587765f684 = L.marker(
                 [55.73516821, 12.56471834],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_9aa3327cc14affbdd48dc4df7400f2b2 = L.AwesomeMarkers.icon(
+            var icon_a39ff85193b172358be0d9fe08093dce = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_392e9eae612d2cd3f1611f25a48f6849.setIcon(icon_9aa3327cc14affbdd48dc4df7400f2b2);
+            marker_663a3288bc33968c35b5bf587765f684.setIcon(icon_a39ff85193b172358be0d9fe08093dce);
         
     
-        var popup_7fd8798ecdc706e7e7ab14a960f6fd4b = L.popup({"maxWidth": "100%"});
+        var popup_479ddea670f557c8a83305152b4130be = L.popup({"maxWidth": "100%"});
 
         
-            var html_21917554dafc3b6a20d01b7de90395a3 = $(`<div id="html_21917554dafc3b6a20d01b7de90395a3" style="width: 100.0%; height: 100.0%;"><b>SHFT</b> <a href='https://http://shft.run/' target='_blank'>http://shft.run/</a>   Listen to your virtual coach, get instructions tailored just for you and improve your performance with every run. SHFT accurately track and analyze your full body running style and statistics through two intelligent pods. Your running data is translated into simple, actionable and real-time coaching instructions that’ll help you run better, faster and with reduced risk of injury</div>`)[0];
-            popup_7fd8798ecdc706e7e7ab14a960f6fd4b.setContent(html_21917554dafc3b6a20d01b7de90395a3);
+            var html_e2dabf63380371d4bc5498c87de813c0 = $(`<div id="html_e2dabf63380371d4bc5498c87de813c0" style="width: 100.0%; height: 100.0%;"><b>SHFT</b> <a href='https://http://shft.run/' target='_blank'>http://shft.run/</a>   Listen to your virtual coach, get instructions tailored just for you and improve your performance with every run. SHFT accurately track and analyze your full body running style and statistics through two intelligent pods. Your running data is translated into simple, actionable and real-time coaching instructions that’ll help you run better, faster and with reduced risk of injury</div>`)[0];
+            popup_479ddea670f557c8a83305152b4130be.setContent(html_e2dabf63380371d4bc5498c87de813c0);
         
 
-        marker_392e9eae612d2cd3f1611f25a48f6849.bindPopup(popup_7fd8798ecdc706e7e7ab14a960f6fd4b)
+        marker_663a3288bc33968c35b5bf587765f684.bindPopup(popup_479ddea670f557c8a83305152b4130be)
         ;
 
         
     
     
-            marker_392e9eae612d2cd3f1611f25a48f6849.bindTooltip(
+            marker_663a3288bc33968c35b5bf587765f684.bindTooltip(
                 `<div>
                      SHFT
                  </div>`,
@@ -637,32 +638,32 @@
             );
         
     
-            var marker_5e6d318403e8c7868bb0eecc5e241282 = L.marker(
+            var marker_4c9b69e0e46d24152382cd96ce7fb256 = L.marker(
                 [55.88104883, 12.54770804],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_fee32f27355de56efb8838c699063126 = L.AwesomeMarkers.icon(
+            var icon_f312815b34b3caa028ee2a09156de5f2 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_5e6d318403e8c7868bb0eecc5e241282.setIcon(icon_fee32f27355de56efb8838c699063126);
+            marker_4c9b69e0e46d24152382cd96ce7fb256.setIcon(icon_f312815b34b3caa028ee2a09156de5f2);
         
     
-        var popup_aeca083eb7f30c9fa60292749c37050c = L.popup({"maxWidth": "100%"});
+        var popup_988233a0f406aa12024c339f39fc3e09 = L.popup({"maxWidth": "100%"});
 
         
-            var html_80efdfb39c992979c302783f3d46e8e7 = $(`<div id="html_80efdfb39c992979c302783f3d46e8e7" style="width: 100.0%; height: 100.0%;"><b>TICRA</b> <a href='https://https://www.ticra.com/' target='_blank'>https://www.ticra.com/</a>   TICRA is a small company in Copenhagen, Denmark specializing in antenna analysis and synthesis software. Their signature software includes: GRASP: POS CHAMP Their software is regarded as the de facto industry standard. </div>`)[0];
-            popup_aeca083eb7f30c9fa60292749c37050c.setContent(html_80efdfb39c992979c302783f3d46e8e7);
+            var html_6e01202666509814d5ce03eac0d8206d = $(`<div id="html_6e01202666509814d5ce03eac0d8206d" style="width: 100.0%; height: 100.0%;"><b>TICRA</b> <a href='https://https://www.ticra.com/' target='_blank'>https://www.ticra.com/</a>   TICRA is a small company in Copenhagen, Denmark specializing in antenna analysis and synthesis software. Their signature software includes: GRASP: POS CHAMP Their software is regarded as the de facto industry standard. </div>`)[0];
+            popup_988233a0f406aa12024c339f39fc3e09.setContent(html_6e01202666509814d5ce03eac0d8206d);
         
 
-        marker_5e6d318403e8c7868bb0eecc5e241282.bindPopup(popup_aeca083eb7f30c9fa60292749c37050c)
+        marker_4c9b69e0e46d24152382cd96ce7fb256.bindPopup(popup_988233a0f406aa12024c339f39fc3e09)
         ;
 
         
     
     
-            marker_5e6d318403e8c7868bb0eecc5e241282.bindTooltip(
+            marker_4c9b69e0e46d24152382cd96ce7fb256.bindTooltip(
                 `<div>
                      TICRA
                  </div>`,
@@ -670,32 +671,32 @@
             );
         
     
-            var marker_9d088dc1e0bb85d2dcf3275e30c0c645 = L.marker(
+            var marker_d01cdf11adf836ab1023794cb77fc782 = L.marker(
                 [55.95492689, 12.59165335],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_eb2b5575ac16a8cf39a567662919d002 = L.AwesomeMarkers.icon(
+            var icon_77d4ab49ca63418d94c5e8d01e845613 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_9d088dc1e0bb85d2dcf3275e30c0c645.setIcon(icon_eb2b5575ac16a8cf39a567662919d002);
+            marker_d01cdf11adf836ab1023794cb77fc782.setIcon(icon_77d4ab49ca63418d94c5e8d01e845613);
         
     
-        var popup_d6f22a1b19fa5899ea71982fdb88a74c = L.popup({"maxWidth": "100%"});
+        var popup_32b00cfb14a054b4e7f554f234a315a6 = L.popup({"maxWidth": "100%"});
 
         
-            var html_1579d3330743a7e59f683def76c91a3f = $(`<div id="html_1579d3330743a7e59f683def76c91a3f" style="width: 100.0%; height: 100.0%;"><b>Withcon</b> <a href='https://http://withcon.dk/' target='_blank'>http://withcon.dk/</a>   At Withcon, we specialize in implementing a smooth, optimized construction process. The core is thorough preparatory work, planning, risk management, an overview of requirements and, not least, management of the process throughout the entire construction project.  </div>`)[0];
-            popup_d6f22a1b19fa5899ea71982fdb88a74c.setContent(html_1579d3330743a7e59f683def76c91a3f);
+            var html_44e2d38fbaecb129843807d37b353096 = $(`<div id="html_44e2d38fbaecb129843807d37b353096" style="width: 100.0%; height: 100.0%;"><b>Withcon</b> <a href='https://http://withcon.dk/' target='_blank'>http://withcon.dk/</a>   At Withcon, we specialize in implementing a smooth, optimized construction process. The core is thorough preparatory work, planning, risk management, an overview of requirements and, not least, management of the process throughout the entire construction project.  </div>`)[0];
+            popup_32b00cfb14a054b4e7f554f234a315a6.setContent(html_44e2d38fbaecb129843807d37b353096);
         
 
-        marker_9d088dc1e0bb85d2dcf3275e30c0c645.bindPopup(popup_d6f22a1b19fa5899ea71982fdb88a74c)
+        marker_d01cdf11adf836ab1023794cb77fc782.bindPopup(popup_32b00cfb14a054b4e7f554f234a315a6)
         ;
 
         
     
     
-            marker_9d088dc1e0bb85d2dcf3275e30c0c645.bindTooltip(
+            marker_d01cdf11adf836ab1023794cb77fc782.bindTooltip(
                 `<div>
                      Withcon
                  </div>`,
@@ -703,32 +704,32 @@
             );
         
     
-            var marker_528850a891075eaaa59bf83302daab92 = L.marker(
+            var marker_384404d0ecbcf123850255b7987d1654 = L.marker(
                 [56.14869468, 10.21319171],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_801a8e7310cbf4e629c6d4eeff9699c4 = L.AwesomeMarkers.icon(
+            var icon_0ef8a199b2f2c16777a03339807eec66 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_528850a891075eaaa59bf83302daab92.setIcon(icon_801a8e7310cbf4e629c6d4eeff9699c4);
+            marker_384404d0ecbcf123850255b7987d1654.setIcon(icon_0ef8a199b2f2c16777a03339807eec66);
         
     
-        var popup_86cc3997ada658969b03e632b22ee1ba = L.popup({"maxWidth": "100%"});
+        var popup_711f933d5513ca3f3f306debe530a14b = L.popup({"maxWidth": "100%"});
 
         
-            var html_af4a29cb8fa2d73ce862a5a379bdfe7c = $(`<div id="html_af4a29cb8fa2d73ce862a5a379bdfe7c" style="width: 100.0%; height: 100.0%;"><b>AAK</b> <a href='https://https://www.aak.com/' target='_blank'>https://www.aak.com/</a>   AAK specializes in plant-based oils that are the value-adding ingredients in many of the products people love to consume. We make these products better tasting, healthier, and more sustainable. We enhance their sensory experience – by giving the silkier mouthfeel in premium chocolate, the juicier texture in a plant-based burger, and the puffier appearance in a lower-fat pastry.</div>`)[0];
-            popup_86cc3997ada658969b03e632b22ee1ba.setContent(html_af4a29cb8fa2d73ce862a5a379bdfe7c);
+            var html_0e6e48e164b6d9e4721897f2a140f7fc = $(`<div id="html_0e6e48e164b6d9e4721897f2a140f7fc" style="width: 100.0%; height: 100.0%;"><b>AAK</b> <a href='https://https://www.aak.com/' target='_blank'>https://www.aak.com/</a>   AAK specializes in plant-based oils that are the value-adding ingredients in many of the products people love to consume. We make these products better tasting, healthier, and more sustainable. We enhance their sensory experience – by giving the silkier mouthfeel in premium chocolate, the juicier texture in a plant-based burger, and the puffier appearance in a lower-fat pastry.</div>`)[0];
+            popup_711f933d5513ca3f3f306debe530a14b.setContent(html_0e6e48e164b6d9e4721897f2a140f7fc);
         
 
-        marker_528850a891075eaaa59bf83302daab92.bindPopup(popup_86cc3997ada658969b03e632b22ee1ba)
+        marker_384404d0ecbcf123850255b7987d1654.bindPopup(popup_711f933d5513ca3f3f306debe530a14b)
         ;
 
         
     
     
-            marker_528850a891075eaaa59bf83302daab92.bindTooltip(
+            marker_384404d0ecbcf123850255b7987d1654.bindTooltip(
                 `<div>
                      AAK
                  </div>`,
@@ -736,32 +737,32 @@
             );
         
     
-            var marker_5fb0e46ea4efe3e425ef5408b3677566 = L.marker(
+            var marker_c9f2424626ae6111e4c841a775daafac = L.marker(
                 [55.72663719, 12.3732971],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_ed6604df6167ccf28f6f5f92a8931a17 = L.AwesomeMarkers.icon(
+            var icon_8de90124e469772d00e7c07db420fc2b = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_5fb0e46ea4efe3e425ef5408b3677566.setIcon(icon_ed6604df6167ccf28f6f5f92a8931a17);
+            marker_c9f2424626ae6111e4c841a775daafac.setIcon(icon_8de90124e469772d00e7c07db420fc2b);
         
     
-        var popup_aad915c05e50b09690ef6f27bd24a9a1 = L.popup({"maxWidth": "100%"});
+        var popup_4c7607343c848c4acbb887eb0660d9d9 = L.popup({"maxWidth": "100%"});
 
         
-            var html_8637485f2b559c3dbfd1afb1a3f04230 = $(`<div id="html_8637485f2b559c3dbfd1afb1a3f04230" style="width: 100.0%; height: 100.0%;"><b>Andel Lumen</b> <a href='https://https://andellumen.dk/' target='_blank'>https://andellumen.dk/</a>   "Vi er knap 100 specialister, der sørger for, at børn og voksne kan færdes sikkert på cykelstier og veje, og vi samarbejder med de bedste aktører på markedet om at levere smarte løsninger til det offentlige rum. Uanset, om vi rådgiver, planlægger drift og vedligehold eller rykker ud og sørger for, at lampen lyser i parken, på gaden og på sportsanlægget, når vi skal være aktive sammen, så løfter vi i flok og i tæt samarbejde med vores kunder.</div>`)[0];
-            popup_aad915c05e50b09690ef6f27bd24a9a1.setContent(html_8637485f2b559c3dbfd1afb1a3f04230);
+            var html_2494e1a0342e4b0d57c21b852a674648 = $(`<div id="html_2494e1a0342e4b0d57c21b852a674648" style="width: 100.0%; height: 100.0%;"><b>Andel Lumen</b> <a href='https://https://andellumen.dk/' target='_blank'>https://andellumen.dk/</a>   "Vi er knap 100 specialister, der sørger for, at børn og voksne kan færdes sikkert på cykelstier og veje, og vi samarbejder med de bedste aktører på markedet om at levere smarte løsninger til det offentlige rum. Uanset, om vi rådgiver, planlægger drift og vedligehold eller rykker ud og sørger for, at lampen lyser i parken, på gaden og på sportsanlægget, når vi skal være aktive sammen, så løfter vi i flok og i tæt samarbejde med vores kunder.</div>`)[0];
+            popup_4c7607343c848c4acbb887eb0660d9d9.setContent(html_2494e1a0342e4b0d57c21b852a674648);
         
 
-        marker_5fb0e46ea4efe3e425ef5408b3677566.bindPopup(popup_aad915c05e50b09690ef6f27bd24a9a1)
+        marker_c9f2424626ae6111e4c841a775daafac.bindPopup(popup_4c7607343c848c4acbb887eb0660d9d9)
         ;
 
         
     
     
-            marker_5fb0e46ea4efe3e425ef5408b3677566.bindTooltip(
+            marker_c9f2424626ae6111e4c841a775daafac.bindTooltip(
                 `<div>
                      Andel Lumen
                  </div>`,
@@ -769,32 +770,32 @@
             );
         
     
-            var marker_ecbe7ed2cdd5b4feff4db0610962f233 = L.marker(
+            var marker_ec5ac050496ac5a3ea0c1c25f2c190f4 = L.marker(
                 [56.10902245, 10.15830372],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_d9210003e9ac8f3bcfb9fb1a19fde486 = L.AwesomeMarkers.icon(
+            var icon_1581d9ac2c1ca31e8f5fd5d1e21b956a = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_ecbe7ed2cdd5b4feff4db0610962f233.setIcon(icon_d9210003e9ac8f3bcfb9fb1a19fde486);
+            marker_ec5ac050496ac5a3ea0c1c25f2c190f4.setIcon(icon_1581d9ac2c1ca31e8f5fd5d1e21b956a);
         
     
-        var popup_1f2c8750c6899b132935df431a1fecab = L.popup({"maxWidth": "100%"});
+        var popup_67d5f7e3810454437d9c23d5eea62128 = L.popup({"maxWidth": "100%"});
 
         
-            var html_84e4a1ac7be700e70b657dbbbc9476d8 = $(`<div id="html_84e4a1ac7be700e70b657dbbbc9476d8" style="width: 100.0%; height: 100.0%;"><b>BKI</b> <a href='https://https://www.bkifoods.com/' target='_blank'>https://www.bkifoods.com/</a>   "Den gode kaffeoplevelse er ikke kun forbeholdt kaffebaren eller din egen kaffemaskine derhjemme. Med BKI Professionel er du sikret den gode kaffeoplevelse på arbejdspladsen, hvor du hverken går på kompromis med kvalitet eller pris. BKI har siden sin opstart i 1960 leveret kvalitetskaffe til de danske forbrugere, og er i dag den største kaffeleverandør til det kaffeglade Danmark – hertil kommer en stærkt voksende eksport. Vi rister og pakker i dag kaffer fra hele verden, på vores højteknologiske kaffefabrik i Højbjerg ved Aarhus. BKI er i dag, blandt de største aktører på kaffemarkedet, det eneste 100% danskejede kaffefirma, med salg til detail- og foodservicesektoren og produktion i Danmark."</div>`)[0];
-            popup_1f2c8750c6899b132935df431a1fecab.setContent(html_84e4a1ac7be700e70b657dbbbc9476d8);
+            var html_ac570a3f6e6c7001253f4bd8918d005f = $(`<div id="html_ac570a3f6e6c7001253f4bd8918d005f" style="width: 100.0%; height: 100.0%;"><b>BKI</b> <a href='https://https://www.bkifoods.com/' target='_blank'>https://www.bkifoods.com/</a>   "Den gode kaffeoplevelse er ikke kun forbeholdt kaffebaren eller din egen kaffemaskine derhjemme. Med BKI Professionel er du sikret den gode kaffeoplevelse på arbejdspladsen, hvor du hverken går på kompromis med kvalitet eller pris. BKI har siden sin opstart i 1960 leveret kvalitetskaffe til de danske forbrugere, og er i dag den største kaffeleverandør til det kaffeglade Danmark – hertil kommer en stærkt voksende eksport. Vi rister og pakker i dag kaffer fra hele verden, på vores højteknologiske kaffefabrik i Højbjerg ved Aarhus. BKI er i dag, blandt de største aktører på kaffemarkedet, det eneste 100% danskejede kaffefirma, med salg til detail- og foodservicesektoren og produktion i Danmark."</div>`)[0];
+            popup_67d5f7e3810454437d9c23d5eea62128.setContent(html_ac570a3f6e6c7001253f4bd8918d005f);
         
 
-        marker_ecbe7ed2cdd5b4feff4db0610962f233.bindPopup(popup_1f2c8750c6899b132935df431a1fecab)
+        marker_ec5ac050496ac5a3ea0c1c25f2c190f4.bindPopup(popup_67d5f7e3810454437d9c23d5eea62128)
         ;
 
         
     
     
-            marker_ecbe7ed2cdd5b4feff4db0610962f233.bindTooltip(
+            marker_ec5ac050496ac5a3ea0c1c25f2c190f4.bindTooltip(
                 `<div>
                      BKI
                  </div>`,
@@ -802,32 +803,32 @@
             );
         
     
-            var marker_dde56fdf6b67d4dcbf5c7ece93ed48d1 = L.marker(
+            var marker_7bd8f92e0efd57f3b2719b8f10c6a767 = L.marker(
                 [55.46850423, 8.668532758],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_e7cb5d4d897c758ed5a1a190d5515634 = L.AwesomeMarkers.icon(
+            var icon_e6f78215fe30190ec24676757a67e4d1 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_dde56fdf6b67d4dcbf5c7ece93ed48d1.setIcon(icon_e7cb5d4d897c758ed5a1a190d5515634);
+            marker_7bd8f92e0efd57f3b2719b8f10c6a767.setIcon(icon_e6f78215fe30190ec24676757a67e4d1);
         
     
-        var popup_89edd1119936c26a1e023ec4f88c4c07 = L.popup({"maxWidth": "100%"});
+        var popup_f4b686920903d207e27c53704b673072 = L.popup({"maxWidth": "100%"});
 
         
-            var html_ae0297724f19be5a545ee0c87ef56f8a = $(`<div id="html_ae0297724f19be5a545ee0c87ef56f8a" style="width: 100.0%; height: 100.0%;"><b>Bramidan</b> <a href='https://https://www.bramidan.com/' target='_blank'>https://www.bramidan.com/</a>   We develop and produce machines for compaction of recyclable waste. We have a strong brand in the market with more than 40 years' experience and a wide global network.</div>`)[0];
-            popup_89edd1119936c26a1e023ec4f88c4c07.setContent(html_ae0297724f19be5a545ee0c87ef56f8a);
+            var html_8abf92dcfd67240ceb8dcf8405115a4d = $(`<div id="html_8abf92dcfd67240ceb8dcf8405115a4d" style="width: 100.0%; height: 100.0%;"><b>Bramidan</b> <a href='https://https://www.bramidan.com/' target='_blank'>https://www.bramidan.com/</a>   We develop and produce machines for compaction of recyclable waste. We have a strong brand in the market with more than 40 years' experience and a wide global network.</div>`)[0];
+            popup_f4b686920903d207e27c53704b673072.setContent(html_8abf92dcfd67240ceb8dcf8405115a4d);
         
 
-        marker_dde56fdf6b67d4dcbf5c7ece93ed48d1.bindPopup(popup_89edd1119936c26a1e023ec4f88c4c07)
+        marker_7bd8f92e0efd57f3b2719b8f10c6a767.bindPopup(popup_f4b686920903d207e27c53704b673072)
         ;
 
         
     
     
-            marker_dde56fdf6b67d4dcbf5c7ece93ed48d1.bindTooltip(
+            marker_7bd8f92e0efd57f3b2719b8f10c6a767.bindTooltip(
                 `<div>
                      Bramidan
                  </div>`,
@@ -835,32 +836,32 @@
             );
         
     
-            var marker_ca4c8286cadca400e0631bec50dd9b4e = L.marker(
+            var marker_ae95719541f2504d01a225fed1ffff4a = L.marker(
                 [56.15996684, 10.21059453],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_3a169f87fd48abe0400b1cd6937fe163 = L.AwesomeMarkers.icon(
+            var icon_df71c9f84bbf6f9d03f972d21b50fbdc = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_ca4c8286cadca400e0631bec50dd9b4e.setIcon(icon_3a169f87fd48abe0400b1cd6937fe163);
+            marker_ae95719541f2504d01a225fed1ffff4a.setIcon(icon_df71c9f84bbf6f9d03f972d21b50fbdc);
         
     
-        var popup_3a8c95a90b887d0f6123c8228fedf718 = L.popup({"maxWidth": "100%"});
+        var popup_d9f7787dd78b4192dd6a98b5ef739191 = L.popup({"maxWidth": "100%"});
 
         
-            var html_abe1ed15eccad4a040936ebabc10dff1 = $(`<div id="html_abe1ed15eccad4a040936ebabc10dff1" style="width: 100.0%; height: 100.0%;"><b>Cadesign</b> <a href='https://http://www.cadesign.dk/' target='_blank'>http://www.cadesign.dk/</a>   Cadesign Group består af de tre virksomheder Cadesign base, Cadesign form og Mind Group. Til Mind Group hører virksomhederne Rootz og Rent a Brain og til Cadesign form hører virksomheden Dimension Design.</div>`)[0];
-            popup_3a8c95a90b887d0f6123c8228fedf718.setContent(html_abe1ed15eccad4a040936ebabc10dff1);
+            var html_b20fb3951405d84e33e4f8a3965fb8f6 = $(`<div id="html_b20fb3951405d84e33e4f8a3965fb8f6" style="width: 100.0%; height: 100.0%;"><b>Cadesign</b> <a href='https://http://www.cadesign.dk/' target='_blank'>http://www.cadesign.dk/</a>   Cadesign Group består af de tre virksomheder Cadesign base, Cadesign form og Mind Group. Til Mind Group hører virksomhederne Rootz og Rent a Brain og til Cadesign form hører virksomheden Dimension Design.</div>`)[0];
+            popup_d9f7787dd78b4192dd6a98b5ef739191.setContent(html_b20fb3951405d84e33e4f8a3965fb8f6);
         
 
-        marker_ca4c8286cadca400e0631bec50dd9b4e.bindPopup(popup_3a8c95a90b887d0f6123c8228fedf718)
+        marker_ae95719541f2504d01a225fed1ffff4a.bindPopup(popup_d9f7787dd78b4192dd6a98b5ef739191)
         ;
 
         
     
     
-            marker_ca4c8286cadca400e0631bec50dd9b4e.bindTooltip(
+            marker_ae95719541f2504d01a225fed1ffff4a.bindTooltip(
                 `<div>
                      Cadesign
                  </div>`,
@@ -868,32 +869,32 @@
             );
         
     
-            var marker_a8c9e6d867aef8d601b4b5b6961b366d = L.marker(
+            var marker_50a86a22b90009c12892c6838dd84a94 = L.marker(
                 [55.64087903, 12.26134905],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_b69d91782b1b1582ae2ac0d7b5cd1e34 = L.AwesomeMarkers.icon(
+            var icon_436c372d2321edd923b5af2f9ec42032 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_a8c9e6d867aef8d601b4b5b6961b366d.setIcon(icon_b69d91782b1b1582ae2ac0d7b5cd1e34);
+            marker_50a86a22b90009c12892c6838dd84a94.setIcon(icon_436c372d2321edd923b5af2f9ec42032);
         
     
-        var popup_efb3df1acbaf0cb9a6606b057e5c7d2b = L.popup({"maxWidth": "100%"});
+        var popup_d4a8f5a3575fd3a8a58b91d424696146 = L.popup({"maxWidth": "100%"});
 
         
-            var html_4bca22da56f946e0a6049f50b084e8e2 = $(`<div id="html_4bca22da56f946e0a6049f50b084e8e2" style="width: 100.0%; height: 100.0%;"><b>Climaid</b> <a href='https://https://en.climaid.dk/' target='_blank'>https://en.climaid.dk/</a>   CLIMAID Insight is an open IoT platform that collects, analyses and visualises all types of data from your buildings.</div>`)[0];
-            popup_efb3df1acbaf0cb9a6606b057e5c7d2b.setContent(html_4bca22da56f946e0a6049f50b084e8e2);
+            var html_e03f28c4c0b170249760d7b70d9e75b8 = $(`<div id="html_e03f28c4c0b170249760d7b70d9e75b8" style="width: 100.0%; height: 100.0%;"><b>Climaid</b> <a href='https://https://en.climaid.dk/' target='_blank'>https://en.climaid.dk/</a>   CLIMAID Insight is an open IoT platform that collects, analyses and visualises all types of data from your buildings.</div>`)[0];
+            popup_d4a8f5a3575fd3a8a58b91d424696146.setContent(html_e03f28c4c0b170249760d7b70d9e75b8);
         
 
-        marker_a8c9e6d867aef8d601b4b5b6961b366d.bindPopup(popup_efb3df1acbaf0cb9a6606b057e5c7d2b)
+        marker_50a86a22b90009c12892c6838dd84a94.bindPopup(popup_d4a8f5a3575fd3a8a58b91d424696146)
         ;
 
         
     
     
-            marker_a8c9e6d867aef8d601b4b5b6961b366d.bindTooltip(
+            marker_50a86a22b90009c12892c6838dd84a94.bindTooltip(
                 `<div>
                      Climaid
                  </div>`,
@@ -901,32 +902,32 @@
             );
         
     
-            var marker_c20ac37e6b9fe6786ea14b0bceb2a8f3 = L.marker(
+            var marker_b513b7346a7f47cbd5e1820641ff49d6 = L.marker(
                 [56.47728169, 8.583737585],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_e0af5c6d3e8632a194e01131ad0d61ff = L.AwesomeMarkers.icon(
+            var icon_9436e88989350299f2f24e0d527344b0 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_c20ac37e6b9fe6786ea14b0bceb2a8f3.setIcon(icon_e0af5c6d3e8632a194e01131ad0d61ff);
+            marker_b513b7346a7f47cbd5e1820641ff49d6.setIcon(icon_9436e88989350299f2f24e0d527344b0);
         
     
-        var popup_7e6ca6d3a0038def1b13a0164a814e65 = L.popup({"maxWidth": "100%"});
+        var popup_72898df5fd11bde581643979d957ada0 = L.popup({"maxWidth": "100%"});
 
         
-            var html_9505d57a19c0e7b84868ff648587a94c = $(`<div id="html_9505d57a19c0e7b84868ff648587a94c" style="width: 100.0%; height: 100.0%;"><b>Conpleks Innovation</b> <a href='https://https://conpleks.com/' target='_blank'>https://conpleks.com/</a>   Award-winning Solutions for Mobile Robot</div>`)[0];
-            popup_7e6ca6d3a0038def1b13a0164a814e65.setContent(html_9505d57a19c0e7b84868ff648587a94c);
+            var html_5bbf948f042183c1b2441f524be6aa42 = $(`<div id="html_5bbf948f042183c1b2441f524be6aa42" style="width: 100.0%; height: 100.0%;"><b>Conpleks Innovation</b> <a href='https://https://conpleks.com/' target='_blank'>https://conpleks.com/</a>   Award-winning Solutions for Mobile Robot</div>`)[0];
+            popup_72898df5fd11bde581643979d957ada0.setContent(html_5bbf948f042183c1b2441f524be6aa42);
         
 
-        marker_c20ac37e6b9fe6786ea14b0bceb2a8f3.bindPopup(popup_7e6ca6d3a0038def1b13a0164a814e65)
+        marker_b513b7346a7f47cbd5e1820641ff49d6.bindPopup(popup_72898df5fd11bde581643979d957ada0)
         ;
 
         
     
     
-            marker_c20ac37e6b9fe6786ea14b0bceb2a8f3.bindTooltip(
+            marker_b513b7346a7f47cbd5e1820641ff49d6.bindTooltip(
                 `<div>
                      Conpleks Innovation
                  </div>`,
@@ -934,32 +935,32 @@
             );
         
     
-            var marker_09964636468beb150a6d9e1b2ecb6397 = L.marker(
+            var marker_0004029e90b700b257e69cca1d6de13b = L.marker(
                 [55.96774698, 12.40095023],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_6abd4a09bbecc08f1128c776153e2ccb = L.AwesomeMarkers.icon(
+            var icon_f77e19d818a290dd8a6e46937a10fa3b = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_09964636468beb150a6d9e1b2ecb6397.setIcon(icon_6abd4a09bbecc08f1128c776153e2ccb);
+            marker_0004029e90b700b257e69cca1d6de13b.setIcon(icon_f77e19d818a290dd8a6e46937a10fa3b);
         
     
-        var popup_cbb9dbb674645f9d73556897d26b64e0 = L.popup({"maxWidth": "100%"});
+        var popup_74516e4152a7212536d78db52f1fd6f3 = L.popup({"maxWidth": "100%"});
 
         
-            var html_860704b4c0b30553e33ca06b487d6c03 = $(`<div id="html_860704b4c0b30553e33ca06b487d6c03" style="width: 100.0%; height: 100.0%;"><b>Dansac</b> <a href='https://https://www.dansac.dk/da-dk' target='_blank'>https://www.dansac.dk/da-dk</a>   Dansac udvikler, producerer og markedsfører unikke stomiplejeprodukter, der opfylder behovene hos folk med stomi – og hos de folk, der leverer stomipleje. Vores produkter er designet til at løse specifikke problemer og forbedre livskvaliteten for alle de mennesker, der bruger dem.</div>`)[0];
-            popup_cbb9dbb674645f9d73556897d26b64e0.setContent(html_860704b4c0b30553e33ca06b487d6c03);
+            var html_56bc2856d6c9d7cbba84c61c3402e480 = $(`<div id="html_56bc2856d6c9d7cbba84c61c3402e480" style="width: 100.0%; height: 100.0%;"><b>Dansac</b> <a href='https://https://www.dansac.dk/da-dk' target='_blank'>https://www.dansac.dk/da-dk</a>   Dansac udvikler, producerer og markedsfører unikke stomiplejeprodukter, der opfylder behovene hos folk med stomi – og hos de folk, der leverer stomipleje. Vores produkter er designet til at løse specifikke problemer og forbedre livskvaliteten for alle de mennesker, der bruger dem.</div>`)[0];
+            popup_74516e4152a7212536d78db52f1fd6f3.setContent(html_56bc2856d6c9d7cbba84c61c3402e480);
         
 
-        marker_09964636468beb150a6d9e1b2ecb6397.bindPopup(popup_cbb9dbb674645f9d73556897d26b64e0)
+        marker_0004029e90b700b257e69cca1d6de13b.bindPopup(popup_74516e4152a7212536d78db52f1fd6f3)
         ;
 
         
     
     
-            marker_09964636468beb150a6d9e1b2ecb6397.bindTooltip(
+            marker_0004029e90b700b257e69cca1d6de13b.bindTooltip(
                 `<div>
                      Dansac
                  </div>`,
@@ -967,32 +968,32 @@
             );
         
     
-            var marker_35a2d2d3a634476a514add27aaf110d5 = L.marker(
+            var marker_ddcd50a83ae73c61640a801b74c951c3 = L.marker(
                 [57.02592308, 9.921649543],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_250912762027482a6cdc3fbba876077b = L.AwesomeMarkers.icon(
+            var icon_19cce15a9b02c4ef6b2dfeed3b6e84ed = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_35a2d2d3a634476a514add27aaf110d5.setIcon(icon_250912762027482a6cdc3fbba876077b);
+            marker_ddcd50a83ae73c61640a801b74c951c3.setIcon(icon_19cce15a9b02c4ef6b2dfeed3b6e84ed);
         
     
-        var popup_a20fc0bf01cde3210ec72bbcb865869b = L.popup({"maxWidth": "100%"});
+        var popup_24889ab3baee4f04aa3b21da98b05a95 = L.popup({"maxWidth": "100%"});
 
         
-            var html_111c8e67e0e1f3e46a172d4950392466 = $(`<div id="html_111c8e67e0e1f3e46a172d4950392466" style="width: 100.0%; height: 100.0%;"><b>Dansk Retursystem</b> <a href='https://https://danskretursystem.dk/' target='_blank'>https://danskretursystem.dk/</a>   Dansk Retursystem has developed the Returkampen, an experience-based and creative learning concept, the purpose of which is to create enthusiasm and increased focus on recycling and circular economy among children and young people in primary schools. If you want to know more about the Returkampen and how to register your class, click on the link below.</div>`)[0];
-            popup_a20fc0bf01cde3210ec72bbcb865869b.setContent(html_111c8e67e0e1f3e46a172d4950392466);
+            var html_058b9e6487ec6aa2b206a160ac34bbfa = $(`<div id="html_058b9e6487ec6aa2b206a160ac34bbfa" style="width: 100.0%; height: 100.0%;"><b>Dansk Retursystem</b> <a href='https://https://danskretursystem.dk/' target='_blank'>https://danskretursystem.dk/</a>   Dansk Retursystem has developed the Returkampen, an experience-based and creative learning concept, the purpose of which is to create enthusiasm and increased focus on recycling and circular economy among children and young people in primary schools. If you want to know more about the Returkampen and how to register your class, click on the link below.</div>`)[0];
+            popup_24889ab3baee4f04aa3b21da98b05a95.setContent(html_058b9e6487ec6aa2b206a160ac34bbfa);
         
 
-        marker_35a2d2d3a634476a514add27aaf110d5.bindPopup(popup_a20fc0bf01cde3210ec72bbcb865869b)
+        marker_ddcd50a83ae73c61640a801b74c951c3.bindPopup(popup_24889ab3baee4f04aa3b21da98b05a95)
         ;
 
         
     
     
-            marker_35a2d2d3a634476a514add27aaf110d5.bindTooltip(
+            marker_ddcd50a83ae73c61640a801b74c951c3.bindTooltip(
                 `<div>
                      Dansk Retursystem
                  </div>`,
@@ -1000,32 +1001,32 @@
             );
         
     
-            var marker_e7f97d0285445b55aca4508cc3de4975 = L.marker(
+            var marker_11c08d665f7f8d7b2422a649ebb55348 = L.marker(
                 [55.69226488, 12.61286551],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_06ec57d64dfc590a4c64997567f35355 = L.AwesomeMarkers.icon(
+            var icon_b28f1e51c08b9f007af05e03073a6117 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_e7f97d0285445b55aca4508cc3de4975.setIcon(icon_06ec57d64dfc590a4c64997567f35355);
+            marker_11c08d665f7f8d7b2422a649ebb55348.setIcon(icon_b28f1e51c08b9f007af05e03073a6117);
         
     
-        var popup_249ce1bc651dda6b7f8171cd6f553454 = L.popup({"maxWidth": "100%"});
+        var popup_50ae4e9ed3b369f84df0b11db3ccee74 = L.popup({"maxWidth": "100%"});
 
         
-            var html_7b3d2bd39b2f63f1c5ebabf0cabd530e = $(`<div id="html_7b3d2bd39b2f63f1c5ebabf0cabd530e" style="width: 100.0%; height: 100.0%;"><b>Empirical</b> <a href='https://https://empirical.co/' target='_blank'>https://empirical.co/</a>   Empirical is a flavor company. Let us explain what that means. Subscribe for product launches, events and whatever else we think of. linkin.bio/empiricalcph.</div>`)[0];
-            popup_249ce1bc651dda6b7f8171cd6f553454.setContent(html_7b3d2bd39b2f63f1c5ebabf0cabd530e);
+            var html_b012c9680684bfa13b861f1545476f4b = $(`<div id="html_b012c9680684bfa13b861f1545476f4b" style="width: 100.0%; height: 100.0%;"><b>Empirical</b> <a href='https://https://empirical.co/' target='_blank'>https://empirical.co/</a>   Empirical is a flavor company. Let us explain what that means. Subscribe for product launches, events and whatever else we think of. linkin.bio/empiricalcph.</div>`)[0];
+            popup_50ae4e9ed3b369f84df0b11db3ccee74.setContent(html_b012c9680684bfa13b861f1545476f4b);
         
 
-        marker_e7f97d0285445b55aca4508cc3de4975.bindPopup(popup_249ce1bc651dda6b7f8171cd6f553454)
+        marker_11c08d665f7f8d7b2422a649ebb55348.bindPopup(popup_50ae4e9ed3b369f84df0b11db3ccee74)
         ;
 
         
     
     
-            marker_e7f97d0285445b55aca4508cc3de4975.bindTooltip(
+            marker_11c08d665f7f8d7b2422a649ebb55348.bindTooltip(
                 `<div>
                      Empirical
                  </div>`,
@@ -1033,32 +1034,32 @@
             );
         
     
-            var marker_f7765a0eca37a87086f2888a5ed4ee1b = L.marker(
+            var marker_f295222118004b10ef1eef22916dc508 = L.marker(
                 [55.57517869, 12.10542213],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_0cafd6a9666f6b05a8e2d3ceb7e07c25 = L.AwesomeMarkers.icon(
+            var icon_ae2142249ef9d628e6e107e6e03430d2 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_f7765a0eca37a87086f2888a5ed4ee1b.setIcon(icon_0cafd6a9666f6b05a8e2d3ceb7e07c25);
+            marker_f295222118004b10ef1eef22916dc508.setIcon(icon_ae2142249ef9d628e6e107e6e03430d2);
         
     
-        var popup_32f17b4d53e84ffd815e5a0b2a691fc7 = L.popup({"maxWidth": "100%"});
+        var popup_a47032f601cde62d5688133a0ff136a0 = L.popup({"maxWidth": "100%"});
 
         
-            var html_a1d60bb0b8edbd473cac51772f0a5a32 = $(`<div id="html_a1d60bb0b8edbd473cac51772f0a5a32" style="width: 100.0%; height: 100.0%;"><b>Esti Chem</b> <a href='https://https://estichem.com/' target='_blank'>https://estichem.com/</a>   Esti Chem, green chemistry,environment. Development, sustainable raw materials, Formulation Ingredients,Formulation Technology,Developments.</div>`)[0];
-            popup_32f17b4d53e84ffd815e5a0b2a691fc7.setContent(html_a1d60bb0b8edbd473cac51772f0a5a32);
+            var html_850332e008ce65a80eae195f23be40a6 = $(`<div id="html_850332e008ce65a80eae195f23be40a6" style="width: 100.0%; height: 100.0%;"><b>Esti Chem</b> <a href='https://https://estichem.com/' target='_blank'>https://estichem.com/</a>   Esti Chem, green chemistry,environment. Development, sustainable raw materials, Formulation Ingredients,Formulation Technology,Developments.</div>`)[0];
+            popup_a47032f601cde62d5688133a0ff136a0.setContent(html_850332e008ce65a80eae195f23be40a6);
         
 
-        marker_f7765a0eca37a87086f2888a5ed4ee1b.bindPopup(popup_32f17b4d53e84ffd815e5a0b2a691fc7)
+        marker_f295222118004b10ef1eef22916dc508.bindPopup(popup_a47032f601cde62d5688133a0ff136a0)
         ;
 
         
     
     
-            marker_f7765a0eca37a87086f2888a5ed4ee1b.bindTooltip(
+            marker_f295222118004b10ef1eef22916dc508.bindTooltip(
                 `<div>
                      Esti Chem
                  </div>`,
@@ -1066,32 +1067,32 @@
             );
         
     
-            var marker_d67fb9d65d290072e499b906b1ce707e = L.marker(
+            var marker_eddd3ac18e72d5a7e726c7cfab911011 = L.marker(
                 [56.17324956, 10.18964658],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_becd3139cbd5fbdfa4883cdde21532d5 = L.AwesomeMarkers.icon(
+            var icon_9c6d56105d1a5b332e5b90cca1b30847 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_d67fb9d65d290072e499b906b1ce707e.setIcon(icon_becd3139cbd5fbdfa4883cdde21532d5);
+            marker_eddd3ac18e72d5a7e726c7cfab911011.setIcon(icon_9c6d56105d1a5b332e5b90cca1b30847);
         
     
-        var popup_26cfaa25a4d8c641d2fce973aab7c071 = L.popup({"maxWidth": "100%"});
+        var popup_aaa6d26e07911a75eed10c63c53f9e8b = L.popup({"maxWidth": "100%"});
 
         
-            var html_d3a4ab3293b730e558cbdb9fdd84faf3 = $(`<div id="html_d3a4ab3293b730e558cbdb9fdd84faf3" style="width: 100.0%; height: 100.0%;"><b>Exigo</b> <a href='https://https://exigoconsult.com/' target='_blank'>https://exigoconsult.com/</a>   Exigo’s advice is data driven. And that makes us special. We will inform you about the benefits and risks of the different scenarios for you to make well-informed and sound decisions.</div>`)[0];
-            popup_26cfaa25a4d8c641d2fce973aab7c071.setContent(html_d3a4ab3293b730e558cbdb9fdd84faf3);
+            var html_a5f9d6bb0002166e31efae9f24b82ed5 = $(`<div id="html_a5f9d6bb0002166e31efae9f24b82ed5" style="width: 100.0%; height: 100.0%;"><b>Exigo</b> <a href='https://https://exigoconsult.com/' target='_blank'>https://exigoconsult.com/</a>   Exigo’s advice is data driven. And that makes us special. We will inform you about the benefits and risks of the different scenarios for you to make well-informed and sound decisions.</div>`)[0];
+            popup_aaa6d26e07911a75eed10c63c53f9e8b.setContent(html_a5f9d6bb0002166e31efae9f24b82ed5);
         
 
-        marker_d67fb9d65d290072e499b906b1ce707e.bindPopup(popup_26cfaa25a4d8c641d2fce973aab7c071)
+        marker_eddd3ac18e72d5a7e726c7cfab911011.bindPopup(popup_aaa6d26e07911a75eed10c63c53f9e8b)
         ;
 
         
     
     
-            marker_d67fb9d65d290072e499b906b1ce707e.bindTooltip(
+            marker_eddd3ac18e72d5a7e726c7cfab911011.bindTooltip(
                 `<div>
                      Exigo
                  </div>`,
@@ -1099,32 +1100,32 @@
             );
         
     
-            var marker_1c4cc70d5fdbde9a70b1904def7ac918 = L.marker(
+            var marker_ab883c41ab067aba8593f2ef172817b6 = L.marker(
                 [55.64893126, 12.55006952],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_17f97509661db8d5fcee741ca5fad96b = L.AwesomeMarkers.icon(
+            var icon_c77590cf480247a031302ca00cd41890 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_1c4cc70d5fdbde9a70b1904def7ac918.setIcon(icon_17f97509661db8d5fcee741ca5fad96b);
+            marker_ab883c41ab067aba8593f2ef172817b6.setIcon(icon_c77590cf480247a031302ca00cd41890);
         
     
-        var popup_2332bfbd3075477bed8576ca8205d0d0 = L.popup({"maxWidth": "100%"});
+        var popup_49d72b0d321e4d5d23a577cfc87f1aee = L.popup({"maxWidth": "100%"});
 
         
-            var html_ba3aa85bb5162bbd1791582a3954230b = $(`<div id="html_ba3aa85bb5162bbd1791582a3954230b" style="width: 100.0%; height: 100.0%;"><b>FaunaPhotonics</b> <a href='https://https://faunaphotonics.com/' target='_blank'>https://faunaphotonics.com/</a>   FaunaPhotonics is positioned at the intersection of two global megatrends: Precision agriculture and biodiversity.We are building next generation real-time insect monitoring technology. By bringing a new technology to the market, we will fill gaps in knowledge of insect populations. We are unmatched in product scale and breadth within automated optical sensing of flying insects in precision agriculture and beyond, uniquely positioned vs competition to providing missing data for optimizing/protecting crop yield and biodiversity while pursuing mobile solutions for autonomous monitoring and precision spraying. Our technology is continuously tested in the field by leading commercial companies within ag-chem, seed and food production as well as equipment manufacturers, and by globally renowned academic institutions and testing authorities. These tests provide us with the technical and scientific validation needed to develop our commercial business at scale. Our mission is to become the leader in delivering data enabling solutions for sustainable and smarter crop management and biodiversity monitoring, with additional opportunities in public health (vector control) and aqua-culture.</div>`)[0];
-            popup_2332bfbd3075477bed8576ca8205d0d0.setContent(html_ba3aa85bb5162bbd1791582a3954230b);
+            var html_fab991f67d1287a13ea220dd894c4c23 = $(`<div id="html_fab991f67d1287a13ea220dd894c4c23" style="width: 100.0%; height: 100.0%;"><b>FaunaPhotonics</b> <a href='https://https://faunaphotonics.com/' target='_blank'>https://faunaphotonics.com/</a>   FaunaPhotonics is positioned at the intersection of two global megatrends: Precision agriculture and biodiversity.We are building next generation real-time insect monitoring technology. By bringing a new technology to the market, we will fill gaps in knowledge of insect populations. We are unmatched in product scale and breadth within automated optical sensing of flying insects in precision agriculture and beyond, uniquely positioned vs competition to providing missing data for optimizing/protecting crop yield and biodiversity while pursuing mobile solutions for autonomous monitoring and precision spraying. Our technology is continuously tested in the field by leading commercial companies within ag-chem, seed and food production as well as equipment manufacturers, and by globally renowned academic institutions and testing authorities. These tests provide us with the technical and scientific validation needed to develop our commercial business at scale. Our mission is to become the leader in delivering data enabling solutions for sustainable and smarter crop management and biodiversity monitoring, with additional opportunities in public health (vector control) and aqua-culture.</div>`)[0];
+            popup_49d72b0d321e4d5d23a577cfc87f1aee.setContent(html_fab991f67d1287a13ea220dd894c4c23);
         
 
-        marker_1c4cc70d5fdbde9a70b1904def7ac918.bindPopup(popup_2332bfbd3075477bed8576ca8205d0d0)
+        marker_ab883c41ab067aba8593f2ef172817b6.bindPopup(popup_49d72b0d321e4d5d23a577cfc87f1aee)
         ;
 
         
     
     
-            marker_1c4cc70d5fdbde9a70b1904def7ac918.bindTooltip(
+            marker_ab883c41ab067aba8593f2ef172817b6.bindTooltip(
                 `<div>
                      FaunaPhotonics
                  </div>`,
@@ -1132,32 +1133,32 @@
             );
         
     
-            var marker_da6b01722b0c3490bf127b15f7fe18b3 = L.marker(
+            var marker_fbe69c10e78ab53472b8d3c1f7d7b917 = L.marker(
                 [56.107817, 10.14393501],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_4f77420ae87e99922e7010fd03a3f925 = L.AwesomeMarkers.icon(
+            var icon_474a3cc218d799ee7a673cfa12773f1c = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_da6b01722b0c3490bf127b15f7fe18b3.setIcon(icon_4f77420ae87e99922e7010fd03a3f925);
+            marker_fbe69c10e78ab53472b8d3c1f7d7b917.setIcon(icon_474a3cc218d799ee7a673cfa12773f1c);
         
     
-        var popup_f7f01f7e4bf001d6dd00cf01939ed65e = L.popup({"maxWidth": "100%"});
+        var popup_4b6e142a9c1a358be56af01d4a18df25 = L.popup({"maxWidth": "100%"});
 
         
-            var html_ca9aa078e3d5740112c6fe2976d58957 = $(`<div id="html_ca9aa078e3d5740112c6fe2976d58957" style="width: 100.0%; height: 100.0%;"><b>Frontier Film</b> <a href='https://https://www.frontierfilm.dk/' target='_blank'>https://www.frontierfilm.dk/</a>   Frontier is well-known in Denmark for its production of commercials and for its TV programs for children and adults, which are characterized by innovation and high standards. In fact Frontier is the single largest producer of children's TV for TV2/Denmark (one of two broadcasters in Denmark). Frontier has been recommended for a nomination to an Emmy for a youth program and has participated in the short film and documentary film festival in Berlin with a documentary film entry. Children and parents in Denmark have been entertained on national TV by Frontier's Christmas series in twenty-four episodes. First All Time's Christmas, then All Time's Santa and finally, All Time's Father Christmas and latest Island of the Pixies. The ratings for these primetime shows have only been beaten by the national football team.</div>`)[0];
-            popup_f7f01f7e4bf001d6dd00cf01939ed65e.setContent(html_ca9aa078e3d5740112c6fe2976d58957);
+            var html_bbbbac60f62406f19af6f9da12c8e833 = $(`<div id="html_bbbbac60f62406f19af6f9da12c8e833" style="width: 100.0%; height: 100.0%;"><b>Frontier Film</b> <a href='https://https://www.frontierfilm.dk/' target='_blank'>https://www.frontierfilm.dk/</a>   Frontier is well-known in Denmark for its production of commercials and for its TV programs for children and adults, which are characterized by innovation and high standards. In fact Frontier is the single largest producer of children's TV for TV2/Denmark (one of two broadcasters in Denmark). Frontier has been recommended for a nomination to an Emmy for a youth program and has participated in the short film and documentary film festival in Berlin with a documentary film entry. Children and parents in Denmark have been entertained on national TV by Frontier's Christmas series in twenty-four episodes. First All Time's Christmas, then All Time's Santa and finally, All Time's Father Christmas and latest Island of the Pixies. The ratings for these primetime shows have only been beaten by the national football team.</div>`)[0];
+            popup_4b6e142a9c1a358be56af01d4a18df25.setContent(html_bbbbac60f62406f19af6f9da12c8e833);
         
 
-        marker_da6b01722b0c3490bf127b15f7fe18b3.bindPopup(popup_f7f01f7e4bf001d6dd00cf01939ed65e)
+        marker_fbe69c10e78ab53472b8d3c1f7d7b917.bindPopup(popup_4b6e142a9c1a358be56af01d4a18df25)
         ;
 
         
     
     
-            marker_da6b01722b0c3490bf127b15f7fe18b3.bindTooltip(
+            marker_fbe69c10e78ab53472b8d3c1f7d7b917.bindTooltip(
                 `<div>
                      Frontier Film
                  </div>`,
@@ -1165,32 +1166,32 @@
             );
         
     
-            var marker_935f6a036c24fbfa509770e64bd9acd0 = L.marker(
+            var marker_f8541d9fa065cb90038194310c54e02f = L.marker(
                 [56.11437129, 10.19320071],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_0dc438275ebdc9f27650a312b6088587 = L.AwesomeMarkers.icon(
+            var icon_64990b01b1af54895e90c7cd38271ecd = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_935f6a036c24fbfa509770e64bd9acd0.setIcon(icon_0dc438275ebdc9f27650a312b6088587);
+            marker_f8541d9fa065cb90038194310c54e02f.setIcon(icon_64990b01b1af54895e90c7cd38271ecd);
         
     
-        var popup_59cd9fea5039e0338d0ad92743fadcb4 = L.popup({"maxWidth": "100%"});
+        var popup_e941d8b469787ea1ae7820c20820ed58 = L.popup({"maxWidth": "100%"});
 
         
-            var html_ccc0c4bb42d15a78fec61b0bc5ee8058 = $(`<div id="html_ccc0c4bb42d15a78fec61b0bc5ee8058" style="width: 100.0%; height: 100.0%;"><b>HMF</b> <a href='https://https://dk.hmfcranes.com/' target='_blank'>https://dk.hmfcranes.com/</a>   We specialize in the development of truck-mounted cranes. Our focus has always been to optimize our cranes' strong and clean design, operational reliability, lifting capacity in relation to dead weight, reach, size andinstallation dimensions. </div>`)[0];
-            popup_59cd9fea5039e0338d0ad92743fadcb4.setContent(html_ccc0c4bb42d15a78fec61b0bc5ee8058);
+            var html_d8abfb96b8361162998b1bf8fcb49882 = $(`<div id="html_d8abfb96b8361162998b1bf8fcb49882" style="width: 100.0%; height: 100.0%;"><b>HMF</b> <a href='https://https://dk.hmfcranes.com/' target='_blank'>https://dk.hmfcranes.com/</a>   We specialize in the development of truck-mounted cranes. Our focus has always been to optimize our cranes' strong and clean design, operational reliability, lifting capacity in relation to dead weight, reach, size andinstallation dimensions. </div>`)[0];
+            popup_e941d8b469787ea1ae7820c20820ed58.setContent(html_d8abfb96b8361162998b1bf8fcb49882);
         
 
-        marker_935f6a036c24fbfa509770e64bd9acd0.bindPopup(popup_59cd9fea5039e0338d0ad92743fadcb4)
+        marker_f8541d9fa065cb90038194310c54e02f.bindPopup(popup_e941d8b469787ea1ae7820c20820ed58)
         ;
 
         
     
     
-            marker_935f6a036c24fbfa509770e64bd9acd0.bindTooltip(
+            marker_f8541d9fa065cb90038194310c54e02f.bindTooltip(
                 `<div>
                      HMF
                  </div>`,
@@ -1198,32 +1199,32 @@
             );
         
     
-            var marker_cd8bf5472bd3dd390f2fe4989aec3fe8 = L.marker(
+            var marker_a36f895981d6e3e36e7e6922a93b5f3b = L.marker(
                 [56.25639277, 8.793744485],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_cb16b6298cd8c2ce7eaed0c25aef629f = L.AwesomeMarkers.icon(
+            var icon_31ad56c4f6d30ff971350c8393373069 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_cd8bf5472bd3dd390f2fe4989aec3fe8.setIcon(icon_cb16b6298cd8c2ce7eaed0c25aef629f);
+            marker_a36f895981d6e3e36e7e6922a93b5f3b.setIcon(icon_31ad56c4f6d30ff971350c8393373069);
         
     
-        var popup_f097414c6414215731a9805a26e6b0ea = L.popup({"maxWidth": "100%"});
+        var popup_d2edd6fe8e7dad9609abb25fb8b9b9d2 = L.popup({"maxWidth": "100%"});
 
         
-            var html_ccaab2f4eb6764e8187413bdf58015bd = $(`<div id="html_ccaab2f4eb6764e8187413bdf58015bd" style="width: 100.0%; height: 100.0%;"><b>HORN Bordplader</b> <a href='https://https://www.hornbordplader.dk/' target='_blank'>https://www.hornbordplader.dk/</a>   HORN ønsker at gentænke kvalitetsbegrebet. Dette gør vi gennem grundige overvejelser om vores rødder, CSR profil, værdisæt, indhentning af certificerede produkter, læring, uddannelse & vidensdeling, løbende udvikling og innovation der sikrer optimal materiale udnyttelser og hertil selvfølgelig en effektiv produktion og overholdelse af internationalt gældende love og reguleringer.</div>`)[0];
-            popup_f097414c6414215731a9805a26e6b0ea.setContent(html_ccaab2f4eb6764e8187413bdf58015bd);
+            var html_bba708697e8ed5a0744e0dde6f488913 = $(`<div id="html_bba708697e8ed5a0744e0dde6f488913" style="width: 100.0%; height: 100.0%;"><b>HORN Bordplader</b> <a href='https://https://www.hornbordplader.dk/' target='_blank'>https://www.hornbordplader.dk/</a>   HORN ønsker at gentænke kvalitetsbegrebet. Dette gør vi gennem grundige overvejelser om vores rødder, CSR profil, værdisæt, indhentning af certificerede produkter, læring, uddannelse & vidensdeling, løbende udvikling og innovation der sikrer optimal materiale udnyttelser og hertil selvfølgelig en effektiv produktion og overholdelse af internationalt gældende love og reguleringer.</div>`)[0];
+            popup_d2edd6fe8e7dad9609abb25fb8b9b9d2.setContent(html_bba708697e8ed5a0744e0dde6f488913);
         
 
-        marker_cd8bf5472bd3dd390f2fe4989aec3fe8.bindPopup(popup_f097414c6414215731a9805a26e6b0ea)
+        marker_a36f895981d6e3e36e7e6922a93b5f3b.bindPopup(popup_d2edd6fe8e7dad9609abb25fb8b9b9d2)
         ;
 
         
     
     
-            marker_cd8bf5472bd3dd390f2fe4989aec3fe8.bindTooltip(
+            marker_a36f895981d6e3e36e7e6922a93b5f3b.bindTooltip(
                 `<div>
                      HORN Bordplader
                  </div>`,
@@ -1231,32 +1232,32 @@
             );
         
     
-            var marker_290206d1cb79c5959ec2a45205a0a518 = L.marker(
+            var marker_6aba43d971141ed3e8b27ada16d27019 = L.marker(
                 [55.45133173, 11.79267204],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_46f293563589e2f445b5979f947ada42 = L.AwesomeMarkers.icon(
+            var icon_695597f16d68acedfb577a7198288652 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_290206d1cb79c5959ec2a45205a0a518.setIcon(icon_46f293563589e2f445b5979f947ada42);
+            marker_6aba43d971141ed3e8b27ada16d27019.setIcon(icon_695597f16d68acedfb577a7198288652);
         
     
-        var popup_3e3729eacffa3872e0421db9a046abab = L.popup({"maxWidth": "100%"});
+        var popup_b223891556bfef7e8578fef659b2ffa7 = L.popup({"maxWidth": "100%"});
 
         
-            var html_cbe499434e2ddcf564ce88b394ce80b7 = $(`<div id="html_cbe499434e2ddcf564ce88b394ce80b7" style="width: 100.0%; height: 100.0%;"><b>HOVMAND</b> <a href='https://https://hovmand.com/da_dk/?utm_term=hovmand&utm_campaign=DK:+L%C3%B8fteudstyr+Exact&utm_source=adwords&utm_medium=ppc&hsa_acc=3459539300&hsa_cam=15230887911&hsa_grp=129152664149&hsa_ad=575978146554&hsa_src=g&hsa_tgt=kwd-13367446&hsa_kw=hovmand&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=CjwKCAjw6fyXBhBgEiwAhhiZss2JBPno839ANuasfuAhP1_Eazw0RIN6mICD-FcH8e4bHa19Pi1T7BoCc6EQAvD_BwE' target='_blank'>https://hovmand.com/da_dk/?utm_term=hovmand&utm_campaign=DK:+L%C3%B8fteudstyr+Exact&utm_source=adwords&utm_medium=ppc&hsa_acc=3459539300&hsa_cam=15230887911&hsa_grp=129152664149&hsa_ad=575978146554&hsa_src=g&hsa_tgt=kwd-13367446&hsa_kw=hovmand&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=CjwKCAjw6fyXBhBgEiwAhhiZss2JBPno839ANuasfuAhP1_Eazw0RIN6mICD-FcH8e4bHa19Pi1T7BoCc6EQAvD_BwE</a>   Hovmand is the world-leading manufacturer of mobile, battery-powered lifters. For nearly 50 years, we have been improving efficiency and working conditions in the area of material handling. Our innovative lifting solutions help customers all over the world improve ergonomics and create more productive workflows.</div>`)[0];
-            popup_3e3729eacffa3872e0421db9a046abab.setContent(html_cbe499434e2ddcf564ce88b394ce80b7);
+            var html_0f9945da4c85eb4af4a30d415be1e329 = $(`<div id="html_0f9945da4c85eb4af4a30d415be1e329" style="width: 100.0%; height: 100.0%;"><b>HOVMAND</b> <a href='https://https://hovmand.com/da_dk/?utm_term=hovmand&utm_campaign=DK:+L%C3%B8fteudstyr+Exact&utm_source=adwords&utm_medium=ppc&hsa_acc=3459539300&hsa_cam=15230887911&hsa_grp=129152664149&hsa_ad=575978146554&hsa_src=g&hsa_tgt=kwd-13367446&hsa_kw=hovmand&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=CjwKCAjw6fyXBhBgEiwAhhiZss2JBPno839ANuasfuAhP1_Eazw0RIN6mICD-FcH8e4bHa19Pi1T7BoCc6EQAvD_BwE' target='_blank'>https://hovmand.com/da_dk/?utm_term=hovmand&utm_campaign=DK:+L%C3%B8fteudstyr+Exact&utm_source=adwords&utm_medium=ppc&hsa_acc=3459539300&hsa_cam=15230887911&hsa_grp=129152664149&hsa_ad=575978146554&hsa_src=g&hsa_tgt=kwd-13367446&hsa_kw=hovmand&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=CjwKCAjw6fyXBhBgEiwAhhiZss2JBPno839ANuasfuAhP1_Eazw0RIN6mICD-FcH8e4bHa19Pi1T7BoCc6EQAvD_BwE</a>   Hovmand is the world-leading manufacturer of mobile, battery-powered lifters. For nearly 50 years, we have been improving efficiency and working conditions in the area of material handling. Our innovative lifting solutions help customers all over the world improve ergonomics and create more productive workflows.</div>`)[0];
+            popup_b223891556bfef7e8578fef659b2ffa7.setContent(html_0f9945da4c85eb4af4a30d415be1e329);
         
 
-        marker_290206d1cb79c5959ec2a45205a0a518.bindPopup(popup_3e3729eacffa3872e0421db9a046abab)
+        marker_6aba43d971141ed3e8b27ada16d27019.bindPopup(popup_b223891556bfef7e8578fef659b2ffa7)
         ;
 
         
     
     
-            marker_290206d1cb79c5959ec2a45205a0a518.bindTooltip(
+            marker_6aba43d971141ed3e8b27ada16d27019.bindTooltip(
                 `<div>
                      HOVMAND
                  </div>`,
@@ -1264,32 +1265,32 @@
             );
         
     
-            var marker_a2f486c462272ce2a542e5e015218e26 = L.marker(
+            var marker_4157bbb9543679760fd44a20c5c5c1ef = L.marker(
                 [57.04738039, 9.944874183],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_241aebe6b1aceaa3d82a65486405a228 = L.AwesomeMarkers.icon(
+            var icon_b56f9ea8c383a7899eb9647f1be3d3fd = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_a2f486c462272ce2a542e5e015218e26.setIcon(icon_241aebe6b1aceaa3d82a65486405a228);
+            marker_4157bbb9543679760fd44a20c5c5c1ef.setIcon(icon_b56f9ea8c383a7899eb9647f1be3d3fd);
         
     
-        var popup_f990a17413f5867216fb0a3fca355e9b = L.popup({"maxWidth": "100%"});
+        var popup_dbfdd9a169d37c8d72d11b91a642639d = L.popup({"maxWidth": "100%"});
 
         
-            var html_f3bef79e93536dd7f512eac6a66823f7 = $(`<div id="html_f3bef79e93536dd7f512eac6a66823f7" style="width: 100.0%; height: 100.0%;"><b>Inropa</b> <a href='https://https://www.inropa.com/' target='_blank'>https://www.inropa.com/</a>   Inropa means Intelligent Robot Painting. We develop and sell software for programming of industrial robots, vision systems, and 3D scanning equipment. We specialize in automatic, semi-automatic and offline programming systems for paint and surface treatment robots</div>`)[0];
-            popup_f990a17413f5867216fb0a3fca355e9b.setContent(html_f3bef79e93536dd7f512eac6a66823f7);
+            var html_4c5df4920cf64df4342daa3db7a4d466 = $(`<div id="html_4c5df4920cf64df4342daa3db7a4d466" style="width: 100.0%; height: 100.0%;"><b>Inropa</b> <a href='https://https://www.inropa.com/' target='_blank'>https://www.inropa.com/</a>   Inropa means Intelligent Robot Painting. We develop and sell software for programming of industrial robots, vision systems, and 3D scanning equipment. We specialize in automatic, semi-automatic and offline programming systems for paint and surface treatment robots</div>`)[0];
+            popup_dbfdd9a169d37c8d72d11b91a642639d.setContent(html_4c5df4920cf64df4342daa3db7a4d466);
         
 
-        marker_a2f486c462272ce2a542e5e015218e26.bindPopup(popup_f990a17413f5867216fb0a3fca355e9b)
+        marker_4157bbb9543679760fd44a20c5c5c1ef.bindPopup(popup_dbfdd9a169d37c8d72d11b91a642639d)
         ;
 
         
     
     
-            marker_a2f486c462272ce2a542e5e015218e26.bindTooltip(
+            marker_4157bbb9543679760fd44a20c5c5c1ef.bindTooltip(
                 `<div>
                      Inropa
                  </div>`,
@@ -1297,32 +1298,32 @@
             );
         
     
-            var marker_636f01ac1a33f42594738771e982e5e3 = L.marker(
+            var marker_068b71991dc29a2883e35a96c7de0684 = L.marker(
                 [55.68244381, 12.50511484],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_e3f5f4359e2c329a13517fc4735f359b = L.AwesomeMarkers.icon(
+            var icon_51a7202cc71c21000c55e1e4d6c76394 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_636f01ac1a33f42594738771e982e5e3.setIcon(icon_e3f5f4359e2c329a13517fc4735f359b);
+            marker_068b71991dc29a2883e35a96c7de0684.setIcon(icon_51a7202cc71c21000c55e1e4d6c76394);
         
     
-        var popup_bc78dda7a741e2eadb6070d9c6031c72 = L.popup({"maxWidth": "100%"});
+        var popup_dca64a13a819c91f07b64e0379585d03 = L.popup({"maxWidth": "100%"});
 
         
-            var html_7976c8290d156217bd52db0a487cd0c0 = $(`<div id="html_7976c8290d156217bd52db0a487cd0c0" style="width: 100.0%; height: 100.0%;"><b>JJW Arkitekter</b> <a href='https://http://www.jjw.dk/' target='_blank'>http://www.jjw.dk/</a>   Vi gør de hverdagsrum, vi alle sammen har brug for, befinder os i og mødes igennem til noget helt særligt. Vores tilgang er at tage samfundsmæssigt ansvar og skabe skræddersyede rum, bygninger, bebyggelser og byrum, som rammer om livet og udveksling mellem mennesker</div>`)[0];
-            popup_bc78dda7a741e2eadb6070d9c6031c72.setContent(html_7976c8290d156217bd52db0a487cd0c0);
+            var html_e92e27df2f95f702c6867c2e60addacb = $(`<div id="html_e92e27df2f95f702c6867c2e60addacb" style="width: 100.0%; height: 100.0%;"><b>JJW Arkitekter</b> <a href='https://http://www.jjw.dk/' target='_blank'>http://www.jjw.dk/</a>   Vi gør de hverdagsrum, vi alle sammen har brug for, befinder os i og mødes igennem til noget helt særligt. Vores tilgang er at tage samfundsmæssigt ansvar og skabe skræddersyede rum, bygninger, bebyggelser og byrum, som rammer om livet og udveksling mellem mennesker</div>`)[0];
+            popup_dca64a13a819c91f07b64e0379585d03.setContent(html_e92e27df2f95f702c6867c2e60addacb);
         
 
-        marker_636f01ac1a33f42594738771e982e5e3.bindPopup(popup_bc78dda7a741e2eadb6070d9c6031c72)
+        marker_068b71991dc29a2883e35a96c7de0684.bindPopup(popup_dca64a13a819c91f07b64e0379585d03)
         ;
 
         
     
     
-            marker_636f01ac1a33f42594738771e982e5e3.bindTooltip(
+            marker_068b71991dc29a2883e35a96c7de0684.bindTooltip(
                 `<div>
                      JJW Arkitekter
                  </div>`,
@@ -1330,32 +1331,32 @@
             );
         
     
-            var marker_e365f4cfa826a4ec948b6ed1c055184e = L.marker(
+            var marker_27cc2e414b891bda9467e08e89746898 = L.marker(
                 [55.82039528, 12.25314502],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_13be9080e6ff21ed7261517e3a01e6d4 = L.AwesomeMarkers.icon(
+            var icon_79219b65704cec36f1c248bc3154b5f9 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_e365f4cfa826a4ec948b6ed1c055184e.setIcon(icon_13be9080e6ff21ed7261517e3a01e6d4);
+            marker_27cc2e414b891bda9467e08e89746898.setIcon(icon_79219b65704cec36f1c248bc3154b5f9);
         
     
-        var popup_928c11873852a3d130c38c0ead8ac433 = L.popup({"maxWidth": "100%"});
+        var popup_62e6bbecc9698072cb327c04fd7a5848 = L.popup({"maxWidth": "100%"});
 
         
-            var html_08f60d80b65c3324509e18fc27ebf7a2 = $(`<div id="html_08f60d80b65c3324509e18fc27ebf7a2" style="width: 100.0%; height: 100.0%;"><b>Kohberg</b> <a href='https://https://www.kohberg.dk/' target='_blank'>https://www.kohberg.dk/</a>   Alle skal have mulighed for at få godt brød hver dag. Det er dét, der driver os, og derfor vi går på arbejde hver dag. Vi har sat nogle klare rammer for vores virke og formuleret en vision, en mission og et værdisæt med ærlige og jordnære værdier</div>`)[0];
-            popup_928c11873852a3d130c38c0ead8ac433.setContent(html_08f60d80b65c3324509e18fc27ebf7a2);
+            var html_3353a3eeef985ed56065ce2ee2cb4f74 = $(`<div id="html_3353a3eeef985ed56065ce2ee2cb4f74" style="width: 100.0%; height: 100.0%;"><b>Kohberg</b> <a href='https://https://www.kohberg.dk/' target='_blank'>https://www.kohberg.dk/</a>   Alle skal have mulighed for at få godt brød hver dag. Det er dét, der driver os, og derfor vi går på arbejde hver dag. Vi har sat nogle klare rammer for vores virke og formuleret en vision, en mission og et værdisæt med ærlige og jordnære værdier</div>`)[0];
+            popup_62e6bbecc9698072cb327c04fd7a5848.setContent(html_3353a3eeef985ed56065ce2ee2cb4f74);
         
 
-        marker_e365f4cfa826a4ec948b6ed1c055184e.bindPopup(popup_928c11873852a3d130c38c0ead8ac433)
+        marker_27cc2e414b891bda9467e08e89746898.bindPopup(popup_62e6bbecc9698072cb327c04fd7a5848)
         ;
 
         
     
     
-            marker_e365f4cfa826a4ec948b6ed1c055184e.bindTooltip(
+            marker_27cc2e414b891bda9467e08e89746898.bindTooltip(
                 `<div>
                      Kohberg
                  </div>`,
@@ -1363,32 +1364,32 @@
             );
         
     
-            var marker_46e7161d30b837d78e7de46698001f0e = L.marker(
+            var marker_9492c9e1e8de733ad0ad836d4c90fe6d = L.marker(
                 [56.80168987, 9.499461083],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_3fd2c7bc707b8d75bbcb428342572239 = L.AwesomeMarkers.icon(
+            var icon_75eada77cb029873133b2f5efe5adf14 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_46e7161d30b837d78e7de46698001f0e.setIcon(icon_3fd2c7bc707b8d75bbcb428342572239);
+            marker_9492c9e1e8de733ad0ad836d4c90fe6d.setIcon(icon_75eada77cb029873133b2f5efe5adf14);
         
     
-        var popup_02353f2267b8fdca40b3073cf4db71dc = L.popup({"maxWidth": "100%"});
+        var popup_f89be9367c9771809bc54622e245bac4 = L.popup({"maxWidth": "100%"});
 
         
-            var html_bb79cd81211b8d46140f915589bd3fa1 = $(`<div id="html_bb79cd81211b8d46140f915589bd3fa1" style="width: 100.0%; height: 100.0%;"><b>Lyngsoe System</b> <a href='https://https://lyngsoesystems.com/' target='_blank'>https://lyngsoesystems.com/</a>   Lyngsoe Systems is a world leader in logistic solutions across the customer supply chain, offering real-time transparency, traceability and data capture.</div>`)[0];
-            popup_02353f2267b8fdca40b3073cf4db71dc.setContent(html_bb79cd81211b8d46140f915589bd3fa1);
+            var html_af5eb03a6ce48bee4e5f252c4ff1aece = $(`<div id="html_af5eb03a6ce48bee4e5f252c4ff1aece" style="width: 100.0%; height: 100.0%;"><b>Lyngsoe System</b> <a href='https://https://lyngsoesystems.com/' target='_blank'>https://lyngsoesystems.com/</a>   Lyngsoe Systems is a world leader in logistic solutions across the customer supply chain, offering real-time transparency, traceability and data capture.</div>`)[0];
+            popup_f89be9367c9771809bc54622e245bac4.setContent(html_af5eb03a6ce48bee4e5f252c4ff1aece);
         
 
-        marker_46e7161d30b837d78e7de46698001f0e.bindPopup(popup_02353f2267b8fdca40b3073cf4db71dc)
+        marker_9492c9e1e8de733ad0ad836d4c90fe6d.bindPopup(popup_f89be9367c9771809bc54622e245bac4)
         ;
 
         
     
     
-            marker_46e7161d30b837d78e7de46698001f0e.bindTooltip(
+            marker_9492c9e1e8de733ad0ad836d4c90fe6d.bindTooltip(
                 `<div>
                      Lyngsoe System
                  </div>`,
@@ -1396,32 +1397,32 @@
             );
         
     
-            var marker_159c2aae67a1260dde9f4a1f8ed24316 = L.marker(
+            var marker_137b028d7d4d2a7b35d1c18f427174a5 = L.marker(
                 [57.01288349, 9.988334371],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_ae4e6082b352c2b69e36778b195d273c = L.AwesomeMarkers.icon(
+            var icon_1c2aa6d86d2a35ed6f5146545b700a84 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_159c2aae67a1260dde9f4a1f8ed24316.setIcon(icon_ae4e6082b352c2b69e36778b195d273c);
+            marker_137b028d7d4d2a7b35d1c18f427174a5.setIcon(icon_1c2aa6d86d2a35ed6f5146545b700a84);
         
     
-        var popup_dab5e31fa85261008b32a602d941e2fb = L.popup({"maxWidth": "100%"});
+        var popup_65a4ee736dadd3229895c6110ca317e8 = L.popup({"maxWidth": "100%"});
 
         
-            var html_f48fb5de1fcbc4e68e1dbe2ae7c11dcc = $(`<div id="html_f48fb5de1fcbc4e68e1dbe2ae7c11dcc" style="width: 100.0%; height: 100.0%;"><b>Neogrid</b> <a href='https://https://neogrid.dk/' target='_blank'>https://neogrid.dk/</a>   Neogrid Technologies ApS is a cleantech company that works with intelligent energy visualization, monitoring and control. Here, knowledge and experience from wireless communication technology is used to develop Smart Grid solutions.</div>`)[0];
-            popup_dab5e31fa85261008b32a602d941e2fb.setContent(html_f48fb5de1fcbc4e68e1dbe2ae7c11dcc);
+            var html_f5b827452872275c6a6007705df2cc73 = $(`<div id="html_f5b827452872275c6a6007705df2cc73" style="width: 100.0%; height: 100.0%;"><b>Neogrid</b> <a href='https://https://neogrid.dk/' target='_blank'>https://neogrid.dk/</a>   Neogrid Technologies ApS is a cleantech company that works with intelligent energy visualization, monitoring and control. Here, knowledge and experience from wireless communication technology is used to develop Smart Grid solutions.</div>`)[0];
+            popup_65a4ee736dadd3229895c6110ca317e8.setContent(html_f5b827452872275c6a6007705df2cc73);
         
 
-        marker_159c2aae67a1260dde9f4a1f8ed24316.bindPopup(popup_dab5e31fa85261008b32a602d941e2fb)
+        marker_137b028d7d4d2a7b35d1c18f427174a5.bindPopup(popup_65a4ee736dadd3229895c6110ca317e8)
         ;
 
         
     
     
-            marker_159c2aae67a1260dde9f4a1f8ed24316.bindTooltip(
+            marker_137b028d7d4d2a7b35d1c18f427174a5.bindTooltip(
                 `<div>
                      Neogrid
                  </div>`,
@@ -1429,32 +1430,32 @@
             );
         
     
-            var marker_5f85663e92f76ac4c4621cc4cf66f922 = L.marker(
+            var marker_98d4c29277a84ad1683d80422ce62d90 = L.marker(
                 [55.68373225, 12.38948211],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_3e5ce311819a9f9ef46d1f3bc8e8f78b = L.AwesomeMarkers.icon(
+            var icon_182a6832cb8299e7b6deecf667c6458c = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_5f85663e92f76ac4c4621cc4cf66f922.setIcon(icon_3e5ce311819a9f9ef46d1f3bc8e8f78b);
+            marker_98d4c29277a84ad1683d80422ce62d90.setIcon(icon_182a6832cb8299e7b6deecf667c6458c);
         
     
-        var popup_8708885a4d659dcc1d07aa31660a3387 = L.popup({"maxWidth": "100%"});
+        var popup_bc9d916dfa8d00fa6fc53c7b773c0b46 = L.popup({"maxWidth": "100%"});
 
         
-            var html_48543b72ca9ad85b8dadd538fee46686 = $(`<div id="html_48543b72ca9ad85b8dadd538fee46686" style="width: 100.0%; height: 100.0%;"><b>Nethire</b> <a href='https://https://nethire.dk/' target='_blank'>https://nethire.dk/</a>   Nethire A/S was founded on 1 July 2017 as a direct outgrowth of the rental industry. Nethire's first task was to take over the license rights to the rental system of the same name from the sister company Garant Udlejning A/S. The rental system was then thoroughly modernized, with both a technological and functional upgrade, and a considerable number of new users have since joined the system. Based on an idea from the company's main shareholder, Nethire has since introduced Denmark's first sharing economy platform for the exchange of machines and tools - Nethire Community.</div>`)[0];
-            popup_8708885a4d659dcc1d07aa31660a3387.setContent(html_48543b72ca9ad85b8dadd538fee46686);
+            var html_645eda31680c3dd4ff7b48180099a615 = $(`<div id="html_645eda31680c3dd4ff7b48180099a615" style="width: 100.0%; height: 100.0%;"><b>Nethire</b> <a href='https://https://nethire.dk/' target='_blank'>https://nethire.dk/</a>   Nethire A/S was founded on 1 July 2017 as a direct outgrowth of the rental industry. Nethire's first task was to take over the license rights to the rental system of the same name from the sister company Garant Udlejning A/S. The rental system was then thoroughly modernized, with both a technological and functional upgrade, and a considerable number of new users have since joined the system. Based on an idea from the company's main shareholder, Nethire has since introduced Denmark's first sharing economy platform for the exchange of machines and tools - Nethire Community.</div>`)[0];
+            popup_bc9d916dfa8d00fa6fc53c7b773c0b46.setContent(html_645eda31680c3dd4ff7b48180099a615);
         
 
-        marker_5f85663e92f76ac4c4621cc4cf66f922.bindPopup(popup_8708885a4d659dcc1d07aa31660a3387)
+        marker_98d4c29277a84ad1683d80422ce62d90.bindPopup(popup_bc9d916dfa8d00fa6fc53c7b773c0b46)
         ;
 
         
     
     
-            marker_5f85663e92f76ac4c4621cc4cf66f922.bindTooltip(
+            marker_98d4c29277a84ad1683d80422ce62d90.bindTooltip(
                 `<div>
                      Nethire
                  </div>`,
@@ -1462,32 +1463,32 @@
             );
         
     
-            var marker_0171f839b6b9c8bb3b5c8bfaf381b315 = L.marker(
+            var marker_58e6d6295caf08ea652226a2a08c483e = L.marker(
                 [55.67445953, 12.59164704],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_95f918c3f15ba871f23ab6a0ee0eb042 = L.AwesomeMarkers.icon(
+            var icon_0e060d565b1ce8007657f069857fd6df = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_0171f839b6b9c8bb3b5c8bfaf381b315.setIcon(icon_95f918c3f15ba871f23ab6a0ee0eb042);
+            marker_58e6d6295caf08ea652226a2a08c483e.setIcon(icon_0e060d565b1ce8007657f069857fd6df);
         
     
-        var popup_5d4e51f159c8fda2ff1c36cfac6eec62 = L.popup({"maxWidth": "100%"});
+        var popup_3ecb0a399044e005143b3c7011b63f49 = L.popup({"maxWidth": "100%"});
 
         
-            var html_38791ad4a01c494950fe59e13950f5e8 = $(`<div id="html_38791ad4a01c494950fe59e13950f5e8" style="width: 100.0%; height: 100.0%;"><b>Northtech</b> <a href='https://https://northtech.dk/' target='_blank'>https://northtech.dk/</a>   For almost 20 years, we have been a preferred digital innovation and development partner for some of the largest and most successful organizations in Denmark. Our customers choose us because we are specialists in finding and developing solutions that others cannot. Our customer relationship is built on trust. We always solve the tasks in close cooperation with our customers and we always make sure that what we deliver works in practice.</div>`)[0];
-            popup_5d4e51f159c8fda2ff1c36cfac6eec62.setContent(html_38791ad4a01c494950fe59e13950f5e8);
+            var html_5a5bb13fd92573331c855e2b82445376 = $(`<div id="html_5a5bb13fd92573331c855e2b82445376" style="width: 100.0%; height: 100.0%;"><b>Northtech</b> <a href='https://https://northtech.dk/' target='_blank'>https://northtech.dk/</a>   For almost 20 years, we have been a preferred digital innovation and development partner for some of the largest and most successful organizations in Denmark. Our customers choose us because we are specialists in finding and developing solutions that others cannot. Our customer relationship is built on trust. We always solve the tasks in close cooperation with our customers and we always make sure that what we deliver works in practice.</div>`)[0];
+            popup_3ecb0a399044e005143b3c7011b63f49.setContent(html_5a5bb13fd92573331c855e2b82445376);
         
 
-        marker_0171f839b6b9c8bb3b5c8bfaf381b315.bindPopup(popup_5d4e51f159c8fda2ff1c36cfac6eec62)
+        marker_58e6d6295caf08ea652226a2a08c483e.bindPopup(popup_3ecb0a399044e005143b3c7011b63f49)
         ;
 
         
     
     
-            marker_0171f839b6b9c8bb3b5c8bfaf381b315.bindTooltip(
+            marker_58e6d6295caf08ea652226a2a08c483e.bindTooltip(
                 `<div>
                      Northtech
                  </div>`,
@@ -1495,32 +1496,32 @@
             );
         
     
-            var marker_1ba2c526d127275a0fcc4d8e8aa423d9 = L.marker(
+            var marker_783850c27133813de9ff9f66af107e98 = L.marker(
                 [56.15386952, 9.560810343],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_b7825a9027df89d1a0306d36dec43cde = L.AwesomeMarkers.icon(
+            var icon_0ca116a35f5d2dbfdec3fa5218de6991 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_1ba2c526d127275a0fcc4d8e8aa423d9.setIcon(icon_b7825a9027df89d1a0306d36dec43cde);
+            marker_783850c27133813de9ff9f66af107e98.setIcon(icon_0ca116a35f5d2dbfdec3fa5218de6991);
         
     
-        var popup_0d10ca8d922a48b5edab5832182d73b0 = L.popup({"maxWidth": "100%"});
+        var popup_74de5ec5d6db609f00d7e266031c1f9b = L.popup({"maxWidth": "100%"});
 
         
-            var html_53e78d1dc62ff362d4a32154cb31529a = $(`<div id="html_53e78d1dc62ff362d4a32154cb31529a" style="width: 100.0%; height: 100.0%;"><b>One2Feed</b> <a href='https://https://www.one2feed.dk/' target='_blank'>https://www.one2feed.dk/</a>   "Our feeding system is master class. Safe and economical. Developed from our and our customers’ everyday lives in the stable. As a company, we were born out of the Danish agricultural culture, where efficiency and quality characterize modern milk production. The Automatic Feeding Mixer has a capacity of 3.5 m3. It is made of stainless steel and is available either with side-doors or a conveyor belt of your preferred length. One2Feed Hoppers are available in capacities from 5m2 to 42m2. The Hopper can be delivered both as a mobile or stationary unit. The moving floor gently carries the feed as a solid pile without air-intake. The floor is made from fibreglass. The Hopper is built to last and proven to be corrosion resistant."</div>`)[0];
-            popup_0d10ca8d922a48b5edab5832182d73b0.setContent(html_53e78d1dc62ff362d4a32154cb31529a);
+            var html_7cb86185833207f1cfeb4715085d8a2f = $(`<div id="html_7cb86185833207f1cfeb4715085d8a2f" style="width: 100.0%; height: 100.0%;"><b>One2Feed</b> <a href='https://https://www.one2feed.dk/' target='_blank'>https://www.one2feed.dk/</a>   "Our feeding system is master class. Safe and economical. Developed from our and our customers’ everyday lives in the stable. As a company, we were born out of the Danish agricultural culture, where efficiency and quality characterize modern milk production. The Automatic Feeding Mixer has a capacity of 3.5 m3. It is made of stainless steel and is available either with side-doors or a conveyor belt of your preferred length. One2Feed Hoppers are available in capacities from 5m2 to 42m2. The Hopper can be delivered both as a mobile or stationary unit. The moving floor gently carries the feed as a solid pile without air-intake. The floor is made from fibreglass. The Hopper is built to last and proven to be corrosion resistant."</div>`)[0];
+            popup_74de5ec5d6db609f00d7e266031c1f9b.setContent(html_7cb86185833207f1cfeb4715085d8a2f);
         
 
-        marker_1ba2c526d127275a0fcc4d8e8aa423d9.bindPopup(popup_0d10ca8d922a48b5edab5832182d73b0)
+        marker_783850c27133813de9ff9f66af107e98.bindPopup(popup_74de5ec5d6db609f00d7e266031c1f9b)
         ;
 
         
     
     
-            marker_1ba2c526d127275a0fcc4d8e8aa423d9.bindTooltip(
+            marker_783850c27133813de9ff9f66af107e98.bindTooltip(
                 `<div>
                      One2Feed
                  </div>`,
@@ -1528,32 +1529,32 @@
             );
         
     
-            var marker_1d87cbc86d091025afd52c91899cfa9e = L.marker(
+            var marker_f8d1ae05f808f1d40a47d8dde92f8236 = L.marker(
                 [56.130272, 9.064785],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_b3fe9da483c6d3c05224bfc08df4cf82 = L.AwesomeMarkers.icon(
+            var icon_9e493949a2d3d2b9c372576d2b2d2585 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_1d87cbc86d091025afd52c91899cfa9e.setIcon(icon_b3fe9da483c6d3c05224bfc08df4cf82);
+            marker_f8d1ae05f808f1d40a47d8dde92f8236.setIcon(icon_9e493949a2d3d2b9c372576d2b2d2585);
         
     
-        var popup_1223a43254c87d3a693ee1c6eb21d514 = L.popup({"maxWidth": "100%"});
+        var popup_99e88d717d2fbfc60d226d2223202147 = L.popup({"maxWidth": "100%"});
 
         
-            var html_750fe5463f020de73dced1be2b71f9d8 = $(`<div id="html_750fe5463f020de73dced1be2b71f9d8" style="width: 100.0%; height: 100.0%;"><b>OpenFreeForm</b> <a href='https://nan' target='_blank'>nan</a>   620100 Computer programming.</div>`)[0];
-            popup_1223a43254c87d3a693ee1c6eb21d514.setContent(html_750fe5463f020de73dced1be2b71f9d8);
+            var html_03d98a98618d1f845b6e3d306774d000 = $(`<div id="html_03d98a98618d1f845b6e3d306774d000" style="width: 100.0%; height: 100.0%;"><b>OpenFreeForm</b> <a href='https://nan' target='_blank'>nan</a>   620100 Computer programming.</div>`)[0];
+            popup_99e88d717d2fbfc60d226d2223202147.setContent(html_03d98a98618d1f845b6e3d306774d000);
         
 
-        marker_1d87cbc86d091025afd52c91899cfa9e.bindPopup(popup_1223a43254c87d3a693ee1c6eb21d514)
+        marker_f8d1ae05f808f1d40a47d8dde92f8236.bindPopup(popup_99e88d717d2fbfc60d226d2223202147)
         ;
 
         
     
     
-            marker_1d87cbc86d091025afd52c91899cfa9e.bindTooltip(
+            marker_f8d1ae05f808f1d40a47d8dde92f8236.bindTooltip(
                 `<div>
                      OpenFreeForm
                  </div>`,
@@ -1561,32 +1562,32 @@
             );
         
     
-            var marker_e15fa32b7568fbe5e139d11766d7ce02 = L.marker(
+            var marker_a62b2bdb5439ebf918d6a205b6a6d0e8 = L.marker(
                 [56.15144907, 10.2073961],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_be53a6ba478f948f5951a2fdd875cf44 = L.AwesomeMarkers.icon(
+            var icon_ee75c12a27ee3b66b139238168938b81 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_e15fa32b7568fbe5e139d11766d7ce02.setIcon(icon_be53a6ba478f948f5951a2fdd875cf44);
+            marker_a62b2bdb5439ebf918d6a205b6a6d0e8.setIcon(icon_ee75c12a27ee3b66b139238168938b81);
         
     
-        var popup_9d57aa99edc1312935450bea1bd413c9 = L.popup({"maxWidth": "100%"});
+        var popup_4c2616788c2ba79eeab345c6afb0e62e = L.popup({"maxWidth": "100%"});
 
         
-            var html_5c5b656a833eddbb80c1b0b948c0179e = $(`<div id="html_5c5b656a833eddbb80c1b0b948c0179e" style="width: 100.0%; height: 100.0%;"><b>Raptor</b> <a href='https://https://www.raptorservices.com/?_gl=1%2A3c09zh%2A_up%2AMQ..&gclid=CjwKCAjw6fyXBhBgEiwAhhiZshPPNcx40QmxdprrxlbRqK3jf_-VEAr86LVe336m4U0HfaAoYaIxOhoC4MEQAvD_BwE' target='_blank'>https://www.raptorservices.com/?_gl=1%2A3c09zh%2A_up%2AMQ..&gclid=CjwKCAjw6fyXBhBgEiwAhhiZshPPNcx40QmxdprrxlbRqK3jf_-VEAr86LVe336m4U0HfaAoYaIxOhoC4MEQAvD_BwE</a>   Raptor Services is a market-leading Personalization and Customer Data Platform provider creating relevant experiences from customer data.</div>`)[0];
-            popup_9d57aa99edc1312935450bea1bd413c9.setContent(html_5c5b656a833eddbb80c1b0b948c0179e);
+            var html_7c298b6e28dd135fe2a28099d8f60f74 = $(`<div id="html_7c298b6e28dd135fe2a28099d8f60f74" style="width: 100.0%; height: 100.0%;"><b>Raptor</b> <a href='https://https://www.raptorservices.com/?_gl=1%2A3c09zh%2A_up%2AMQ..&gclid=CjwKCAjw6fyXBhBgEiwAhhiZshPPNcx40QmxdprrxlbRqK3jf_-VEAr86LVe336m4U0HfaAoYaIxOhoC4MEQAvD_BwE' target='_blank'>https://www.raptorservices.com/?_gl=1%2A3c09zh%2A_up%2AMQ..&gclid=CjwKCAjw6fyXBhBgEiwAhhiZshPPNcx40QmxdprrxlbRqK3jf_-VEAr86LVe336m4U0HfaAoYaIxOhoC4MEQAvD_BwE</a>   Raptor Services is a market-leading Personalization and Customer Data Platform provider creating relevant experiences from customer data.</div>`)[0];
+            popup_4c2616788c2ba79eeab345c6afb0e62e.setContent(html_7c298b6e28dd135fe2a28099d8f60f74);
         
 
-        marker_e15fa32b7568fbe5e139d11766d7ce02.bindPopup(popup_9d57aa99edc1312935450bea1bd413c9)
+        marker_a62b2bdb5439ebf918d6a205b6a6d0e8.bindPopup(popup_4c2616788c2ba79eeab345c6afb0e62e)
         ;
 
         
     
     
-            marker_e15fa32b7568fbe5e139d11766d7ce02.bindTooltip(
+            marker_a62b2bdb5439ebf918d6a205b6a6d0e8.bindTooltip(
                 `<div>
                      Raptor
                  </div>`,
@@ -1594,32 +1595,32 @@
             );
         
     
-            var marker_97f8d9eb3b61d455125feced7a31d524 = L.marker(
+            var marker_b86e93dc08a1b2e5a8438b528ab6ebe7 = L.marker(
                 [55.3781974, 10.41378985],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_fc3fac1534851a9210dc8608a464ef86 = L.AwesomeMarkers.icon(
+            var icon_9dd9a8bfd6b9669e0a942c8312fcdf8f = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_97f8d9eb3b61d455125feced7a31d524.setIcon(icon_fc3fac1534851a9210dc8608a464ef86);
+            marker_b86e93dc08a1b2e5a8438b528ab6ebe7.setIcon(icon_9dd9a8bfd6b9669e0a942c8312fcdf8f);
         
     
-        var popup_05538066007ecaddab21766423130d1f = L.popup({"maxWidth": "100%"});
+        var popup_45941995cbfc06e445e3ef332ac8e3ac = L.popup({"maxWidth": "100%"});
 
         
-            var html_f83e0f7c60626d7abe6065b8206fd77d = $(`<div id="html_f83e0f7c60626d7abe6065b8206fd77d" style="width: 100.0%; height: 100.0%;"><b>ROB-EX</b> <a href='https://https://rob-ex.com/en/about-us/' target='_blank'>https://rob-ex.com/en/about-us/</a>   ROB-EX A/S is an IT and engineering company, specialised in software specifically dedicated to production scheduling. We launched ROB-EX Scheduler in 2002 and have worked closely with planners and manufacturers to ensure optimum usability and focus on the actual needs and requirements that planners experience every day.</div>`)[0];
-            popup_05538066007ecaddab21766423130d1f.setContent(html_f83e0f7c60626d7abe6065b8206fd77d);
+            var html_8353720d91412711decf7caba3a747a5 = $(`<div id="html_8353720d91412711decf7caba3a747a5" style="width: 100.0%; height: 100.0%;"><b>ROB-EX</b> <a href='https://https://rob-ex.com/en/about-us/' target='_blank'>https://rob-ex.com/en/about-us/</a>   ROB-EX A/S is an IT and engineering company, specialised in software specifically dedicated to production scheduling. We launched ROB-EX Scheduler in 2002 and have worked closely with planners and manufacturers to ensure optimum usability and focus on the actual needs and requirements that planners experience every day.</div>`)[0];
+            popup_45941995cbfc06e445e3ef332ac8e3ac.setContent(html_8353720d91412711decf7caba3a747a5);
         
 
-        marker_97f8d9eb3b61d455125feced7a31d524.bindPopup(popup_05538066007ecaddab21766423130d1f)
+        marker_b86e93dc08a1b2e5a8438b528ab6ebe7.bindPopup(popup_45941995cbfc06e445e3ef332ac8e3ac)
         ;
 
         
     
     
-            marker_97f8d9eb3b61d455125feced7a31d524.bindTooltip(
+            marker_b86e93dc08a1b2e5a8438b528ab6ebe7.bindTooltip(
                 `<div>
                      ROB-EX
                  </div>`,
@@ -1627,32 +1628,32 @@
             );
         
     
-            var marker_2b6bb8d9b00ca6ad37b2b64f32ca5528 = L.marker(
+            var marker_96242231d53abba3398fbae72e06f16c = L.marker(
                 [57.05415128, 9.911460371],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_130bc8b14f52a5afda7122d8742a869b = L.AwesomeMarkers.icon(
+            var icon_f60812e4b58eb3b093a295af7b1e8f5e = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_2b6bb8d9b00ca6ad37b2b64f32ca5528.setIcon(icon_130bc8b14f52a5afda7122d8742a869b);
+            marker_96242231d53abba3398fbae72e06f16c.setIcon(icon_f60812e4b58eb3b093a295af7b1e8f5e);
         
     
-        var popup_d5a1e191640e89f17c01e1a54a8524d2 = L.popup({"maxWidth": "100%"});
+        var popup_0be41a312bcce007b527d8d5b42f097b = L.popup({"maxWidth": "100%"});
 
         
-            var html_b039fe5d737714376059390c38c411f5 = $(`<div id="html_b039fe5d737714376059390c38c411f5" style="width: 100.0%; height: 100.0%;"><b>Senti</b> <a href='https://https://senti.io/' target='_blank'>https://senti.io/</a>   At Senti, we believe that it is important to find the right business and technology partners. This is why we are continuously expanding our partnership network. The combination of devices, IoT application and service platform as well as services from our partner companies not only allows for the rapid implementation of large, innovative IoT applications, but it generates new ideas and products.</div>`)[0];
-            popup_d5a1e191640e89f17c01e1a54a8524d2.setContent(html_b039fe5d737714376059390c38c411f5);
+            var html_667a6474e2c0a8d8ae3d225534b70e90 = $(`<div id="html_667a6474e2c0a8d8ae3d225534b70e90" style="width: 100.0%; height: 100.0%;"><b>Senti</b> <a href='https://https://senti.io/' target='_blank'>https://senti.io/</a>   At Senti, we believe that it is important to find the right business and technology partners. This is why we are continuously expanding our partnership network. The combination of devices, IoT application and service platform as well as services from our partner companies not only allows for the rapid implementation of large, innovative IoT applications, but it generates new ideas and products.</div>`)[0];
+            popup_0be41a312bcce007b527d8d5b42f097b.setContent(html_667a6474e2c0a8d8ae3d225534b70e90);
         
 
-        marker_2b6bb8d9b00ca6ad37b2b64f32ca5528.bindPopup(popup_d5a1e191640e89f17c01e1a54a8524d2)
+        marker_96242231d53abba3398fbae72e06f16c.bindPopup(popup_0be41a312bcce007b527d8d5b42f097b)
         ;
 
         
     
     
-            marker_2b6bb8d9b00ca6ad37b2b64f32ca5528.bindTooltip(
+            marker_96242231d53abba3398fbae72e06f16c.bindTooltip(
                 `<div>
                      Senti
                  </div>`,
@@ -1660,32 +1661,32 @@
             );
         
     
-            var marker_195493c5d9ed0f06f33c4c76b0eeefbc = L.marker(
+            var marker_c0103fbc462a4858b975c44b0e0f289a = L.marker(
                 [57.02533029, 9.897135187],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_edd62f2f7ea8c248ce5f8eb200757264 = L.AwesomeMarkers.icon(
+            var icon_2d82a48cde64d688323f17170635682c = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_195493c5d9ed0f06f33c4c76b0eeefbc.setIcon(icon_edd62f2f7ea8c248ce5f8eb200757264);
+            marker_c0103fbc462a4858b975c44b0e0f289a.setIcon(icon_2d82a48cde64d688323f17170635682c);
         
     
-        var popup_6b75e3a34426e8de99249abc9c8d2f3b = L.popup({"maxWidth": "100%"});
+        var popup_229dc94540ad43e9a8e8b863c5196005 = L.popup({"maxWidth": "100%"});
 
         
-            var html_1fc564cfea54b185cb41f149dbc6ebd3 = $(`<div id="html_1fc564cfea54b185cb41f149dbc6ebd3" style="width: 100.0%; height: 100.0%;"><b>SerEnergy</b> <a href='https://https://serene.advent.energy/' target='_blank'>https://serene.advent.energy/</a>   Meet the needs of the present without compromising the ability of future generations. The push for sustainable energy is not only evident but also highly relevant. Serene is all about clean energy but our solutions also secure other competitive advantages supportive of our customers’ business. We do no just provide power – we empower your business.</div>`)[0];
-            popup_6b75e3a34426e8de99249abc9c8d2f3b.setContent(html_1fc564cfea54b185cb41f149dbc6ebd3);
+            var html_29e66c773fbb31c671f2c41c19548de7 = $(`<div id="html_29e66c773fbb31c671f2c41c19548de7" style="width: 100.0%; height: 100.0%;"><b>SerEnergy</b> <a href='https://https://serene.advent.energy/' target='_blank'>https://serene.advent.energy/</a>   Meet the needs of the present without compromising the ability of future generations. The push for sustainable energy is not only evident but also highly relevant. Serene is all about clean energy but our solutions also secure other competitive advantages supportive of our customers’ business. We do no just provide power – we empower your business.</div>`)[0];
+            popup_229dc94540ad43e9a8e8b863c5196005.setContent(html_29e66c773fbb31c671f2c41c19548de7);
         
 
-        marker_195493c5d9ed0f06f33c4c76b0eeefbc.bindPopup(popup_6b75e3a34426e8de99249abc9c8d2f3b)
+        marker_c0103fbc462a4858b975c44b0e0f289a.bindPopup(popup_229dc94540ad43e9a8e8b863c5196005)
         ;
 
         
     
     
-            marker_195493c5d9ed0f06f33c4c76b0eeefbc.bindTooltip(
+            marker_c0103fbc462a4858b975c44b0e0f289a.bindTooltip(
                 `<div>
                      SerEnergy
                  </div>`,
@@ -1693,32 +1694,32 @@
             );
         
     
-            var marker_468e1611ae9bde76c94a83c340b6d861 = L.marker(
+            var marker_67a0f7241a9baaba121d859e7980d99f = L.marker(
                 [55.80395694, 12.53336075],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_82685ae1b521213a47c89fc435652126 = L.AwesomeMarkers.icon(
+            var icon_c1403243e0029a2e0e60394c6380804f = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_468e1611ae9bde76c94a83c340b6d861.setIcon(icon_82685ae1b521213a47c89fc435652126);
+            marker_67a0f7241a9baaba121d859e7980d99f.setIcon(icon_c1403243e0029a2e0e60394c6380804f);
         
     
-        var popup_b6a707b1c97a7d743630796c4b55cd12 = L.popup({"maxWidth": "100%"});
+        var popup_93e1ef26ede4838785a70426059d0138 = L.popup({"maxWidth": "100%"});
 
         
-            var html_40aee04e407e5e6533d6e947a2edb62d = $(`<div id="html_40aee04e407e5e6533d6e947a2edb62d" style="width: 100.0%; height: 100.0%;"><b>Sweetspot</b> <a href='https://https://sweetspot.me/' target='_blank'>https://sweetspot.me/</a>   SweetSpot er din rådgiver og sparringspartner, når det kommer til impulsvarer. Med over 25 års erfaring i hele Norden rådgiver vi dig med de bedste anbefalinger og håndtering af indkøb og levering af impulsvarer, så du kan fokusere på din kerneforretning.</div>`)[0];
-            popup_b6a707b1c97a7d743630796c4b55cd12.setContent(html_40aee04e407e5e6533d6e947a2edb62d);
+            var html_9925664119b6a52541e420d08d36c1d9 = $(`<div id="html_9925664119b6a52541e420d08d36c1d9" style="width: 100.0%; height: 100.0%;"><b>Sweetspot</b> <a href='https://https://sweetspot.me/' target='_blank'>https://sweetspot.me/</a>   SweetSpot er din rådgiver og sparringspartner, når det kommer til impulsvarer. Med over 25 års erfaring i hele Norden rådgiver vi dig med de bedste anbefalinger og håndtering af indkøb og levering af impulsvarer, så du kan fokusere på din kerneforretning.</div>`)[0];
+            popup_93e1ef26ede4838785a70426059d0138.setContent(html_9925664119b6a52541e420d08d36c1d9);
         
 
-        marker_468e1611ae9bde76c94a83c340b6d861.bindPopup(popup_b6a707b1c97a7d743630796c4b55cd12)
+        marker_67a0f7241a9baaba121d859e7980d99f.bindPopup(popup_93e1ef26ede4838785a70426059d0138)
         ;
 
         
     
     
-            marker_468e1611ae9bde76c94a83c340b6d861.bindTooltip(
+            marker_67a0f7241a9baaba121d859e7980d99f.bindTooltip(
                 `<div>
                      Sweetspot
                  </div>`,
@@ -1726,32 +1727,32 @@
             );
         
     
-            var marker_43a470a7fd6c04aac308db5ec6659e91 = L.marker(
+            var marker_9ebbdacb9dd3e04ee76bd264bd4288ff = L.marker(
                 [55.70727384, 12.53229083],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_019723aaea18db0cd944016aba916c68 = L.AwesomeMarkers.icon(
+            var icon_9df6448fd4432806ae8f93ae5edb2223 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_43a470a7fd6c04aac308db5ec6659e91.setIcon(icon_019723aaea18db0cd944016aba916c68);
+            marker_9ebbdacb9dd3e04ee76bd264bd4288ff.setIcon(icon_9df6448fd4432806ae8f93ae5edb2223);
         
     
-        var popup_46f78780adbc6d31feda720bd0a98c85 = L.popup({"maxWidth": "100%"});
+        var popup_74a8a7dc3aca4d84d87cc824f0c4de1f = L.popup({"maxWidth": "100%"});
 
         
-            var html_9a63d945b8c8f9051128762c6376c067 = $(`<div id="html_9a63d945b8c8f9051128762c6376c067" style="width: 100.0%; height: 100.0%;"><b>Syncsense</b> <a href='https://https://www.syncsense.io/' target='_blank'>https://www.syncsense.io/</a>   Today, we are an interdisciplinary team of digital health specialists and collaborate with world-leading partners within health and digital technology. We combine participatory design with Nordic design aesthetics and agile software development to ensure a meaningful and value-creating VR solution. This means that we actively involve patients, citizens and health professionals in the design process via living laboratories. SYNCSENSE® is an award-winning digital training technology that is nominated and finalist at the Danish Design Award in the Healthy Life category.</div>`)[0];
-            popup_46f78780adbc6d31feda720bd0a98c85.setContent(html_9a63d945b8c8f9051128762c6376c067);
+            var html_d2ba20b9d9bf70d266c014c1a757e45c = $(`<div id="html_d2ba20b9d9bf70d266c014c1a757e45c" style="width: 100.0%; height: 100.0%;"><b>Syncsense</b> <a href='https://https://www.syncsense.io/' target='_blank'>https://www.syncsense.io/</a>   Today, we are an interdisciplinary team of digital health specialists and collaborate with world-leading partners within health and digital technology. We combine participatory design with Nordic design aesthetics and agile software development to ensure a meaningful and value-creating VR solution. This means that we actively involve patients, citizens and health professionals in the design process via living laboratories. SYNCSENSE® is an award-winning digital training technology that is nominated and finalist at the Danish Design Award in the Healthy Life category.</div>`)[0];
+            popup_74a8a7dc3aca4d84d87cc824f0c4de1f.setContent(html_d2ba20b9d9bf70d266c014c1a757e45c);
         
 
-        marker_43a470a7fd6c04aac308db5ec6659e91.bindPopup(popup_46f78780adbc6d31feda720bd0a98c85)
+        marker_9ebbdacb9dd3e04ee76bd264bd4288ff.bindPopup(popup_74a8a7dc3aca4d84d87cc824f0c4de1f)
         ;
 
         
     
     
-            marker_43a470a7fd6c04aac308db5ec6659e91.bindTooltip(
+            marker_9ebbdacb9dd3e04ee76bd264bd4288ff.bindTooltip(
                 `<div>
                      Syncsense
                  </div>`,
@@ -1759,32 +1760,32 @@
             );
         
     
-            var marker_1eb964770edffff29251eddc8162079b = L.marker(
+            var marker_90b4599d0d1b3f093cdc5558a2896a63 = L.marker(
                 [55.88742405, 12.35020179],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_c8635fd4886dc0b2cffc087191ee4643 = L.AwesomeMarkers.icon(
+            var icon_1972c2c20d7786830ea47bf7c955f57d = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_1eb964770edffff29251eddc8162079b.setIcon(icon_c8635fd4886dc0b2cffc087191ee4643);
+            marker_90b4599d0d1b3f093cdc5558a2896a63.setIcon(icon_1972c2c20d7786830ea47bf7c955f57d);
         
     
-        var popup_a430756f32d54e6694913e927aa991e5 = L.popup({"maxWidth": "100%"});
+        var popup_7f783481585e6b4afe8bff2011cd1cf5 = L.popup({"maxWidth": "100%"});
 
         
-            var html_fcfe9a4925eb6ec489ebb9340c1da797 = $(`<div id="html_fcfe9a4925eb6ec489ebb9340c1da797" style="width: 100.0%; height: 100.0%;"><b>Tier1 Asset</b> <a href='https://https://tier1asset.com/' target='_blank'>https://tier1asset.com/</a>   T1A is Europe’s leading refurbisher with more than 4000 m² production and warehouse facilities with 20 years of experience. We take great pride in our strict grading policy, and are Blancco certified Gold Partner and Microsoft authorized refurbisher. Prior to any sales, our products go through rigorous testing to make sure that our customers receive only 100% fully functioning products with zero to minimal signs of usage</div>`)[0];
-            popup_a430756f32d54e6694913e927aa991e5.setContent(html_fcfe9a4925eb6ec489ebb9340c1da797);
+            var html_454ea0841184b361cb3923ee9e8d2be7 = $(`<div id="html_454ea0841184b361cb3923ee9e8d2be7" style="width: 100.0%; height: 100.0%;"><b>Tier1 Asset</b> <a href='https://https://tier1asset.com/' target='_blank'>https://tier1asset.com/</a>   T1A is Europe’s leading refurbisher with more than 4000 m² production and warehouse facilities with 20 years of experience. We take great pride in our strict grading policy, and are Blancco certified Gold Partner and Microsoft authorized refurbisher. Prior to any sales, our products go through rigorous testing to make sure that our customers receive only 100% fully functioning products with zero to minimal signs of usage</div>`)[0];
+            popup_7f783481585e6b4afe8bff2011cd1cf5.setContent(html_454ea0841184b361cb3923ee9e8d2be7);
         
 
-        marker_1eb964770edffff29251eddc8162079b.bindPopup(popup_a430756f32d54e6694913e927aa991e5)
+        marker_90b4599d0d1b3f093cdc5558a2896a63.bindPopup(popup_7f783481585e6b4afe8bff2011cd1cf5)
         ;
 
         
     
     
-            marker_1eb964770edffff29251eddc8162079b.bindTooltip(
+            marker_90b4599d0d1b3f093cdc5558a2896a63.bindTooltip(
                 `<div>
                      Tier1 Asset
                  </div>`,
@@ -1792,32 +1793,32 @@
             );
         
     
-            var marker_ace2321a01574214c23b8fd906c1ac07 = L.marker(
+            var marker_e1c45619df0d468175e68fc9f6592765 = L.marker(
                 [55.65723893, 12.55835601],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_ed3bb23fec9d6bed873636c0ad98714e = L.AwesomeMarkers.icon(
+            var icon_ebf1f61af624a02aba0a3dbd963c2d0e = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_ace2321a01574214c23b8fd906c1ac07.setIcon(icon_ed3bb23fec9d6bed873636c0ad98714e);
+            marker_e1c45619df0d468175e68fc9f6592765.setIcon(icon_ebf1f61af624a02aba0a3dbd963c2d0e);
         
     
-        var popup_b5e232ebf6635fb16e89478018912c01 = L.popup({"maxWidth": "100%"});
+        var popup_ce65d700b752548bc0882c0a44d5151b = L.popup({"maxWidth": "100%"});
 
         
-            var html_b99b6dc934628a07a85d71e7323df9d6 = $(`<div id="html_b99b6dc934628a07a85d71e7323df9d6" style="width: 100.0%; height: 100.0%;"><b>Viggo</b> <a href='https://https://viggo.dk/' target='_blank'>https://viggo.dk/</a>   ViGGO is a user-friendly and flexible communication platform that is based on the users' everyday life. With an overview of the schedule, homework, rooms, attendance and much more, ViGGO collects all information for students and staff.</div>`)[0];
-            popup_b5e232ebf6635fb16e89478018912c01.setContent(html_b99b6dc934628a07a85d71e7323df9d6);
+            var html_c35ff81be6d9eab1936fa9f4c88474c2 = $(`<div id="html_c35ff81be6d9eab1936fa9f4c88474c2" style="width: 100.0%; height: 100.0%;"><b>Viggo</b> <a href='https://https://viggo.dk/' target='_blank'>https://viggo.dk/</a>   ViGGO is a user-friendly and flexible communication platform that is based on the users' everyday life. With an overview of the schedule, homework, rooms, attendance and much more, ViGGO collects all information for students and staff.</div>`)[0];
+            popup_ce65d700b752548bc0882c0a44d5151b.setContent(html_c35ff81be6d9eab1936fa9f4c88474c2);
         
 
-        marker_ace2321a01574214c23b8fd906c1ac07.bindPopup(popup_b5e232ebf6635fb16e89478018912c01)
+        marker_e1c45619df0d468175e68fc9f6592765.bindPopup(popup_ce65d700b752548bc0882c0a44d5151b)
         ;
 
         
     
     
-            marker_ace2321a01574214c23b8fd906c1ac07.bindTooltip(
+            marker_e1c45619df0d468175e68fc9f6592765.bindTooltip(
                 `<div>
                      Viggo
                  </div>`,
@@ -1825,32 +1826,32 @@
             );
         
     
-            var marker_fde9a22f33b2b775e874dbea3a35f1fd = L.marker(
+            var marker_7e39f0c1a9da929e1e345154bd75fb6f = L.marker(
                 [55.5058398, 12.18801183],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_c36867470f9dece530088a73af4f8876 = L.AwesomeMarkers.icon(
+            var icon_f3c4c678b2ef7585cc9dfb233f2a8039 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_fde9a22f33b2b775e874dbea3a35f1fd.setIcon(icon_c36867470f9dece530088a73af4f8876);
+            marker_7e39f0c1a9da929e1e345154bd75fb6f.setIcon(icon_f3c4c678b2ef7585cc9dfb233f2a8039);
         
     
-        var popup_68520bff8321d17c2661c01c76466ce4 = L.popup({"maxWidth": "100%"});
+        var popup_9b4e93b5431afd4967581330f0733987 = L.popup({"maxWidth": "100%"});
 
         
-            var html_78fbf9ecba56d71285b957d2004cd180 = $(`<div id="html_78fbf9ecba56d71285b957d2004cd180" style="width: 100.0%; height: 100.0%;"><b>Fomaco</b> <a href='https://https://fomaco.com/' target='_blank'>https://fomaco.com/</a>   As one of the world’s leading machine manufacturers in our field, Fomaco delivers thoroughly tested, reliable technology that adds value to every part of our customers curing and marinating processes. As a food machinery company we always strive for perfection, and we never compromise on quality. Choose your industry and see what we can do for you.</div>`)[0];
-            popup_68520bff8321d17c2661c01c76466ce4.setContent(html_78fbf9ecba56d71285b957d2004cd180);
+            var html_284609819f123fd3b58554ab86961ed0 = $(`<div id="html_284609819f123fd3b58554ab86961ed0" style="width: 100.0%; height: 100.0%;"><b>Fomaco</b> <a href='https://https://fomaco.com/' target='_blank'>https://fomaco.com/</a>   As one of the world’s leading machine manufacturers in our field, Fomaco delivers thoroughly tested, reliable technology that adds value to every part of our customers curing and marinating processes. As a food machinery company we always strive for perfection, and we never compromise on quality. Choose your industry and see what we can do for you.</div>`)[0];
+            popup_9b4e93b5431afd4967581330f0733987.setContent(html_284609819f123fd3b58554ab86961ed0);
         
 
-        marker_fde9a22f33b2b775e874dbea3a35f1fd.bindPopup(popup_68520bff8321d17c2661c01c76466ce4)
+        marker_7e39f0c1a9da929e1e345154bd75fb6f.bindPopup(popup_9b4e93b5431afd4967581330f0733987)
         ;
 
         
     
     
-            marker_fde9a22f33b2b775e874dbea3a35f1fd.bindTooltip(
+            marker_7e39f0c1a9da929e1e345154bd75fb6f.bindTooltip(
                 `<div>
                      Fomaco
                  </div>`,
@@ -1858,32 +1859,32 @@
             );
         
     
-            var marker_cb35ed1754d79d706d7afec4af6664bb = L.marker(
+            var marker_1755eca4bbb8902098dcf0b7ab92ffa1 = L.marker(
                 [55.68187, 12.57819],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_b6efa6a399c015f4a26d36edf3882ebd = L.AwesomeMarkers.icon(
+            var icon_83ff3fea943f9e7bbbbffe80312bcc3f = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_cb35ed1754d79d706d7afec4af6664bb.setIcon(icon_b6efa6a399c015f4a26d36edf3882ebd);
+            marker_1755eca4bbb8902098dcf0b7ab92ffa1.setIcon(icon_83ff3fea943f9e7bbbbffe80312bcc3f);
         
     
-        var popup_7ef8708389b74bc32b0dc4fea21cd491 = L.popup({"maxWidth": "100%"});
+        var popup_71c9fe223d42300d323ab6d021206f1e = L.popup({"maxWidth": "100%"});
 
         
-            var html_f1c8efb04f7c2a8f32795fdf1a657b7b = $(`<div id="html_f1c8efb04f7c2a8f32795fdf1a657b7b" style="width: 100.0%; height: 100.0%;"><b>Infomedia</b> <a href='https://https://infomedia.dk/' target='_blank'>https://infomedia.dk/</a>   Infomedia hjælper virksomheder og organisationer med at få succes gennem intelligent brug af data, ny digital teknologi og dyb indsigt i medier og kommunikation</div>`)[0];
-            popup_7ef8708389b74bc32b0dc4fea21cd491.setContent(html_f1c8efb04f7c2a8f32795fdf1a657b7b);
+            var html_ed26d755f6370bf13f9efb628a563c60 = $(`<div id="html_ed26d755f6370bf13f9efb628a563c60" style="width: 100.0%; height: 100.0%;"><b>Infomedia</b> <a href='https://https://infomedia.dk/' target='_blank'>https://infomedia.dk/</a>   Infomedia hjælper virksomheder og organisationer med at få succes gennem intelligent brug af data, ny digital teknologi og dyb indsigt i medier og kommunikation</div>`)[0];
+            popup_71c9fe223d42300d323ab6d021206f1e.setContent(html_ed26d755f6370bf13f9efb628a563c60);
         
 
-        marker_cb35ed1754d79d706d7afec4af6664bb.bindPopup(popup_7ef8708389b74bc32b0dc4fea21cd491)
+        marker_1755eca4bbb8902098dcf0b7ab92ffa1.bindPopup(popup_71c9fe223d42300d323ab6d021206f1e)
         ;
 
         
     
     
-            marker_cb35ed1754d79d706d7afec4af6664bb.bindTooltip(
+            marker_1755eca4bbb8902098dcf0b7ab92ffa1.bindTooltip(
                 `<div>
                      Infomedia
                  </div>`,
@@ -1891,32 +1892,32 @@
             );
         
     
-            var marker_bc27bc477256723610946354445d06f2 = L.marker(
+            var marker_e247d6728378a0edc4e42a54bcd3884d = L.marker(
                 [55.68964077, 12.49930455],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_244c4ec0fde9d266339ec57e6eb616d3 = L.AwesomeMarkers.icon(
+            var icon_ec4a4b0f861d33ceb7abff928ba9bd3f = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_bc27bc477256723610946354445d06f2.setIcon(icon_244c4ec0fde9d266339ec57e6eb616d3);
+            marker_e247d6728378a0edc4e42a54bcd3884d.setIcon(icon_ec4a4b0f861d33ceb7abff928ba9bd3f);
         
     
-        var popup_162b6625d05052a307398dda6763be5b = L.popup({"maxWidth": "100%"});
+        var popup_14fa87c5e9eac277d603bf0c1d8ceeee = L.popup({"maxWidth": "100%"});
 
         
-            var html_e967b1e0422b72c3cf5902173ea4ce19 = $(`<div id="html_e967b1e0422b72c3cf5902173ea4ce19" style="width: 100.0%; height: 100.0%;"><b>P+</b> <a href='https://https://www.pplus.dk/' target='_blank'>https://www.pplus.dk/</a>   P+ is a pension fund for academics. We are over 100,000 members who own P+, and we have a total of around DKK 150 billion. DKK. This makes us one of Denmark's largest pension companies</div>`)[0];
-            popup_162b6625d05052a307398dda6763be5b.setContent(html_e967b1e0422b72c3cf5902173ea4ce19);
+            var html_c0744cf74fac0fe6b33e56f8c6992b2f = $(`<div id="html_c0744cf74fac0fe6b33e56f8c6992b2f" style="width: 100.0%; height: 100.0%;"><b>P+</b> <a href='https://https://www.pplus.dk/' target='_blank'>https://www.pplus.dk/</a>   P+ is a pension fund for academics. We are over 100,000 members who own P+, and we have a total of around DKK 150 billion. DKK. This makes us one of Denmark's largest pension companies</div>`)[0];
+            popup_14fa87c5e9eac277d603bf0c1d8ceeee.setContent(html_c0744cf74fac0fe6b33e56f8c6992b2f);
         
 
-        marker_bc27bc477256723610946354445d06f2.bindPopup(popup_162b6625d05052a307398dda6763be5b)
+        marker_e247d6728378a0edc4e42a54bcd3884d.bindPopup(popup_14fa87c5e9eac277d603bf0c1d8ceeee)
         ;
 
         
     
     
-            marker_bc27bc477256723610946354445d06f2.bindTooltip(
+            marker_e247d6728378a0edc4e42a54bcd3884d.bindTooltip(
                 `<div>
                      P+
                  </div>`,
@@ -1924,32 +1925,32 @@
             );
         
     
-            var marker_adef914705bf84f99d613ef37903baaa = L.marker(
+            var marker_8ba7878aad8fb530417f1415f4c4066e = L.marker(
                 [55.3447372, 10.39920828],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_9dce2b660057fdfdfa5f0f730b28791d = L.AwesomeMarkers.icon(
+            var icon_005a86199c40fc65c4b7e6caed801843 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_adef914705bf84f99d613ef37903baaa.setIcon(icon_9dce2b660057fdfdfa5f0f730b28791d);
+            marker_8ba7878aad8fb530417f1415f4c4066e.setIcon(icon_005a86199c40fc65c4b7e6caed801843);
         
     
-        var popup_c5b36cc3216eaa6251b875350e8d678c = L.popup({"maxWidth": "100%"});
+        var popup_eca1b2c386d1c6e97e965bee33cfd6f5 = L.popup({"maxWidth": "100%"});
 
         
-            var html_82cc3fe5d9540b777ddf6a783629e287 = $(`<div id="html_82cc3fe5d9540b777ddf6a783629e287" style="width: 100.0%; height: 100.0%;"><b>Plus Pack</b> <a href='https://https://pluspack.com/' target='_blank'>https://pluspack.com/</a>   At Plus Pack, we’re dedicated to designing sustainable and customized food packaging solutions. And to making our customers stand out in the marketplace. We know that differentiation is business-critical. And we believe that our superior industry know-how and flexibility, enable us to customize innovative and sustainable packaging solutions that are truly outstanding.</div>`)[0];
-            popup_c5b36cc3216eaa6251b875350e8d678c.setContent(html_82cc3fe5d9540b777ddf6a783629e287);
+            var html_5788906e5b1b31fd4b73039d588bcc83 = $(`<div id="html_5788906e5b1b31fd4b73039d588bcc83" style="width: 100.0%; height: 100.0%;"><b>Plus Pack</b> <a href='https://https://pluspack.com/' target='_blank'>https://pluspack.com/</a>   At Plus Pack, we’re dedicated to designing sustainable and customized food packaging solutions. And to making our customers stand out in the marketplace. We know that differentiation is business-critical. And we believe that our superior industry know-how and flexibility, enable us to customize innovative and sustainable packaging solutions that are truly outstanding.</div>`)[0];
+            popup_eca1b2c386d1c6e97e965bee33cfd6f5.setContent(html_5788906e5b1b31fd4b73039d588bcc83);
         
 
-        marker_adef914705bf84f99d613ef37903baaa.bindPopup(popup_c5b36cc3216eaa6251b875350e8d678c)
+        marker_8ba7878aad8fb530417f1415f4c4066e.bindPopup(popup_eca1b2c386d1c6e97e965bee33cfd6f5)
         ;
 
         
     
     
-            marker_adef914705bf84f99d613ef37903baaa.bindTooltip(
+            marker_8ba7878aad8fb530417f1415f4c4066e.bindTooltip(
                 `<div>
                      Plus Pack
                  </div>`,
@@ -1957,36 +1958,42 @@
             );
         
     
-            var marker_33aa84ec278d4b7787217c8c0fcf60c9 = L.marker(
+            var marker_d1988e20186dd457ae9dce1f181045cb = L.marker(
                 [56.21041482, 10.21025341],
                 {}
-            ).addTo(marker_cluster_9a0449a9f92dd44600ab4cd4b55e032a);
+            ).addTo(marker_cluster_89e7c4c8dee00e2d76e2a06d7b1225dd);
         
     
-            var icon_103bdec6a8cdd323911b15ea03e174b7 = L.AwesomeMarkers.icon(
+            var icon_e526a047e0e5bbbe09ef8f9fa27a7700 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_33aa84ec278d4b7787217c8c0fcf60c9.setIcon(icon_103bdec6a8cdd323911b15ea03e174b7);
+            marker_d1988e20186dd457ae9dce1f181045cb.setIcon(icon_e526a047e0e5bbbe09ef8f9fa27a7700);
         
     
-        var popup_c93c36c509b8f8000b74d4bb58188bbb = L.popup({"maxWidth": "100%"});
+        var popup_68e522417486277ae6284f7b20415eb1 = L.popup({"maxWidth": "100%"});
 
         
-            var html_a0fc5247f9d07cf89f9e627b274a27ab = $(`<div id="html_a0fc5247f9d07cf89f9e627b274a27ab" style="width: 100.0%; height: 100.0%;"><b>Tracelink</b> <a href='https://https://www.tracelink.com/' target='_blank'>https://www.tracelink.com/</a>   Leveraging Digital Networks for Greater Visibility and Collaboration with your Supply Partners One system to capture, analyze, resolve and prevent supply chain issues. </div>`)[0];
-            popup_c93c36c509b8f8000b74d4bb58188bbb.setContent(html_a0fc5247f9d07cf89f9e627b274a27ab);
+            var html_fe68b4e1b3119e29afc2d71d108ab28c = $(`<div id="html_fe68b4e1b3119e29afc2d71d108ab28c" style="width: 100.0%; height: 100.0%;"><b>Tracelink</b> <a href='https://https://www.tracelink.com/' target='_blank'>https://www.tracelink.com/</a>   Leveraging Digital Networks for Greater Visibility and Collaboration with your Supply Partners One system to capture, analyze, resolve and prevent supply chain issues. </div>`)[0];
+            popup_68e522417486277ae6284f7b20415eb1.setContent(html_fe68b4e1b3119e29afc2d71d108ab28c);
         
 
-        marker_33aa84ec278d4b7787217c8c0fcf60c9.bindPopup(popup_c93c36c509b8f8000b74d4bb58188bbb)
+        marker_d1988e20186dd457ae9dce1f181045cb.bindPopup(popup_68e522417486277ae6284f7b20415eb1)
         ;
 
         
     
     
-            marker_33aa84ec278d4b7787217c8c0fcf60c9.bindTooltip(
+            marker_d1988e20186dd457ae9dce1f181045cb.bindTooltip(
                 `<div>
                      Tracelink
                  </div>`,
                 {"sticky": true}
             );
+        
+    
+            var heat_map_c03b53e09ac66c74049a28f44b55621d = L.heatLayer(
+                [[56.1597, 10.2161], [55.65934601, 12.51762934], [56.17059639, 10.03292068], [55.68899294, 12.57673777], [55.6730546, 12.58877916], [55.672861, 12.58955163], [56.65673812, 9.809348027], [55.73903852, 12.39968537], [55.75144644, 12.59668239], [55.67689907, 12.5707055], [55.76218131, 12.4540671], [55.68060517, 12.60363474], [55.69168865, 12.52448203], [56.15351316, 10.17507256], [55.67810547, 12.5794905], [55.73138208, 12.4683168], [55.73516821, 12.56471834], [55.88104883, 12.54770804], [55.95492689, 12.59165335], [56.14869468, 10.21319171], [55.72663719, 12.3732971], [56.10902245, 10.15830372], [55.46850423, 8.668532758], [56.15996684, 10.21059453], [55.64087903, 12.26134905], [56.47728169, 8.583737585], [55.96774698, 12.40095023], [57.02592308, 9.921649543], [55.69226488, 12.61286551], [55.57517869, 12.10542213], [56.17324956, 10.18964658], [55.64893126, 12.55006952], [56.107817, 10.14393501], [56.11437129, 10.19320071], [56.25639277, 8.793744485], [55.45133173, 11.79267204], [57.04738039, 9.944874183], [55.68244381, 12.50511484], [55.82039528, 12.25314502], [56.80168987, 9.499461083], [57.01288349, 9.988334371], [55.68373225, 12.38948211], [55.67445953, 12.59164704], [56.15386952, 9.560810343], [56.130272, 9.064785], [56.15144907, 10.2073961], [55.3781974, 10.41378985], [57.05415128, 9.911460371], [57.02533029, 9.897135187], [55.80395694, 12.53336075], [55.70727384, 12.53229083], [55.88742405, 12.35020179], [55.65723893, 12.55835601], [55.5058398, 12.18801183], [55.68187, 12.57819], [55.68964077, 12.49930455], [55.3447372, 10.39920828], [56.21041482, 10.21025341]],
+                {"blur": 15, "maxZoom": 18, "minOpacity": 0.5, "radius": 25}
+            ).addTo(map_cdf8fe911c8a5c5255f5e969058c718d);
         
 </script>
